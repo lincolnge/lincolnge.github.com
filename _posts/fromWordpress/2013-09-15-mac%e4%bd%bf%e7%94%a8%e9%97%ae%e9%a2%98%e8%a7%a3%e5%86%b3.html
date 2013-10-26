@@ -12,21 +12,21 @@ meta:
   _edit_last: '1'
   duoshuo_thread_id: '1365771562581491757'
 ---
-<h1>mac command line</h1>
+<h2>mac command line</h2>
 
 <span>
-<h2>mdfind</h2>
+<h3>mdfind</h3>
 'mdfind' can find something in mac
 </span>
 
 <span>
-<h2>cal</h2>
+<h3>cal</h3>
 'cal' launch a calendar
 </span>
 
 
 <span>
-<h2>start/stop apache:</h2>
+<h3>start/stop apache:</h3>
 <pre>sudo apachectl start
 sudo apachectl stop
 </pre>
@@ -34,15 +34,15 @@ sudo apachectl stop
 
 
 <span>
-<h2>删除非空:</h2>
+<h3>删除非空:</h3>
 <pre>rm -rf dir</pre>
 </span>
 
 
-<h1>brew install</h1>
+<h2>brew install</h2>
 
 <span>
-<h2>install homebrew</h2>
+<h3>install homebrew</h3>
 mac安装homebrew，可以用git
 参考：<a href="http://blog.jjgod.org/2009/12/21/homebrew-package-management/" title="git install homebrew">http://blog.jjgod.org/2009/12/21/homebrew-package-management/</a>
 <pre>sudo chown -R `wanggengzhou` /usr/local
@@ -55,7 +55,7 @@ git pull origin master</pre>
 
 
 <span>
-<h2>安装ruby:</h2>
+<h3>安装ruby:</h3>
 <pre>
 brew install ruby
 </pre>
@@ -68,7 +68,7 @@ $ vim ~/.bash_profile
 
 
 <span>
-<h2>安装jekyll：</h2>
+<h3>安装jekyll：</h3>
 <pre>
 gem update --system
 gem install jekyll
@@ -77,8 +77,8 @@ gem install jekyll
 
 
 <span>
-<h1>mac vim</h1>
-<h2>vimrc configure</h2>
+<h2>mac vim</h2>
+<h3>vimrc configure</h3>
 <pre>sudo vim /usr/share/vim/vimrc</pre>
 <code>
 set ai                  " auto indenting
@@ -98,20 +98,20 @@ autocmd BufReadPost *
 </code>
 </code></span>
 
-<h1>文件系统</h1>
+<h2>文件系统</h2>
 <span>新版QQ信息存放地址 ~/Library/Containers/com.tencent.qq/Data/Library/Application Support/QQ</span>
 
 
-<h1>问题解决：</h1>
+<h2>问题解决：</h2>
 
-<h2>can't open file for writing</h2>
+<h3>can't open file for writing</h3>
 <span>
 can't open file for writing 可能是文件所有者变成root了
 </span>
 
 
 <span>
-<h2>Permission denied</h2>
+<h3>Permission denied</h3>
 cannot open .git/FETCH_HEAD: Permission denied 可能的原因为.git没有权限
 解决,解决方案：
 <pre>sudo chown -R .git/</pre>
