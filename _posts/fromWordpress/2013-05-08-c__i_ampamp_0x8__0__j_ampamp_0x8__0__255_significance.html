@@ -1,0 +1,17 @@
+---
+layout: post
+title: c = ((((i&amp;0x8)==0)^((j&amp;0x8))==0))*255的意义
+categories:
+- ComputerGraphics
+tags:
+- '365'
+status: publish
+type: post
+published: true
+meta:
+  duoshuo_thread_id: '1365771562581491725'
+---
+
+<pre accuse="aContent">
+就先分别判断（(i&amp;0x8)==0)和((j&amp;0x8))==0))是否为真，真为1假为0.接着再将两者的值进行或运算，或运算出来的值再和255相乘，最后的结果赋值给c
+</pre>

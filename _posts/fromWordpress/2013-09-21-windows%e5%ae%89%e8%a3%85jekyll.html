@@ -1,0 +1,46 @@
+---
+layout: post
+title: windows安装jekyll
+categories:
+- Science and Technology
+tags:
+- ruby
+- windows
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  duoshuo_thread_id: '1365771562581491758'
+---
+<h1>下载</h1>
+下载：<a href="http://rubyinstaller.org/downloads/" title="RubyInstaller for windows">ruby on windows</a>
+下载：<a href="http://rubyinstaller.org/add-ons/devkit/" title="Meet the Devkit">Devkit</a>
+
+<h1>安装</h1>
+安装RubyInstaller到c盘
+设置环境变量，path中配置形如C:\Ruby193\bin目录，然后在命令行终端下输入gem update --system来升级gem
+Devkit解压到C:\DevKit
+
+<code>
+cd C:\DevKit
+ruby dk.rb init
+ruby dk.rb install
+</code>
+上面这段code的目的是让Devkit目录下的config.yml中有形如
+<pre>- C:/Ruby193</pre>
+e.g.
+<a href="http://bcs.duapp.com/blogma//blog/201309//5A95C53B-C071-4FDA-ADF8-D360F12B3774.png"><img src="http://bcs.duapp.com/blogma//blog/201309//5A95C53B-C071-4FDA-ADF8-D360F12B3774.png" alt="5A95C53B-C071-4FDA-ADF8-D360F12B3774" class="alignnone size-medium wp-image-354" /></a>
+最后gem install jekyll
+
+启动服务器
+<pre>jekyll server</pre>
+服务器地址为：<a href="http://127.0.0.1:4000">http://127.0.0.1:4000</a>
+完毕
+
+<h1>问题答疑：</h1>
+<a href="http://bcs.duapp.com/blogma//blog/201309//37313619-900D-49FE-A23F-F795A45B5000.png"><img src="http://bcs.duapp.com/blogma//blog/201309//37313619-900D-49FE-A23F-F795A45B5000.png" alt="37313619-900D-49FE-A23F-F795A45B5000" class="alignnone size-medium wp-image-353" /></a>
+这个问题是源于没有安装成功Devkit
+
+<h1>References</h1>
+[1] purediy。[原]通过GitHub Pages建立个人站点（详细步骤）。2013年3月7日。<a href="http://www.cnblogs.com/purediy/archive/2013/03/07/2948892.html" title="http://www.cnblogs.com/purediy/archive/2013/03/07/2948892.html">http://www.cnblogs.com/purediy/archive/2013/03/07/2948892.html</a>

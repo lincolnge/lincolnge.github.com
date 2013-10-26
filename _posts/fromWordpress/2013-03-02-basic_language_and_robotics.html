@@ -1,0 +1,221 @@
+---
+layout: post
+title: BASIC语言与机器人
+categories:
+- Basic语言与机器人
+tags:
+- it
+status: publish
+type: post
+published: true
+meta:
+  _oembed_4252b53a30eb5fa2447c5d4a6bdfb3a2: '{{unknown}}'
+  duoshuo_thread_id: '1365771562581491738'
+  _oembed_baeb118d0d3b88bbd3c6f084b386500b: '{{unknown}}'
+---
+
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+实验一：I/O控制<br />
+' {$STAMP BS2}<br />
+' {$PBASIC 2.5}</p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+DO<br />
+LOW&nbsp;<wbr>&nbsp;</wbr><wbr>
+0&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+:I/O口输出低电平<br />
+LOW&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+1&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+:I/O口输出低电平<br />
+PAUSE&nbsp;</wbr><wbr> 1000&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+:延时1000ms&nbsp;</wbr><wbr>&nbsp;</wbr><wbr><br />
+HIGH&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+0&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+:I/O口输出高电平<br />
+HIGH&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+1&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+:I/O口输出高电平<br />
+LOOP</wbr></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+END<br />
+实验二：电机控制<br />
+' {$STAMP BS2}<br />
+' {$PBASIC 2.5}<br />
+DO&nbsp;<wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+:无条件无限循环<br />
+PULSOUT 12,650&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+:表示在12I/O口输出650*2us的脉冲<br />
+PULSOUT 13,850&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+:表示在12I/O口输出850*2us的脉冲<br />
+PAUSE&nbsp;</wbr><wbr> 20&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+:表示延时20ms<br />
+LOOP</wbr></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+注意：PULSOUT 12,650改为750则电机停转，电机转速控制应在650到850之间越靠近750，转速越低。</p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+<br />
+' {$STAMP BS2}<br />
+' {$PBASIC 2.5}</p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+count1 VAR
+word&nbsp;<wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+：count1为16位变量0-65535<br />
+count2 VAR
+byte&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+：count2为8位变量0-255<br />
+count3 VAR
+nib&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+：count3为4位变量0-15<br />
+count4 VAR
+bit&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+：count4为1位变量0-1</wbr></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+FOR count1 =1 TO
+100&nbsp;<wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr><br />
+&nbsp;</wbr><wbr> PULSOUT 12,735<br />
+&nbsp;</wbr><wbr> PULSOUT 13,755<br />
+&nbsp;</wbr><wbr> PAUSE&nbsp;</wbr><wbr> 20<br />
+Next</wbr></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+<br />
+' {$STAMP BS2}<br />
+' {$PBASIC 2.5}</p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+count1 VAR Word<br />
+count2 VAR Byte<br />
+count3 VAR Nib<br />
+count4 VAR Bit</p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+DO<br />
+&nbsp;<wbr> GOSUB
+Backward&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+：调用子程序Backward&nbsp;</wbr><wbr>&nbsp;</wbr><wbr><br />
+&nbsp;</wbr><wbr> GOSUB
+liftward&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+：调用子程序liftward<br />
+&nbsp;</wbr><wbr> GOSUB
+Forward&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+：调用子程序Forward<br />
+LOOP</wbr></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+Rightward:&nbsp;<wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+：通过标号定义子程序<br />
+&nbsp;</wbr><wbr> FOR count1 =1 TO 100<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> PULSOUT
+12,850<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> PULSOUT
+13,750<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+PAUSE&nbsp;</wbr><wbr> 20<br />
+&nbsp;</wbr><wbr> NEXT<br />
+RETURN&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+：子程序返回</wbr></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+Liftward:<br />
+&nbsp;<wbr> FOR count1 =1 TO 100<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> PULSOUT
+12,750<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> PULSOUT
+13,850<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+PAUSE&nbsp;</wbr><wbr> 20<br />
+&nbsp;</wbr><wbr> NEXT<br />
+RETURN</wbr></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+Backward:<br />
+&nbsp;<wbr> FOR count1 =1 TO 100<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> PULSOUT
+12,850<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> PULSOUT
+13,650<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+PAUSE&nbsp;</wbr><wbr> 20<br />
+&nbsp;</wbr><wbr> NEXT<br />
+RETURN</wbr></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+<br />
+Forward:<br />
+&nbsp;<wbr> FOR count1 =1 TO 100<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> PULSOUT
+12,650<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> PULSOUT
+13,850<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+PAUSE&nbsp;</wbr><wbr> 20<br />
+&nbsp;</wbr><wbr> NEXT<br />
+RETURN</wbr></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+实验三：触须机器人<br />
+' {$STAMP BS2}<br />
+' {$PBASIC 2.5}</p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+count1 VAR Byte<br />
+count2 VAR Word</p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+main:<br />
+FOR count2=0 TO 100<br />
+&nbsp;<wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> FREQOUT
+0,2,800&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> :I/O口0输出800Hz方波信号<br />
+NEXT</wbr></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+DO<br />
+IF(IN8=0 OR IN9=0)THEN&nbsp;<wbr>&nbsp;</wbr><wbr>
+：I/O口8/9输入检测<br />
+FOR count2=0 TO 100<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> FREQOUT
+0,2,800<br />
+NEXT<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> GOSUB
+Backward<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> GOSUB
+Liftward<br />
+ELSE<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> GOSUB
+Forward<br />
+ENDIF<br />
+LOOP</wbr></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+Backward:<br />
+&nbsp;<wbr> FOR count1 =1 TO 100<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> PULSOUT
+12,850<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> PULSOUT
+13,650<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+PAUSE&nbsp;</wbr><wbr> 20<br />
+&nbsp;</wbr><wbr> NEXT<br />
+RETURN</wbr></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+<br />
+Liftward:<br />
+&nbsp;<wbr> FOR count1 =1 TO 100<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> PULSOUT
+12,750<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> PULSOUT
+13,850<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+PAUSE&nbsp;</wbr><wbr> 20<br />
+&nbsp;</wbr><wbr> NEXT<br />
+RETURN</wbr></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+Forward:<br />
+&nbsp;<wbr> FOR count1 =1 TO 10<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> PULSOUT
+12,650<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr> PULSOUT
+13,850<br />
+&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+PAUSE&nbsp;</wbr><wbr> 20<br />
+&nbsp;</wbr><wbr> NEXT<br />
+RETURN</wbr></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+<br /></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+<span style="word-wrap: normal; word-break: normal; line-height: 21px; color: rgb(73, 73, 73); background-color: rgb(226, 226, 226); font-family: 宋体;">
+本文参考网址</span><span lang="EN-US" xml:lang="EN-US" style="word-wrap: normal; word-break: normal; line-height: 21px; color: rgb(73, 73, 73); font-family: simsun; background-color: rgb(226, 226, 226);">:</span></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+<a href="http://wenku.baidu.com/view/555d083b376baf1ffc4fad90.html">http://wenku.baidu.com/view/555d083b376baf1ffc4fad90<wbr>.html</wbr></a></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+<a href="http://www.worlduc.com/blog2012.aspx?bid=3884991">http://www.worlduc.com/blog2012.aspx?bid=3884991</a></p>
+<p style="margin: 5px 0px; padding: 0px; font-family: 'sans serif', tahoma, verdana, helvetica; background-color: rgb(255, 255, 255);">
+<a href="http://read.pudn.com/downloads166/ebook/761752/%E5%AE%9D%E8%B4%9D%E8%BD%A6%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%99%E6%9D%90.pdf">
+http://read.pudn.com/downloads166/ebook/761752/宝贝车机器人教材.pdf</a></p>
