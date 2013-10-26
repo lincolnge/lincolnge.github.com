@@ -1,14 +1,29 @@
 ---
 layout: page
-title: Hello World!
+title:
 tagline:
 ---
 {% include JB/setup %}
 
-## Archive
+<div>
 
-<ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% for post in site.posts limit: 4  %}
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    <div class="list"><time>{{ post.date | date_to_string }}</time></div>
+    <p>{{ post.content }}</p>
+    <a href="{{ post.url }}">More...</a>
+    <hr />
   {% endfor %}
-</ul>
+
+  <ul>
+    {% for post in site.posts limit: 5 offset: 4 %}
+    <li class="list">
+      <time>{{ post.date | date_to_string }}</time> <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+	<a href="/archive.html">Continue...</a>
+
+</div>
+
