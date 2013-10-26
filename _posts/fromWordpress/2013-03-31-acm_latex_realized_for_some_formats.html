@@ -1,0 +1,127 @@
+---
+layout: post
+title: ACM 一些格式的LATEX实现
+categories:
+- Latex
+tags:
+- it
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  duoshuo_thread_id: '1365771562581491717'
+---
+reference实现：
+<div></div>
+<div>tex文件：</div>
+<div>//---------------------------------------------------
+<div>
+<div>documentclass[prodmode,acmtecs]{acmsmall} % Aptara
+syntax</div>
+<div>begin{document}</div>
+<div></div>
+<div><span style="line-height: 21px;">cite{sakarovitch2009elements} <wbr /></span></div>
+<div><span style="line-height: 21px;">cite{</span><span style="line-height: 21px;">sipserintroduction</span><span style="line-height: 21px;">} <wbr /></span></div>
+<div><span style="line-height: 21px;">cite{</span><span style="line-height: 21px;">allan2005adding</span><span style="line-height: 21px;">} <wbr /></span></div>
+<div><span style="line-height: 21px;">cite{</span><span style="line-height: 21px;">van1994python</span><span style="line-height: 21px;">} <wbr /></span></div>
+<div></div>
+<div>% Bibliography</div>
+<div>bibliographystyle{ACM-Reference-Format-Journals}</div>
+<div>bibliography{acmsmall-sample-bibfile}</div>
+<div></div>
+<div>end{document}</div>
+</div>
+</div>
+<div>//--------------------------------------------------</div>
+<div></div>
+<div>bib文件：</div>
+<div><span style="line-height: 21px;">//--------------------------------------------------</span></div>
+<div>
+<div>@book{sakarovitch2009elements,</div>
+<div> <wbr /> title={Elements of automata theory},</div>
+<div> <wbr /> author={Sakarovitch, Jacques},</div>
+<div> <wbr /> year={2009},</div>
+<div> <wbr /> publisher={Cambridge University
+Press}</div>
+<div>}</div>
+<div></div>
+<div></div>
+<div>@techreport{sipserintroduction,</div>
+<div> <wbr /> title={Introduction to the Theory of
+Computation. PWS, Boston. 1997},</div>
+<div> <wbr /> author={Sipser, Michael},</div>
+<div> <wbr /> institution={ISBN 0-534-94728-X}</div>
+<div>}</div>
+<div></div>
+<div>@article{allan2005adding,</div>
+<div> <wbr /> title={Adding trace matching with free
+variables to AspectJ},</div>
+<div> <wbr /> author={Allan, Chris and Avgustinov, Pavel
+and Christensen, Aske Simon and Hendren, Laurie and Kuzins, Sascha
+and Lhot{'a}k, Ond{v{r}}ej and De Moor, Oege and Sereni, Damien
+and Sittampalam, Ganesh and Tibble, Julian},</div>
+<div> <wbr /> journal={ACM SIGPLAN Notices},</div>
+<div> <wbr /> volume={40},</div>
+<div> <wbr /> number={10},</div>
+<div> <wbr /> pages={345--364},</div>
+<div> <wbr /> year={2005},</div>
+<div> <wbr /> publisher={ACM}</div>
+<div>}</div>
+<div></div>
+<div>@misc{van1994python,</div>
+<div> <wbr /> title={Python programming language},</div>
+<div> <wbr /> author={Van Rossum, Guido and
+others},</div>
+<div> <wbr /> year={1994}</div>
+<div>}</div>
+</div>
+<div><span style="line-height: 21px;">//--------------------------------------------------</span></div>
+<div><span style="line-height: 21px;"> </span></div>
+<div>编译为点击一次LaTex(快捷键Shift+Ctrl+L)，点击一次BibTex(快捷键Shift+Ctrl+B),最后点击PDFTeXify(快捷键Shift+Ctrl+P)</div>
+<div>reference的一些小技巧：打开谷歌学术文献<a href="http://scholar.google.com/schhp?hl=zh-CN">http://scholar.google.com/schhp?hl=zh-CN</a>搜索文献，然后找到自己引用的文献，点击引用，可以找到导入BibTeX，它就帮你把bib文件里面的内容写好了！</div>
+<div></div>
+<div></div>
+<div>Latex插图心得：</div>
+<div><span style="line-height: 21px;">//--------------------------------------------------</span></div>
+<div>
+<p style="margin: 0px 0px 0.8em; padding: 0px; list-style: none; background-color: #ffffff;"> <wbr /></p>
+<p style="margin: 0px 0px 0.8em; padding: 0px; list-style: none;"><span style="color: #333333; font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif;"><span style="line-height: 19px;">Figure ref{tab:NFAtoDFAMinDFA} show how to
+convert a NFA to a DFA:</span></span></p>
+<p style="margin: 0px 0px 0.8em; padding: 0px; list-style: none;"><span style="color: #333333; font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif;"><span style="line-height: 19px;">begin{figure}[htbp]</span></span></p>
+<p style="margin: 0px 0px 0.8em; padding: 0px; list-style: none;"><span style="color: #333333; font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif;"><span style="line-height: 19px;">begin{center}</span></span></p>
+<p style="margin: 0px 0px 0.8em; padding: 0px; list-style: none;"><span style="color: #333333; font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif;"><span style="line-height: 19px;">includegraphics[width=0.6textwidth]{NFAtoDFAMinDFA}</span></span></p>
+<p style="margin: 0px 0px 0.8em; padding: 0px; list-style: none;"><span style="color: #333333; font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif;"><span style="line-height: 19px;">caption{NFAtoDFAMinDFA}</span></span></p>
+<p style="margin: 0px 0px 0.8em; padding: 0px; list-style: none;"><span style="color: #333333; font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif;"><span style="line-height: 19px;">label{tab:NFAtoDFAMinDFA}</span></span></p>
+<p style="margin: 0px 0px 0.8em; padding: 0px; list-style: none;"><span style="color: #333333; font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif;"><span style="line-height: 19px;">end{center}</span></span></p>
+<p style="margin: 0px 0px 0.8em; padding: 0px; list-style: none;"><span style="color: #333333; font-family: Tahoma, Verdana, STHeiTi, simsun, sans-serif;"><span style="line-height: 19px;">end{figure}</span></span></p>
+
+</div>
+<div><span style="line-height: 21px;">//--------------------------------------------------</span></div>
+<div>
+<p style="margin: 0px 0px 0.8em; padding: 0px; line-height: 1.4; list-style: none; color: #333333; font-family: Tahoma, Verdana, sTHeiTi, simsun, sans-serif; background-color: #ffffff;">其中[htbp]就是浮动格式</p>
+<p style="margin: 0px 0px 0.8em; padding: 0px; line-height: 1.4; list-style: none; color: #333333; font-family: Tahoma, Verdana, sTHeiTi, simsun, sans-serif; background-color: #ffffff;">“h 当前位置。将图形放置在正文文本中给出该图形环境的地方。如果本页所剩的页面不够，这一参数将不起作用。</p>
+<p style="margin: 0px 0px 0.8em; padding: 0px; line-height: 1.4; list-style: none; color: #333333; font-family: Tahoma, Verdana, sTHeiTi, simsun, sans-serif; background-color: #ffffff;">t 顶部。将图形放置在页面的顶部。</p>
+<p style="margin: 0px 0px 0.8em; padding: 0px; line-height: 1.4; list-style: none; color: #333333; font-family: Tahoma, Verdana, sTHeiTi, simsun, sans-serif; background-color: #ffffff;">b 底部。将图形放置在页面的底部。</p>
+<p style="margin: 0px 0px 0.8em; padding: 0px; line-height: 1.4; list-style: none; color: #333333; font-family: Tahoma, Verdana, sTHeiTi, simsun, sans-serif; background-color: #ffffff;">p 浮动页。将图形放置在一只允许有浮动对象的页面上。”</p>
+
+</div>
+<div></div>
+<div></div>
+<div>item的一些效果</div>
+<div><span style="line-height: 21px;">//--------------------------------------------------</span></div>
+<div>
+<div>renewcommand{labelitemi}{$bullet$}</div>
+<div>renewcommand{labelitemii}{$cdot$}</div>
+<div>renewcommand{labelitemiii}{$diamond$}</div>
+<div>renewcommand{labelitemiv}{$ast$}</div>
+<div>begin{itemize}</div>
+<div>item very clear, readable syntax</div>
+<div>item strong introspection capabilities</div>
+<div>end{itemize}</div>
+</div>
+<div><span style="line-height: 21px;">//--------------------------------------------------</span></div>
+<div><span style="line-height: 21px;"> </span></div>
+<div><span style="line-height: 21px;"> </span></div>
+<div>reference</div>
+<div></div>

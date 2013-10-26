@@ -1,0 +1,212 @@
+---
+layout: post
+title: snow leopard虚拟机雪豹安装
+categories:
+- MAC platforms
+tags:
+- it
+status: publish
+type: post
+published: true
+meta:
+  duoshuo_thread_id: '1365771562581491737'
+---
+
+<p align="left" style="">&nbsp;<wbr></wbr></p>
+<p align="left"><span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体; mso-font-kerning:0pt" xml:lang="EN-US">from：</span><a href="http://wenku.baidu.com/view/5b2bf625bcd126fff7050bae?fr=prin">http://wenku.baidu.com/view/5b2bf625bcd126fff7050bae<wbr>?fr=prin</wbr></a></p>
+<p align="left"><span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体; mso-font-kerning:0pt" xml:lang="EN-US">Write by LincolnGE</span></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast">
+注明<span lang="EN-US" xml:lang="EN-US">CPU</span>是<span lang="EN-US" xml:lang="EN-US">AMD</span>的！虚拟机是<span lang="EN-US" xml:lang="EN-US">VIRTUAL BOX</span></span></p>
+<p align="left"><span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast; mso-bidi-font-family:Arial">
+第一步，先查看自己电脑的<span lang="EN-US" xml:lang="EN-US">CPU</span>支不支持虚拟化（工具<span lang="EN-US" xml:lang="EN-US">Securable</span>，自己下一个） 理论上不支持虚拟化的<span lang="EN-US" xml:lang="EN-US">CPU</span>是不能装的</span></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left"><span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast; mso-bidi-font-family:Arial">
+当测试结果显示为“<span lang="EN-US" xml:lang="EN-US">Hardware
+Virtualization YES</span>”或者“<span lang="EN-US" xml:lang="EN-US">Hardware Virtualization Locked
+On</span>”之类的字眼就证明已经开启了<span lang="EN-US" xml:lang="EN-US">CPU</span>的虚拟技术支持了。我使用的是华硕<span lang="EN-US" xml:lang="EN-US">m4a88t-m</span>主板，<span lang="EN-US" xml:lang="EN-US">bois</span>中需要将 <span lang="EN-US" xml:lang="EN-US">Advanced/Secure Virtual Machine Mode</span>
+的值设置为<span lang="EN-US" xml:lang="EN-US">Enabled</span>
+（默认是<span lang="EN-US" xml:lang="EN-US">Disabled</span>）。
+（纠正一下，上面的图片个这段话是引用别人的）</span></p>
+<p align="left"><span lang="EN-US" style="mso-bidi-font-size:10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font: minor-fareast;mso-bidi-font-family:Arial" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast; mso-bidi-font-family:Arial">
+第二步</span></p>
+<p align="left"><span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast; mso-bidi-font-family:Arial">
+下载地址</span></p>
+<p align="left"><span lang="EN-US" style="mso-bidi-font-size:10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font: minor-fareast;mso-bidi-font-family:Arial" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+雪豹系统：</span><span lang="EN-US" xml:lang="EN-US">http://www.verycd.com/topics/2765539/</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr></wbr></span>
+<span style="font-family:宋体; mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+雪豹更新补丁：</span><span lang="EN-US" xml:lang="EN-US">http://support.apple.com/kb/dl1349</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr></wbr></span>
+<span style="font-family:宋体; mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+关键的一个东西：</span><span lang="EN-US" xml:lang="EN-US">http://ishare.iask.sina.com.cn/f/13524370.html?retcode=0</span>
+<span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font: minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast; mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+（</span><span lang="EN-US" xml:lang="EN-US">legacy_kernel-10.6.0.pkg</span><span style="font-family:宋体; mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">）</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">Ps</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">：这个补丁可以直接在</span><span lang="EN-US" xml:lang="EN-US">MAC</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">里面下载</span><span lang="EN-US" xml:lang="EN-US">~</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">或者用</span><span lang="EN-US" xml:lang="EN-US">U</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">盘拷进去</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>&nbsp;</wbr><wbr>
+XCODE4.1</wbr></span><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">：</span><span lang="EN-US" xml:lang="EN-US">ed2k://|file|[寮&euro;鍙戝伐鍏穄.TLF-SOFT-Apple.Xcode.v4.0.1.and.iOS.SDK.v4.3.MacOSX.ISO-CORE.dmg|4607939522|c726159d07ab97c952451eea<wbr>248d6267|h=3j6lfuct727aqvo54buwpymp</wbr><wbr>p4ccn5jd|/&nbsp;</wbr><wbr></wbr></span>
+<span style="font-family:宋体; mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+这个复制了用迅雷下</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+第三部</span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+建立虚拟机</span></p>
+<p align="left"><span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast; mso-bidi-font-family:Arial">
+新建一个<span lang="EN-US" xml:lang="EN-US">MAC</span>就<span lang="EN-US" xml:lang="EN-US">OK</span>啦</span></p>
+<p align="left"><span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast; mso-bidi-font-family:Arial">
+设置如图</span></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left"><span lang="EN-US" style="mso-bidi-font-size:10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font: minor-fareast;mso-bidi-font-family:Arial" xml:lang="EN-US">1</span><span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast; mso-bidi-font-family:Arial">、移除软驱</span></p>
+<p align="left"><span lang="EN-US" style="mso-bidi-font-size:10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font: minor-fareast;mso-bidi-font-family:Arial" xml:lang="EN-US">2</span><span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast; mso-bidi-font-family:Arial">、启用<span lang="EN-US" xml:lang="EN-US">EFI</span>（只针对某些系统） 不要打勾</span></p>
+<p align="left"><span lang="EN-US" style="mso-bidi-font-size:10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font: minor-fareast;mso-bidi-font-family:Arial" xml:lang="EN-US">3</span><span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast; mso-bidi-font-family:Arial">、<span lang="EN-US" xml:lang="EN-US">MAC OS X</span>是<span lang="EN-US" xml:lang="EN-US">64bit</span></span></p>
+<p align="left"><span lang="EN-US" style="mso-bidi-font-size:10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font: minor-fareast;mso-bidi-font-family:Arial" xml:lang="EN-US">4</span><span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast; mso-bidi-font-family:Arial">、其他设置无伤大雅！</span></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left"><span lang="EN-US" style="mso-bidi-font-size:10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font: minor-fareast;mso-bidi-font-family:Arial" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast; mso-bidi-font-family:Arial">
+第四步 安装</span></p>
+<p align="left"><span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast">
+一开始的引导文件是 可以是 <span lang="EN-US" xml:lang="EN-US">EmpireEFI4AMD.ios</span> 也可以是 <span lang="EN-US" xml:lang="EN-US">darwin_snow_legacy.ios</span></span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+分配光驱那里选择</span> <span lang="EN-US" style="mso-bidi-font-size:10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font: minor-fareast" xml:lang="EN-US">darwin_snow_legacy.ios</span> <span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast">
+或 <span lang="EN-US" xml:lang="EN-US">EmpireEFI4AMD.ios</span>
+（不再重复了）</span></p>
+<p align="left"><span lang="EN-US" style="mso-bidi-font-size:10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font: minor-fareast" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p>网上的说法是不同的<span lang="EN-US" xml:lang="EN-US">cpu</span>会用到不同的引导文件，经实践发现不仅<span lang="EN-US" xml:lang="EN-US">cpu</span>，安装不同版本的<span lang="EN-US" xml:lang="EN-US">mac
+os</span>都会有影响，一个一个试吧，总有适合的。</p>
+<p>设置完成后运行<span lang="EN-US" xml:lang="EN-US">mac</span>虚拟机，如果引导文件正确，就会看到这个（当然不同的引导文件的画面不一样）：</p>
+<p align="left"><span lang="EN-US" style="mso-bidi-font-size:10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font: minor-fareast" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left"><span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体; mso-font-kerning:0pt" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+设备</span> <span style="font-family:宋体; mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+分配光驱</span> <span style="font-family:宋体; mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+去分配</span><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr>
+[</wbr></span><span style="font-family:宋体; mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">苹果雪豹操作系统正式版</span><span lang="EN-US" xml:lang="EN-US">].snowleopard_10a432_userdvd.dmg</span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+这个家伙</span> <span lang="EN-US" xml:lang="EN-US">dmg</span>
+<span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">
+后缀</span> <span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+没所谓。</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">dmg</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">文件选择后，按</span>
+<span lang="EN-US" xml:lang="EN-US">F5</span> <span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">
+键后，界面中的</span><span lang="EN-US" xml:lang="EN-US">Legacy
+EmpireEFI</span> <span style="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+图标将变为</span> <span lang="EN-US" xml:lang="EN-US">Mac OS X Install
+DVD</span> <span style="font-family:宋体;mso-ascii-font-family: Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+图标</span><span lang="EN-US" xml:lang="EN-US">,</span><span style="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">如下：</span></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left"><span lang="EN-US" style="font-size:12.0pt;font-family:宋体;mso-bidi-font-family:宋体; mso-font-kerning:0pt" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">PS</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">：有些图我直接拷贝网上别人的</span>
+<span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">
+你自己看实际情况！</span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+此时按回车键，过会儿就可以进入系统的安装界面了。</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+这个画面可能有点久</span> <span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+慢慢来！</span></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+虽然提示安装失败，但其实已经成功安装完毕了。</span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+这个时候用</span><span lang="EN-US" style="mso-bidi-font-size:10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font: minor-fareast" xml:lang="EN-US">darwin_snow_legacy.ios</span> <span style="mso-bidi-font-size: 10.5pt;font-family:宋体;mso-ascii-theme-font:minor-fareast;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-fareast">
+或 <span lang="EN-US" xml:lang="EN-US">EmpireEFI4AMD.ios</span>
+也是可以启动的！</span></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+至此</span><span lang="EN-US" xml:lang="EN-US">Mac OS
+X</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">基础系统安装完毕！</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+第五步</span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+安装系统更新</span><span lang="EN-US" xml:lang="EN-US">+</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">补丁</span><span lang="EN-US" xml:lang="EN-US">+ XCODE</span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+安装完系统后</span><span lang="EN-US" xml:lang="EN-US">4.1</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">的</span><span lang="EN-US" xml:lang="EN-US">XCODE</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">没法安装，所以我们必须更新系统，</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr>PS</wbr></span><span style="font-family:宋体; mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">：系统直接更新</span>
+<span style="font-family:宋体; mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+我还未测试好！</span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+用我们之前下载的更新</span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+仍然是分配光驱</span> <span style="font-family:宋体; mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+强制释放推出光盘的选项</span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+然后安装</span><span lang="EN-US" xml:lang="EN-US">~~</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">一路点下去</span><span lang="EN-US" xml:lang="EN-US">~~~~~</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">、</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+【升级完成以后系统会叫你点</span><span lang="EN-US" xml:lang="EN-US">Restart</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">（重启）。千万千万不要马上点，点了后重启鼠标就不能动了，又要重装</span><span lang="EN-US" xml:lang="EN-US">~~</span><span style="font-family:宋体;mso-ascii-font-family:Calibri; mso-ascii-theme-font:minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font: minor-fareast;mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">（我就在这搞了两天，不信你们可以试试）】</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">PS</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">：上面那句话摘自网上攻略</span>
+<span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">
+我未测试过</span> <span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+不确定！</span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+不过我还是装了</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">legacy_kernel-10.6.0.pkg</span> <span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font: minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast; mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+补丁</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+然后重启</span> <span style="font-family:宋体; mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+要开始换引导了！</span> <span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+我测试了很多个引导文件</span> <span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+貌似只有</span><span lang="EN-US" xml:lang="EN-US">darwin300</span>
+<span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">
+可以用！</span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+（而且方法很雷人</span> <span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+就是分配</span> <span style="font-family:宋体; mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+然后取消分配</span> <span style="font-family:宋体; mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+分配取消分配</span> <span style="font-family:宋体; mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+我怀疑他的启动是随机的！）</span></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+取消分配光驱</span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+就可以进入系统了！</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">Ps</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">：关机每次都要强制关机才能关掉这个虚拟机，开机每次都得分配光驱</span>
+<span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font: minor-latin;mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast; mso-hansi-font-family:Calibri;mso-hansi-theme-font:minor-latin">
+取消光驱这个方式去开。</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+关于</span><span lang="EN-US" xml:lang="EN-US">XCODE</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">安装</span><span lang="EN-US" xml:lang="EN-US">~</span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+安装</span><span lang="EN-US" xml:lang="EN-US">XCODE4.1</span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+修改日期为安装包附近的日期改成</span><span lang="EN-US" xml:lang="EN-US">2011</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">年</span><span lang="EN-US" xml:lang="EN-US">6</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">月，也就是</span><span lang="EN-US" xml:lang="EN-US">ios4.3</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">发布后不久，也就可以装了</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">PS:</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">记得关掉网络</span>
+<span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+不然</span><span lang="EN-US" xml:lang="EN-US">MAC</span><span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">会自动更新时间</span>
+<span style="font-family:宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin; mso-fareast-font-family:宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family: Calibri;mso-hansi-theme-font:minor-latin">
+然后程序就会突然出错！！</span></p>
+<p align="left">&nbsp;<wbr></wbr></p>
+<p align="left"><span style='mso-bidi-font-size: 10.5pt;font-family:"微软雅黑","sans-serif";color:#444444;background:white'>
+最新的<span lang="EN-US" xml:lang="EN-US">Xcode4.3.2 and IOS SDK
+5&nbsp;<wbr>&nbsp;</wbr><wbr></wbr></span>需要<span lang="EN-US" xml:lang="EN-US">10.7.3</span>以上版本</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US">&nbsp;<wbr></wbr></span></p>
+<p align="left"><span style="font-family: 宋体;mso-ascii-font-family:Calibri;mso-ascii-theme-font:minor-latin;mso-fareast-font-family: 宋体;mso-fareast-theme-font:minor-fareast;mso-hansi-font-family:Calibri; mso-hansi-theme-font:minor-latin">
+本文参考网址</span><span lang="EN-US" xml:lang="EN-US">:</span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US"><a href="http://bbs.weiphone.com/read.php?tid=2173406">http://bbs.weiphone.com/read.php?tid=2173406</a></span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US"><a href="http://www.cnblogs.com/growing/archive/2011/09/20/2182797.html">http://www.cnblogs.com/growing/archive/2011/09/20/2182797.html</a></span></p>
+<p align="left"><span lang="EN-US" xml:lang="EN-US"><a href="http://bbs.pcbeta.com/viewthread-1052249-1-1.html">http://bbs.pcbeta.com/viewthread-1052249-1-1.html</a></span></p>

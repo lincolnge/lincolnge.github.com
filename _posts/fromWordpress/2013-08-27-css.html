@@ -1,0 +1,89 @@
+---
+layout: post
+title: CSS
+categories:
+- Science and Technology
+tags: []
+status: draft
+type: post
+published: false
+meta:
+  _edit_last: '1'
+---
+##CSS##
+###全局CSS设置，基本的HTML元素样式与增强的扩展类，还有一个高级的网格系统。###
+
+1. 概括
+＋HTML文档类型
+＋移动设备优先
+＋响应图片
+＋排版和链接
+＋Normalize
+＋Containers
+2. 网格系统
+＋媒体查询
+＋网格选项
+＋例如：堆叠水平
+＋例如：手机，平板电脑，台式机
+＋Responsive column resets
+＋偏移列
+＋嵌套列
+＋列排序
+＋LESS mixins and variables
+3. 排版
+＋Headings
+＋Body copy
+＋强调类
+＋缩略语
+＋地址
+＋引用
+＋列表
+4. 代码
+5. 表格
+＋基本的例子
+＋带条纹的行
+＋带边界的表格
+＋带悬停效果的行
+＋带简明(condensed)效果的表格
+＋情景(contextual)类
+＋响应式表格
+6. 表单
+＋基本的例子
+＋行内表单
+＋横向表单
+＋被支持的控件
+＋静止的控件
+＋控件状态
+＋控件大小
+＋帮助文本
+7. 按钮
+＋选项
+＋大小
+＋无法使用状态
+＋按钮标签
+8. 图片
+9. 帮助类
+10. 响应的实用程序
+＋可用类
+＋打印类
+＋测试类
+
+##概括##
+通过我们的途径得到Bootstrap架构核心将可以更好，更快，更强大进行网页开发。
+
+###HTML5的文档类型###
+Bootstrap使用确定的HTML5的元素和CSS的属性即HTML5文档类型的使用需求。
+在所有你的项目中以下面的内容为开始。
+&gt;
+&gt; &gt; ... &gt;
+
+###移动设备优先原则###
+在Bootstrap 2里，我们添加了选项即可支持移动设备的类型作为框架的主要方向。在Bootstrap 3里，我们重写了这个项目使其在开始时就可支持移动设备。可支持移动设备将作为框架的主要内容，而不是只是作为可选择的项。(Instead of adding on optional mobile styles, they're baked right into the core. )事实上，Bootstrap一直以移动设备优先作为原则。移动设备优先的类型(style)可以转整个library中发现而不是仅仅几个分散的文件。
+为了确保适当的渲染和触控缩放效果，请转你的''中添加名为viewport的meta标签。 &gt;<meta name="viewport" content="width=device-width, initial-scale=1.0" />你可以通过在名为viewport的meta标签中添加user-scalable=no使得移动设备上禁用缩放这个功能。禁用缩放意味着用户只能使用滚动，这使你的网站令人感觉像是本地应用。原则上我们不建议所有站点都这么设置，请小心使用。 &gt;<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+###响应式图片###
+图片在Bootstrap 3中可以通过添加.img-responsive的类支持响应方式。应用max-width: 100%; 和height: auto; 使其在父元素下有更好的延展性。
+&gt; <img class="img-responsive" alt="Responsive image" src="..." />
+
+###排版和超链接###
+Bootstrap
