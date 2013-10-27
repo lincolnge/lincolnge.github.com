@@ -2,7 +2,7 @@
 layout: post
 title: C#代码生成label和button
 categories:
-- C#
+- Csharp
 tags:
 - it
 status: publish
