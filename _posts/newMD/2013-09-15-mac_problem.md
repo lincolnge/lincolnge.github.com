@@ -8,9 +8,6 @@ tags:
 status: publish
 type: post
 published: true
-meta:
-  _edit_last: '1'
-  duoshuo_thread_id: '1365771562581491757'
 ---
 
 ## MAC command line
