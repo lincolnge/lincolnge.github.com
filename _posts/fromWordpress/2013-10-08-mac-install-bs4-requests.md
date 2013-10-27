@@ -46,4 +46,4 @@ sudo python setup.py install
 and then if you can run 'import requests', it means it is ok.
 
 <h2>References:</h2>
-Jay Kim (Mar 26, 2012). <a href="http://stackoverflow.com/questions/9876226/how-do-i-install-beautiful-soup-for-python-on-my-mac-see-error" title="http://stackoverflow.com/questions/9876226/how-do-i-install-beautiful-soup-for-python-on-my-mac-see-error">http://stackoverflow.com/questions/9876226/how-do-i-install-beautiful-soup-for-python-on-my-mac-see-error</a>
++ Jay Kim (Mar 26, 2012). <a href="http://stackoverflow.com/questions/9876226/how-do-i-install-beautiful-soup-for-python-on-my-mac-see-error" title="http://stackoverflow.com/questions/9876226/how-do-i-install-beautiful-soup-for-python-on-my-mac-see-error">http://stackoverflow.com/questions/9876226/how-do-i-install-beautiful-soup-for-python-on-my-mac-see-error</a>

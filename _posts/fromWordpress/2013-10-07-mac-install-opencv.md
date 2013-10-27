@@ -13,6 +13,7 @@ meta:
   _edit_last: '1'
   duoshuo_thread_id: '1365771562581491759'
 ---
+
 <h2>install opencv</h2>
 Download XCode from App Store
 
@@ -21,11 +22,12 @@ Download XCode command tools
 Open XCode -> Preferences -> Downloads -> Components -> Command Line Tools
 
 Install ScipySuperpack (https://github.com/fonnesbeck/ScipySuperpack)
+
 <pre>
 git clone https://github.com/fonnesbeck/ScipySuperpack.git
-
 sh install_superpack.sh
 </pre>
+
 Download OpenCV
 
 Extract OpenCV-2.4.2.tar.bz2
@@ -77,8 +79,7 @@ Insert the path of your cv.so file, mine is in /build/lib.
 (this path maybe /opencv/release/lib or /opencv/build/lib)
 Click on Finish, Now your project is configured with openCV library.
 
-
 <h2>References:</h2>
 
-Impetus.(Monday, 5 August 2013). http://sumitkumariit.blogspot.hk/2013/08/how-to-install-opencv-for-java-on-mac.html
-Guilherme Defreitas. (1 de Outubro de 2012). http://www.guidefreitas.com/installing-opencv-2-4-2-on-mac-osx-mountain-lion-with-python-support
++ Impetus.(Monday, 5 August 2013). <http://sumitkumariit.blogspot.hk/2013/08/how-to-install-opencv-for-java-on-mac.html>
+Guilherme Defreitas. (1 de Outubro de 2012). <http://www.guidefreitas.com/installing-opencv-2-4-2-on-mac-osx-mountain-lion-with-python-support>
