@@ -129,6 +129,6 @@ published: true
 
 ## References:
 
-+ http://wenku.baidu.com/view/555d083b376baf1ffc4fad90.html
-+ http://www.worlduc.com/blog2012.aspx?bid=3884991
-+ http://read.pudn.com/downloads166/ebook/761752/宝贝车机器人教材.pdf
++ [德普施机器人2](http://wenku.baidu.com/view/555d083b376baf1ffc4fad90.html)
++ [智能机器人平台搭建及BASIC语言在机器人中的简单应用](http://www.worlduc.com/blog2012.aspx?bid=3884991)
++ [宝贝车机器人教材](http://read.pudn.com/downloads166/ebook/761752/宝贝车机器人教材.pdf)

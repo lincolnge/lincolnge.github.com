@@ -27,8 +27,10 @@ meta:
 
     imageView.setScaleType(ImageView.ScaleType.FIT_XY);
 
-`ImageView.ScaleType`八种类型即`CENTER，CENTER_CROP，CENTER_INSIDE，FIT_CENTER，FIT_START，FIT_END，FIT_XY，MATRIX`
+`ImageView.ScaleType`八种类型即
+
+    CENTER，CENTER_CROP，CENTER_INSIDE，FIT_CENTER，FIT_START，FIT_END，FIT_XY，MATRIX
 
 ## References:
-+ Android. API之ImageView.ScaleType代码演示: <http://blog.sina.com.cn/s/blog_407abb0d0100mao1.html>
-+ Android. ImageView.ScaleType设置图解: <http://blog.csdn.net/larryl2003/article/details/6919513>
++ Android. [API之ImageView.ScaleType代码演示](http://blog.sina.com.cn/s/blog_407abb0d0100mao1.html)
++ Android. [ImageView.ScaleType设置图解](http://blog.csdn.net/larryl2003/article/details/6919513)
