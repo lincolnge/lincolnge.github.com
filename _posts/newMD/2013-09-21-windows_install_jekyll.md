@@ -45,4 +45,4 @@ e.g.
 这个问题是源于没有安装成功Devkit
 
 ## References:
-* purediy。\[原\]通过GitHub Pages建立个人站点（详细步骤）。2013年3月7日。<http://www.cnblogs.com/purediy/archive/2013/03/07/2948892.html>  
+* purediy。[\[原\]通过GitHub Pages建立个人站点（详细步骤）。](http://www.cnblogs.com/purediy/archive/2013/03/07/2948892.html)2013年3月7日。

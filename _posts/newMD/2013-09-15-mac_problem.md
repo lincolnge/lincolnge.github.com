@@ -80,7 +80,8 @@ input:
 
 
 ## File System
-The path of QQ information: `~/Library/Containers/com.tencent.qq/Data/Library/Application Support/QQ`
+The path of QQ information: 
+    ~/Library/Containers/com.tencent.qq/Data/Library/Application Support/QQ
 
 
 ## Questions：

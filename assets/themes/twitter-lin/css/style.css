@@ -69,6 +69,7 @@
 .navbar-brand{padding-left: 0px;}
 .tag_box{padding-left: 0px;}
 img{width: 100%; height: 100%}
+embed{width: 100%;}
 
 /* From bootstrap.2.2.2.min.css */
 .hidden-desktop{display:none !important;}
