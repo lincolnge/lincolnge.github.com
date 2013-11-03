@@ -1,0 +1,48 @@
+---
+layout: post
+title: windows安装jekyll
+categories:
+- Science and Technology
+tags:
+- ruby
+- windows
+status: publish
+type: post
+published: true
+meta:
+  _edit_last: '1'
+  duoshuo_thread_id: '1365771562581491758'
+---
+
+## 下载
+下载：[ruby on windows](http://rubyinstaller.org/downloads/)
+下载：[Devkit](http://rubyinstaller.org/add-ons/devkit/)
+
+## 安装
+安装RubyInstaller到c盘
+设置环境变量，path中配置形如C:\Ruby193\bin目录，然后在命令行终端下输入gem update --system来升级gem
+Devkit解压到C:\DevKit
+
+    cd C:\DevKit
+    ruby dk.rb init
+    ruby dk.rb install
+
+上面这段code的目的是让Devkit目录下的config.yml中有形如  
+`- C:/Ruby193`
+e.g.
+![](http://bcs.duapp.com/blogma//blog/201309//5A95C53B-C071-4FDA-ADF8-D360F12B3774.png)
+
+最后gem install jekyll
+
+启动服务器
+    jekyll server
+
+服务器地址为：<http://127.0.0.1:4000>
+完毕
+
+## 问题答疑：
+![](http://bcs.duapp.com/blogma//blog/201309//37313619-900D-49FE-A23F-F795A45B5000.png)
+这个问题是源于没有安装成功Devkit
+
+## References:
+* purediy。\[原\]通过GitHub Pages建立个人站点（详细步骤）。2013年3月7日。<http://www.cnblogs.com/purediy/archive/2013/03/07/2948892.html>  
