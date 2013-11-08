@@ -93,7 +93,7 @@ Maybe the file owner becomes root
 ### Permission denied
 cannot open .git/FETCH_HEAD: Permission denied
 
-    sudo chown -R .git/
+    $ sudo chown -R .git/
 
 mac ssh need not to be root accout
 
