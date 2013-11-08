@@ -24,8 +24,8 @@ Open XCode -> Preferences -> Downloads -> Components -> Command Line Tools
 Install ScipySuperpack (https://github.com/fonnesbeck/ScipySuperpack)
 
 <pre>
-git clone https://github.com/fonnesbeck/ScipySuperpack.git
-sh install_superpack.sh
+$ git clone https://github.com/fonnesbeck/ScipySuperpack.git
+$ sh install_superpack.sh
 </pre>
 
 Download OpenCV
@@ -36,27 +36,27 @@ Open Terminal at the extracted directory
 
 At OpenCV-2.4.2 directory:
 <pre>
-mkdir release cd release cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_NEW_PYTHON_SUPPORT=ON -D BUILD_EXAMPLES=ON ..
+$ mkdir release cd release cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D BUILD_NEW_PYTHON_SUPPORT=ON -D BUILD_EXAMPLES=ON ..
 </pre>
 Compile with:
 
-<pre>make -j8</pre>
+<pre>$ make -j8</pre>
 
 Install:
 
-<pre>sudo make install</pre>
+<pre>$ sudo make install</pre>
 
 <h2>Configuring python with opencv</h2>
 
 Update your bash_profile:
 
-<pre>echo "export PYTHONPATH=/usr/local/lib/python2.7/site-packages/:$PYTHONPATH" >> ~/.bash_profile</pre>
+<pre>$ echo "export PYTHONPATH=/usr/local/lib/python2.7/site-packages/:$PYTHONPATH" >> ~/.bash_profile</pre>
 
 Close and open the Terminal
 
 Open python console and try to import cv2 to test if everything works
 
-<pre>~$ python import cv2</pre>
+<pre>$ python import cv2</pre>
 
 <h2>Configuring Eclipse with opencv</h2>
 Open eclipse

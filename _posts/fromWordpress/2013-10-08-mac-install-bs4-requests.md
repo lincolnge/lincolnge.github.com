@@ -22,8 +22,8 @@ downloaded beautifulsoup
 <a href="https://pypi.python.org/pypi/beautifulsoup4" title="https://pypi.python.org/pypi/beautifulsoup4">https://pypi.python.org/pypi/beautifulsoup4
 </a>uncompressed it
 <pre>
-cd beautifulsoup4-*
-sudo python setup.py install
+$ cd beautifulsoup4-*
+$ sudo python setup.py install
 </pre>
 and then if you can run 'from bs4 import BeautifulSoup', it means it is ok.
 
@@ -37,8 +37,8 @@ download request
 <a href="https://pypi.python.org/pypi/requests" title="https://pypi.python.org/pypi/requests">https://pypi.python.org/pypi/requests
 </a>uncompressed it
 <pre>
-cd requests-*
-sudo python setup.py install
+$ cd requests-*
+$ sudo python setup.py install
 </pre>
 and then if you can run 'import requests', it means it is ok.
 

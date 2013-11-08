@@ -23,19 +23,22 @@ meta:
 设置环境变量，path中配置形如C:\Ruby193\bin目录，然后在命令行终端下输入gem update --system来升级gem
 Devkit解压到C:\DevKit
 
-    cd C:\DevKit
-    ruby dk.rb init
-    ruby dk.rb install
+    $ cd C:\DevKit
+    $ ruby dk.rb init
+    $ ruby dk.rb install
 
 上面这段code的目的是让Devkit目录下的config.yml中有形如  
 `- C:/Ruby193`
 e.g.
 ![](http://bcs.duapp.com/blogma//blog/201309//5A95C53B-C071-4FDA-ADF8-D360F12B3774.png)
 
-最后gem install jekyll
+最后
+
+    $ gem install jekyll
 
 启动服务器
-    jekyll server
+
+    $ jekyll server
 
 服务器地址为：<http://127.0.0.1:4000>
 完毕

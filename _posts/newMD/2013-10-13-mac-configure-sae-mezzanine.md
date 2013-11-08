@@ -31,7 +31,7 @@ Generally， we need to install(using pip install package)
 
 launch
   
-    dev_server.py --mysql=xxxx:xxxx@localhost:3306 --host=127.0.0.1 --storage-path=/tmp
+    $ dev_server.py --mysql=xxxx:xxxx@localhost:3306 --host=127.0.0.1 --storage-path=/tmp
 
 ## Saecloud install mezzanine
 
