@@ -2,15 +2,9 @@
 layout: post
 title: C#代码生成label和button
 categories:
-- Csharp
+- C&#35;
 tags:
 - it
-status: publish
-type: post
-published: true
-meta:
-  duoshuo_thread_id: '1365771562581491729'
-  _edit_last: '1'
 ---
 {% include JB/setup %}
 
