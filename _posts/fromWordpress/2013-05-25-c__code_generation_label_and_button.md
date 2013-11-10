@@ -12,6 +12,8 @@ meta:
   duoshuo_thread_id: '1365771562581491729'
   _edit_last: '1'
 ---
+{% include JB/setup %}
+
     //自动生成label
     for (int x = 0; x < 5;x++ )
     {

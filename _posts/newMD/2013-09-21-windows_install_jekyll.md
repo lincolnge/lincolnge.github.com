@@ -6,13 +6,8 @@ categories:
 tags:
 - ruby
 - windows
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
-  duoshuo_thread_id: '1365771562581491758'
 ---
+{% include JB/setup %}
 
 ## 下载
 下载：[ruby on windows](http://rubyinstaller.org/downloads/)

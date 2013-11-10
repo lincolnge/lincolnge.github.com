@@ -1,15 +1,14 @@
 ---
 layout: post
-title: MAC install bs4 &amp; requests
+title: Mac install bs4 &amp; requests
 categories:
 - Science and Technology
 tags:
-- MAC
+- Mac
 - python
-status: publish
-type: post
-published: true
 ---
+{% include JB/setup %}
+
 As I want to run a crawler which in <a href="https://github.com/lvyaojia/crawler">https://github.com/lvyaojia/crawler</a>
 
 but the error is

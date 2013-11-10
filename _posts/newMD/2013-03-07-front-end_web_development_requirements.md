@@ -6,6 +6,7 @@ categories:
 tags:
 - it
 ---
+{% include JB/setup %}
 
     要求  
     - 高超的原生JavaScript开发水平和丰富经验。最好参与过框架研发或深入研读开源js框架代码。 

@@ -5,13 +5,8 @@ categories:
 - Science and Technology
 tags:
 - '软文'
-status: publish
-type: post
-published: true
-meta:
-  duoshuo_thread_id: '1365771562581491742'
-  _edit_last: '1'
 ---
+{% include JB/setup %}
 
 from <http://news.cnblogs.com/n/148842/>
 

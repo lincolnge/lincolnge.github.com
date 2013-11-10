@@ -4,17 +4,12 @@ title: Mac install opencv
 categories:
 - opencv
 tags:
-- MAC
+- Mac
 - opencv
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
-  duoshuo_thread_id: '1365771562581491759'
 ---
+{% include JB/setup %}
 
-<h2>install opencv</h2>
+## install opencv
 Download XCode from App Store
 
 Download XCode command tools
@@ -46,7 +41,7 @@ Install:
 
 <pre>$ sudo make install</pre>
 
-<h2>Configuring python with opencv</h2>
+## Configuring python with opencv
 
 Update your bash_profile:
 
@@ -58,7 +53,7 @@ Open python console and try to import cv2 to test if everything works
 
 <pre>$ python import cv2</pre>
 
-<h2>Configuring Eclipse with opencv</h2>
+## Configuring Eclipse with opencv
 Open eclipse
 Click on File-> New Project-> Java Project
 Give an appropriate Project Name
@@ -79,7 +74,7 @@ Insert the path of your cv.so file, mine is in /build/lib.
 (this path maybe /opencv/release/lib or /opencv/build/lib)
 Click on Finish, Now your project is configured with openCV library.
 
-<h2>References:</h2>
+## References:
 
 + Impetus.(Monday, 5 August 2013). <http://sumitkumariit.blogspot.hk/2013/08/how-to-install-opencv-for-java-on-mac.html>
 Guilherme Defreitas. (1 de Outubro de 2012). <http://www.guidefreitas.com/installing-opencv-2-4-2-on-mac-osx-mountain-lion-with-python-support>

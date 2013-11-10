@@ -2,13 +2,11 @@
 layout: post
 title: BASIC语言与机器人
 categories:
-- Basic语言与机器人
+- 机器人
 tags:
 - it
-status: publish
-type: post
-published: true
 ---
+{% include JB/setup %}
 
     实验一：I/O控制
     ' {$STAMP BS2}
