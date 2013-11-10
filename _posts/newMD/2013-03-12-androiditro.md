@@ -5,13 +5,8 @@ categories:
 - Android platform
 tags:
 - it
-status: publish
-type: post
-published: true
-meta:
-  duoshuo_thread_id: '1365771562581491744'
-  _edit_last: '1'
 ---
+{% include JB/setup %}
 
 ## 安卓itro
 <http://android.yaohuiji.com/about>

@@ -3,15 +3,10 @@ layout: post
 title: ubuntu phpmyadmin
 categories:
 - PHP
-tags: []
-status: publish
-type: post
-published: true
-meta:
-  _edit_last: '1'
-  duoshuo_thread_id: '1365771562581491754'
-  _oembed_910c90ccc548a2bc684b557e4a21f5c3: '{{unknown}}'
+tags: [ubuntu]
 ---
+{% include JB/setup %}
+
 安装phpmyadmin在/usr/share/phpmyadmin目录下：sudo apt-get install phpmyadmin
 
 重启apache：

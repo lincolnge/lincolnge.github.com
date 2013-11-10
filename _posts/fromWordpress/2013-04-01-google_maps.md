@@ -13,6 +13,8 @@ meta:
   _edit_last: '1'
   _oembed_7e039f35f0725ce818855b62108d415d: '{{unknown}}'
 ---
+{% include JB/setup %}
+
     <code lang="html">
     <!DOCTYPE html>
     <html>

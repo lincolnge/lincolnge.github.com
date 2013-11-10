@@ -12,6 +12,8 @@ meta:
   duoshuo_thread_id: '1365771562581491748'
   _edit_last: '1'
 ---
+{% include JB/setup %}
+
 <div><a href="https://github.com/lincolnge/NFA-to-DFA/blob/master/dictDFA.py">https://github.com/lincolnge/NFA-to-DFA/blob/master/dictDFA.py</a></div>
 
 <div>NFA to DFA python</div>

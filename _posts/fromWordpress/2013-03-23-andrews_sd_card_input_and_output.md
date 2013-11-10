@@ -12,6 +12,8 @@ meta:
   _edit_last: '1'
   _post_restored_from: a:3:{s:20:"restored_revision_id";i:262;s:16:"restored_by_user";i:1;s:13:"restored_time";i:1378001105;}
 ---
+{% include JB/setup %}
+
 
 1、首先AndroidManifest.xml里面要写权限，如下：
 
