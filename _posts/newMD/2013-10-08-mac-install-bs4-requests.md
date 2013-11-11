@@ -5,7 +5,7 @@ categories:
 - Science and Technology
 tags:
 - Mac
-- python
+- Python
 ---
 {% include JB/setup %}
 

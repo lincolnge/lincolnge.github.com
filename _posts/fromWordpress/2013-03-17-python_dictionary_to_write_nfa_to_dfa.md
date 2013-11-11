@@ -5,12 +5,6 @@ categories:
 - Python
 tags:
 - it
-status: publish
-type: post
-published: true
-meta:
-  duoshuo_thread_id: '1365771562581491748'
-  _edit_last: '1'
 ---
 {% include JB/setup %}
 

@@ -1,3 +1,16 @@
+<ul class="pagination pull-right">
+{% if page.previous %}
+  <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&laquo;</a></li>
+{% else %}
+  <li class="prev disabled"><a>&laquo;</a></li>
+{% endif %}
+{% if page.next %}
+  <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">&raquo;</a></li>
+{% else %}
+  <li class="next disabled"><a>&raquo;</a>
+{% endif %}
+</ul>
+
 <div class="page-header">
   <h1>{{ page.title }} {% if page.tagline %}<small>{{page.tagline}}</small>{% endif %}</h1>
 </div>
