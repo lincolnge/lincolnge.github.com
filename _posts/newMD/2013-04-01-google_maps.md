@@ -5,17 +5,10 @@ categories:
 - Android platform
 tags:
 - it
-status: publish
-type: post
-published: true
-meta:
-  duoshuo_thread_id: '1365771562581491720'
-  _edit_last: '1'
-  _oembed_7e039f35f0725ce818855b62108d415d: '{{unknown}}'
 ---
 {% include JB/setup %}
 
-    <code lang="html">
+
     <!DOCTYPE html>
     <html>
       <head>
@@ -26,7 +19,7 @@ meta:
           #map-canvas { height: 100% }
         </style>
         <script type="text/javascript"
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyx3W8gpUx47lMxs7BMstGpHg9gwN4Uzg&sensor=true">
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALTGPdgSxKf3oaKknvE11B01p5qFp4T9Y&sensor=true">
         </script>
         <script type="text/javascript">
           function initialize() {
@@ -35,17 +28,17 @@ meta:
               zoom: 8,
               mapTypeId: google.maps.MapTypeId.ROADMAP
             };
-            var map = new google.maps.Map(document.getElementByIdx_x_x("map-canvas"),
+            var map = new google.maps.Map(document.getElementById("map-canvas"),
                 mapOptions);
           }
           google.maps.event.addDomListener(window, 'load', initialize);
         </script>
       </head>
       <body>
-        <div id="map-canvas"></div>
+        <div id="map-canvas"/>
       </body>
-    </html></code>
+    </html>
 
-    <div>references:</div>
-    <div><a href="https://developers.google.com/maps/documentation/javascript/tutorial#api_key">
-    https://developers.google.com/maps/documentation/javascript/tutorial#api_key</a></div>
+## References:
++ Goodgle Map, <a href="https://developers.google.com/maps/documentation/javascript/tutorial#api_key">
+https://developers.google.com/maps/documentation/javascript/tutorial#api_key</a>

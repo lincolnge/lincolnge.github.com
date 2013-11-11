@@ -9,6 +9,10 @@ tags:
 ---
 {% include JB/setup %}
 
+## Jekyll
+
+jekyll是一个简单的免费的Blog生成工具，它只是一个生成静态网页的工具，可以使用第三方服务，类似disqus作为它的评论。最关键的是它可以免费部署在Github上，并且绑定自己的域名。
+
 ## 下载
 下载：[ruby on windows](http://rubyinstaller.org/downloads/)
 下载：[Devkit](http://rubyinstaller.org/add-ons/devkit/)

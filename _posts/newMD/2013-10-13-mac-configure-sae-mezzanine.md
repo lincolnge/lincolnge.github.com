@@ -10,6 +10,14 @@ tags:
 ---
 {% include JB/setup %}
 
+## SAE
+
+SAE作为国内的公有云计算，新浪开发的，安全可靠。我们可以将网站挂在上面运行。
+
+## Mezzanine
+
+Mezzanine是一个强大的，扩展性良好的管理平台，是一种CMS（内容管理系统）。它是建立在Django的框架之上的。
+
 ## 配置SAE本地环境
 
 一开始要安装ython(2.7)，接着如下操作安装`virtualenv`并且运行`virtualenv`：
