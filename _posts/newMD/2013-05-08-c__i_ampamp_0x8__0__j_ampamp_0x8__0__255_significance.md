@@ -2,8 +2,9 @@
 layout: post
 title: C运算
 categories:
-- C&#43;&#43;
+- programming
 tags:
+- C++
 ---
 {% include JB/setup %}
 

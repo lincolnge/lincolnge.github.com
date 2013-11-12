@@ -2,9 +2,9 @@
 layout: post
 title: java problem
 categories:
-- Android platform
+- programming
 tags:
-- it
+- java
 ---
 {% include JB/setup %}
 

@@ -2,9 +2,9 @@
 layout: post
 title: python用字典写NFA to DFA
 categories:
-- Python
+- programming
 tags:
-- it
+- Python
 ---
 {% include JB/setup %}
 

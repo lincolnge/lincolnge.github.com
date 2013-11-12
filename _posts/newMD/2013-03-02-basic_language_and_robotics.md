@@ -2,9 +2,9 @@
 layout: post
 title: BASIC语言与机器人
 categories:
-- 机器人
+- programming
 tags:
-- it
+- robot
 ---
 {% include JB/setup %}
 

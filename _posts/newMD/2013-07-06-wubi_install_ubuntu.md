@@ -2,9 +2,9 @@
 layout: post
 title: wubi 安装 Ubuntu
 categories:
-- ubuntu
+- Science and Technology
 tags:
-- it
+- ubuntu
 ---
 {% include JB/setup %}
 

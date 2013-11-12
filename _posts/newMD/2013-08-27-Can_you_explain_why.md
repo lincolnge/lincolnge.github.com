@@ -2,10 +2,11 @@
 layout: post
 title: '[转载]JS为什么 ++[[]][+[]]+[+[]] = 10 ？'
 categories:
-- Web开发
+- programming
 tags:
 - 转载
 - js
+- Web开发
 ---
 {% include JB/setup %}
 

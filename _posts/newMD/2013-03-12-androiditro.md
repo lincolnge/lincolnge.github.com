@@ -2,9 +2,9 @@
 layout: post
 title: Android introduction
 categories:
-- Android platform
+- programming
 tags:
-- it
+- Android
 ---
 {% include JB/setup %}
 

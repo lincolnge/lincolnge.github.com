@@ -2,9 +2,9 @@
 layout: post
 title: excel作为数据库！
 categories:
-- 'C#'
+- programming
 tags:
-- it
+- C#
 ---
 {% include JB/setup %}
 

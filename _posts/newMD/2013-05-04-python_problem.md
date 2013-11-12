@@ -2,9 +2,8 @@
 layout: post
 title: python |=
 categories:
-- Python
+- programming
 tags:
-- it
 - Python
 ---
 {% include JB/setup %}

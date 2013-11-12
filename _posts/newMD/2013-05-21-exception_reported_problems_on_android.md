@@ -2,9 +2,9 @@
 layout: post
 title: 关于android报exception的问题
 categories:
-- Android platform
+- Science and Technology
 tags:
-- it
+- Android
 ---
 {% include JB/setup %}
 
