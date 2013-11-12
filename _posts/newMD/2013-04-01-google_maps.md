@@ -2,9 +2,9 @@
 layout: post
 title: 谷歌地图
 categories:
-- Android platform
+- programming
 tags:
-- it
+- API
 ---
 {% include JB/setup %}
 

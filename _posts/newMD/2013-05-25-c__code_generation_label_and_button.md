@@ -2,9 +2,9 @@
 layout: post
 title: C#代码生成label和button
 categories:
-- 'C#'
+- programming
 tags:
-- it
+- C#
 ---
 {% include JB/setup %}
 

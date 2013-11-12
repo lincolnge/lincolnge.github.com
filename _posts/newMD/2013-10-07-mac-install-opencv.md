@@ -2,7 +2,7 @@
 layout: post
 title: Mac install opencv
 categories:
-- opencv
+- programming
 tags:
 - Mac
 - opencv

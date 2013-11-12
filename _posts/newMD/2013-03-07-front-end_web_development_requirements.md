@@ -2,9 +2,9 @@
 layout: post
 title: Web开发前端要求
 categories:
-- Web开发
+- Science and Technology
 tags:
-- it
+- Web开发
 ---
 {% include JB/setup %}
 

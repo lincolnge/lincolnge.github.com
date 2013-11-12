@@ -2,9 +2,9 @@
 layout: post
 title: "'bin/bash --login/' command problem"
 categories:
-- ubuntu
+- Science and Technology
 tags:
-- it
+- ubuntu
 ---
 {% include JB/setup %}
 

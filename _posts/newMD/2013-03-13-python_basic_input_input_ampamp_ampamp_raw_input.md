@@ -2,9 +2,9 @@
 layout: post
 title: python基本输入 input &amp;&amp; raw_input
 categories:
-- Python
+- programming
 tags:
-- it
+- Python
 status: publish
 type: post
 published: true

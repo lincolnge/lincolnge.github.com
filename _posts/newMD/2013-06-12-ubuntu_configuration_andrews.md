@@ -2,9 +2,10 @@
 layout: post
 title: ubuntu配置安卓
 categories:
-- Android platform
+- Science and Technology
 tags:
-- it
+- Android
+- ubuntu
 ---
 {% include JB/setup %}
 
