@@ -2,7 +2,7 @@
 layout: post
 title: 关于android报exception的问题
 categories:
-- Science and Technology
+- programming
 tags:
 - Android
 ---
