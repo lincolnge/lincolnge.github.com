@@ -2,7 +2,7 @@
 layout: post
 title: windows安装jekyll
 categories:
-- Science and Technology
+- programming
 tags:
 - ruby
 - windows

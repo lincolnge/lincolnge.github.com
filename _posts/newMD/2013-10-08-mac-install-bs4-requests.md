@@ -2,7 +2,7 @@
 layout: post
 title: Mac install bs4 &amp; requests
 categories:
-- Science and Technology
+- programming
 tags:
 - Mac
 - Python

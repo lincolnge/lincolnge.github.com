@@ -2,7 +2,7 @@
 layout: post
 title: Mac Configure SAE mezzanine
 categories:
-- Science and Technology
+- programming
 tags:
 - Mac
 - Python
