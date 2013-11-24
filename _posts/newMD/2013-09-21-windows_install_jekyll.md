@@ -13,13 +13,15 @@ tags:
 
 jekyll是一个简单的免费的Blog生成工具，它只是一个生成静态网页的工具，可以使用第三方服务，类似disqus作为它的评论。最关键的是它可以免费部署在Github上，并且绑定自己的域名。
 
+windows 8 系统似乎还有问题，未解决
+
 ## 下载
 下载：[ruby on windows](http://rubyinstaller.org/downloads/)
 下载：[Devkit](http://rubyinstaller.org/add-ons/devkit/)
 
 ## 安装
 安装RubyInstaller到c盘
-设置环境变量，path中配置形如C:\Ruby193\bin目录，然后在命令行终端下输入gem update --system来升级gem
+设置环境变量，path中配置形如C:\Ruby193\bin目录，然后在命令行终端下输入`gem update --system`来升级gem  
 Devkit解压到C:\DevKit
 
     $ cd C:\DevKit
@@ -48,3 +50,4 @@ e.g.
 
 ## References:
 * purediy。[\[原\]通过GitHub Pages建立个人站点（详细步骤）。](http://www.cnblogs.com/purediy/archive/2013/03/07/2948892.html)2013年3月7日。
+* [Running Jekyll on Windows](http://www.madhur.co.in/blog/2011/09/01/runningjekyllwindows.html)
