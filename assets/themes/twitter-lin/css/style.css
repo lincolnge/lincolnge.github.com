@@ -85,3 +85,6 @@ embed{width: 100%;}
 /* overwrite boostrap style */
 .navbar-collapse .navbar-nav.navbar-right:last-child {margin-right: -32px}
 .navbar-default .navbar-left>li>a:hover{background-color: rgba(231, 231, 231, 0.50);} /* 鼠标悬停在导航栏的颜色 */
+
+/* 调整字体大小 */
+h2, .h2 {font-size: 26px;}
