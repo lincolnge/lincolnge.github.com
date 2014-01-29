@@ -9,7 +9,7 @@ tags:
 ---
 {% include JB/setup %}
 
-## install opencv
+## Install opencv
 Download XCode from App Store
 
 Download XCode command tools
@@ -71,6 +71,21 @@ Now Select Native Library Location and click on Edit.
 Insert the path of your cv.so file, mine is in /build/lib.
 (this path maybe /opencv/release/lib or /opencv/build/lib)
 Click on Finish, Now your project is configured with openCV library.
+
+## ant
+
+### Environment
+
+First, create a bin/ folder and copy the OpenCV jar into it. Second, create a lib/ folder and copy the OpenCV lib into it.
+
+    $ mkdir bin
+    $ cp <opencv_dir>/bin/opencv_<version>.jar bin/
+    $ mkdir lib
+    $ cp -rf <opencv_dir>/lib/ lib/
+
+### Running
+
+    $ ant -DocvJarDir=bin -DocvLibDir=lib
 
 ## References:
 
