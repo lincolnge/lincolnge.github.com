@@ -26,3 +26,20 @@ meta:
     print name2
 
 ----------------------------------------------------
+
+Result:
+
+    >>> name = raw_input("你猜：")
+    你猜：d
+    >>> print "hello. " + name + "!"
+    hello. d!
+    >>> name2 = input("你再猜(请输入数字,或者带有引号的字符串)：")
+    你再猜(请输入数字,或者带有引号的字符串)：d
+    Traceback (most recent call last):
+      File "<stdin>", line 1, in <module>
+      File "<string>", line 1, in <module>
+    NameError: name 'd' is not defined
+    >>> name2 = input("你再猜(请输入数字,或者带有引号的字符串)：")
+    你再猜(请输入数字,或者带有引号的字符串)：3
+    >>> print name2
+    3
