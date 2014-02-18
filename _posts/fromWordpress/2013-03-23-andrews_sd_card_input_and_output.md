@@ -19,7 +19,7 @@ tags: [Android]
 
     <uses -sdk android:minSdkVersion="3"></uses>
 
-<div><a href="http://photo.blog.sina.com.cn/showpic.html#blogid=626a2e8d0101ip1r&amp;url=http://s1.sinaimg.cn/orignal/626a2e8dgd898e2e2cce0" target="_blank"><img title="安卓SD卡输入输出" alt="安卓SD卡输入输出" src="http://lincolnge.duapp.com/wp-content/uploads/pic/626a2e8dgd898e2e2cce0.jpg" width="353" height="133" name="image_operate_46701364051109023" /></a><a href="http://photo.blog.sina.com.cn/showpic.html#blogid=626a2e8d0101ip1r&amp;url=http://s7.sinaimg.cn/orignal/626a2e8dgd898e3637676" target="_blank"><img title="安卓SD卡输入输出" alt="安卓SD卡输入输出" src="http://lincolnge.duapp.com/wp-content/uploads/pic/626a2e8dgd898e3637676.jpg" width="586" height="65" name="image_operate_65431364051208710" /></a></div>
+<div><a href="/files/images/626a2e8dgd898e2e2cce0.jpg" target="_blank"><img title="安卓SD卡输入输出" alt="安卓SD卡输入输出" src="/files/images/626a2e8dgd898e2e2cce0.jpg" width="353" height="133" name="image_operate_46701364051109023" /></a><a href="/files/images/626a2e8dgd898e3637676.jpg" target="_blank"><img title="安卓SD卡输入输出" alt="安卓SD卡输入输出" src="/files/images/626a2e8dgd898e3637676.jpg" width="586" height="65" name="image_operate_65431364051208710" /></a></div>
 
     // 写文件
     try {

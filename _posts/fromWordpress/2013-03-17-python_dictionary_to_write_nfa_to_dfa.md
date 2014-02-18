@@ -83,7 +83,7 @@ dictNFA = {
 <div>树状图如下：</div>
 
 <div>
-<img alt="" src="http://lincolnge.duapp.com/wp-content/uploads/pic/626a2e8dgd818660c407d&amp;690.jpg" width="385" height="509" name="image_operate_22101363499632793" />
+<img alt="" src="/files/images/626a2e8dgd818660c407d&amp;690.jpg" width="385" height="509" name="image_operate_22101363499632793" />
 </div>
 
 <div>用一个循环让它循环下去，什么时候停止呢？</div>
@@ -107,7 +107,7 @@ dictNFA = {
 <div>NFA to DFA 原理如此图</div>
 
 <div>
-<img alt="" src="http://lincolnge.duapp.com/wp-content/uploads/pic/626a2e8dgd8187db392c5&amp;690.jpg" width="385" height="509" name="image_operate_22101363499632793" />
+<img alt="" src="/files/images/626a2e8dgd8187db392c5&amp;690.jpg" width="385" height="509" name="image_operate_22101363499632793" />
 </div>
 
 <div>接下来最小化这个DFA：</div>
@@ -120,6 +120,6 @@ dictNFA = {
 <div>NFA转化为DFA，并且Minimum DFA过程如下：</div>
 
 <div>
-<img alt="" src="http://lincolnge.duapp.com/wp-content/uploads/pic/626a2e8dgd81895f987bd&amp;690.jpg" width="397" height="800" name="image_operate_62251363500041337" />
+<img alt="" src="/files/images/626a2e8dgd81895f987bd&amp;690.jpg" width="397" height="800" name="image_operate_62251363500041337" />
 </div>
 
