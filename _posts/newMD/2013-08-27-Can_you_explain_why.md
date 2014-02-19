@@ -11,7 +11,7 @@ tags:
 {% include JB/setup %}
 
 ## 转自：珠海GDG微信
-<img alt="qrcode_for_gh_5e32c47b5b23_258.jpg" src="http://zoomq.qiniudn.com/ZHGDG/design/qrcode_for_gh_5e32c47b5b23_258.jpg" />
+<img alt="qrcode_for_gh_5e32c47b5b23_258.jpg" src="/files/images/qrcode_for_gh_5e32c47b5b23_258.jpg" />
 
 ## 为什么 `++[[]][+[]]+[+[]] = 10` ？
 全文引用自:

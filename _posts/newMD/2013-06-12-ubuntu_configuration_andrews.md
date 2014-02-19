@@ -13,24 +13,24 @@ tags:
 
 首先下载Android SDK  
 
-<img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="http://lincolnge.duapp.com/wp-content/uploads/pic/ubuntu_android/1_130115191941_1.jpg" name="image_operate_93601371041564499" />
+<img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="/files/images/1_130115191941_1.jpg" name="image_operate_93601371041564499" />
 
 Android SDK官方下载地址：<http://developer.android.com/sdk/index.html>  
 
 下载Linux 32-bit版本 .
 
-<img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="http://lincolnge.duapp.com/wp-content/uploads/pic/ubuntu_android/1_130115191941_2.jpg" name="image_operate_23491371041594355" />
+<img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="/files/images/1_130115191941_2.jpg" name="image_operate_23491371041594355" />
 
 解压 然后到目录下的tools里面
-<img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="http://lincolnge.duapp.com/wp-content/uploads/pic/ubuntu_android/1_130115192903_1.jpg" name="image_operate_13991371041593832" />
+<img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="/files/images/1_130115192903_1.jpg" name="image_operate_13991371041593832" />
 
 输入`$ ./android`启动Android SDK Manager
 
-<img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="http://lincolnge.duapp.com/wp-content/uploads/pic/ubuntu_android/1_130115193246_2.jpg" name="image_operate_44041371041593707" />
+<img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="/files/images/1_130115193246_2.jpg" name="image_operate_44041371041593707" />
 勾中Tools和Android 4.2(API 17)，还可以安装以前的Android 4.1.2或者2.3版本，一般我们选择最新版本就好了，因为选择的版本越多下载时间就越长。SDK可以向下兼容, 意思就是4.2版本可以运行2.3 不过2.3 不一定可以运行4.2
-<img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="http://lincolnge.duapp.com/wp-content/uploads/pic/ubuntu_android/1_130115193422_1.jpg" name="image_operate_75751371041617547" />
+<img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="/files/images/1_130115193422_1.jpg" name="image_operate_75751371041617547" />
 选中后，点击右下角的Install 5 packages...
-<img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="http://lincolnge.duapp.com/wp-content/uploads/pic/ubuntu_android/1_130115193422_2.jpg" />
+<img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="/files/images/1_130115193422_2.jpg" />
 
 
 这时就开始在线下载文件了，时间会比较长，中途如果弹出错误窗口也不用管，等待下载完成。
@@ -47,7 +47,7 @@ Android SDK官方下载地址：<http://developer.android.com/sdk/index.html>
 
 创建虚拟手机设备，这里的myphone01是指虚拟机名称，也可以更改。
 
-<img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="http://lincolnge.duapp.com/wp-content/uploads/pic/ubuntu_android/1_130115203734_1.jpg" name="image_operate_11581371041651123" />
+<img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="/files/images/1_130115203734_1.jpg" name="image_operate_11581371041651123" />
 
 出现上面这种提示就表示模拟器建立好了
 
