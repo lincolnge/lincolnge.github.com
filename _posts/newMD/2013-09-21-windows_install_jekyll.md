@@ -31,7 +31,7 @@ Devkit解压到C:\DevKit
 上面这段code的目的是让Devkit目录下的config.yml中有形如  
 `- C:/Ruby193`
 e.g.
-![](http://bcs.duapp.com/blogma//blog/201309//5A95C53B-C071-4FDA-ADF8-D360F12B3774.png)
+![](/files/images/37313619-900D-49FE-A23F-F795A45B5000.png)
 
 最后
 
