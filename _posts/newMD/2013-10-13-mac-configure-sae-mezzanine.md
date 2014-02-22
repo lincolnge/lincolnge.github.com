@@ -100,7 +100,7 @@ svn checkout 你的project：
 
 执行`python manage.py collectstatic`收集静态文件
 
-修改`setting.py`中的`ROOT_URLCONF = "%s.urls" % PROJECT_DIRNAME`修改为`ROOT_URLCONF = "urls"`，这一句大概在208行。
+修改`setting.py`中的<pre>ROOT_URLCONF = "%s.urls" % PROJECT_DIRNAME</pre>修改为`ROOT_URLCONF = "urls"`，这一句大概在208行。
 
 
 运行脚本：
@@ -112,5 +112,5 @@ svn checkout 你的project：
 
 ## References:
 * Virtualenv. <em>Installation</em>. <a href="http://www.virtualenv.org/en/latest/" title="virtualenv">http://www.virtualenv.org/en/latest/</a>  
-* Marchliu. <a href="http://marchliu.github.io/tech/2013/10/09/sae-developer-env-in-local/" title="sae-python-django">http://marchliu.github.io/tech/2013/10/09/sae-developer-env-in-local/</a>  
+* Marchliu. [URL](http://marchliu.github.io/tech/2013/10/09/sae-developer-env-in-local/)
 * SAE Python Developer's Guide 1.0(beta) documentation [URL](http://python.sinaapp.com/doc/tools.html#howto-use-saecloud-install)
