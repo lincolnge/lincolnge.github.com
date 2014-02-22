@@ -89,5 +89,5 @@ First, create a bin/ folder and copy the OpenCV jar into it. Second, create a li
 
 ## References:
 
-+ Impetus.(Monday, 5 August 2013). <http://sumitkumariit.blogspot.hk/2013/08/how-to-install-opencv-for-java-on-mac.html>
++ Impetus.(Monday, 5 August 2013). [URL](http://sumitkumariit.blogspot.hk/2013/08/how-to-install-opencv-for-java-on-mac.html)
 + Guilherme Defreitas. (1 de Outubro de 2012). <http://www.guidefreitas.com/installing-opencv-2-4-2-on-mac-osx-mountain-lion-with-python-support>

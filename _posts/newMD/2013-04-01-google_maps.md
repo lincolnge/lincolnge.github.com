@@ -8,7 +8,7 @@ tags:
 ---
 {% include JB/setup %}
 
-<iframe src="/files/code/map.html" width="700px" height="500px" frameborder="0" scrolling="no"> </iframe>
+<iframe src="/files/code/map.html" width="100%" height="100%" frameborder="0" scrolling="no"> </iframe>
 
     <!DOCTYPE html>
     <html>
@@ -42,4 +42,4 @@ tags:
 
 ## References:
 + Goodgle Map, <a href="https://developers.google.com/maps/documentation/javascript/tutorial#api_key">
-https://developers.google.com/maps/documentation/javascript/tutorial#api_key</a>
+URL</a>

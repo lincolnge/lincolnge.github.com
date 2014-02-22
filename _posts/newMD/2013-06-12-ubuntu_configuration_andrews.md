@@ -43,7 +43,7 @@ Android SDK官方下载地址：<http://developer.android.com/sdk/index.html>
 
 上面的512M是指虚拟机的SD卡大小，mysd01是指卡的名称，大小和名称可以更改为别的。
 
-`$ ./android create avd -n myphone01 -t 2`
+    $ ./android create avd -n myphone01 -t 2
 
 创建虚拟手机设备，这里的myphone01是指虚拟机名称，也可以更改。
 
@@ -82,7 +82,7 @@ bash: ./android: 权限不够
 ## References:
 
 + ubuntu下编译Android出现的问题
-<a href="http://zuiniuwang.blog.51cto.com/3709988/718277">http://zuiniuwang.blog.51cto.com/3709988/718277</a>
+<a href="http://zuiniuwang.blog.51cto.com/3709988/718277">URL</a>
 + ubuntu系统安装安卓模拟器(Android SDK)的方法
 <a href="http://www.anzhuobuluo.com/android/rom/142/">http://www.anzhuobuluo.com/android/rom/142/</a>
 + Ubuntu配置Eclipse + Android环境问题

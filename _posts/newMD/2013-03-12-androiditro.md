@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Android introduction
+title: Android
 categories:
 - programming
 tags:

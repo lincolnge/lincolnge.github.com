@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python基本输入 input &amp;&amp; raw_input
+title: python基本输入
 categories:
 - programming
 tags:

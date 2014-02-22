@@ -46,7 +46,9 @@ Configure the path: PATH=$(brew --prefix ruby)/bin:$PATH
 
     $ vim ~/.bash_profile
 
-input: `export PATH=$(brew --prefix ruby)/bin:$PATH`
+input: 
+
+    export PATH=$(brew --prefix ruby)/bin:$PATH
 
 ### install jekyll：
 
@@ -79,6 +81,7 @@ input:
 
 ## File System
 The path of QQ information: 
+
     ~/Library/Containers/com.tencent.qq/Data/Library/Application Support/QQ
 
 
@@ -96,4 +99,6 @@ cannot open .git/FETCH_HEAD: Permission denied
 Mac ssh need not to be root accout
 
 
-Lauchpad icon information is in `~/Library/Application\ Support/Dock/*.db`
+Lauchpad icon information is in 
+
+    ~/Library/Application\ Support/Dock/*.db
