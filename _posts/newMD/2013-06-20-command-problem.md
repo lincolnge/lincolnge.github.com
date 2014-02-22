@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "'bin/bash --login/' command problem"
+title: "bin/bash --login/"
 categories:
 - Science and Technology
 tags:

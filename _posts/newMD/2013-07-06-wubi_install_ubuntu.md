@@ -37,4 +37,4 @@ PS：
 
 ubuntu12.04已经自带了ibus输入法框架和一些中文输入法。
 想要谷歌输入法可以移步到
-<http://www.cnblogs.com/yejinru/archive/2013/03/31/2991851.html>
+[URL](http://www.cnblogs.com/yejinru/archive/2013/03/31/2991851.html)
