@@ -42,4 +42,4 @@ uncompressed it
 and then if you can run 'import requests', it means it is ok.
 
 ## References:
-+ Jay Kim (Mar 26, 2012). [http://stackoverflow.com/questions/9876226/how-do-i-install-beautiful-soup-for-python-on-my-mac-see-error](http://stackoverflow.com/questions/9876226/how-do-i-install-beautiful-soup-for-python-on-my-mac-see-error)
++ Jay Kim (Mar 26, 2012). from:[URL](http://stackoverflow.com/questions/9876226/how-do-i-install-beautiful-soup-for-python-on-my-mac-see-error)

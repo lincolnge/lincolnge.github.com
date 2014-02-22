@@ -113,4 +113,4 @@ svn checkout 你的project：
 ## References:
 * Virtualenv. <em>Installation</em>. <a href="http://www.virtualenv.org/en/latest/" title="virtualenv">http://www.virtualenv.org/en/latest/</a>  
 * Marchliu. <a href="http://marchliu.github.io/tech/2013/10/09/sae-developer-env-in-local/" title="sae-python-django">http://marchliu.github.io/tech/2013/10/09/sae-developer-env-in-local/</a>  
-* SAE Python Developer's Guide 1.0(beta) documentation <a href="http://python.sinaapp.com/doc/tools.html#howto-use-saecloud-install" title="SAE Python Developer's Guide 1.0(beta) documentation">http://python.sinaapp.com/doc/tools.html#howto-use-saecloud-install</a>  
+* SAE Python Developer's Guide 1.0(beta) documentation [URL](http://python.sinaapp.com/doc/tools.html#howto-use-saecloud-install)

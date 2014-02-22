@@ -10,7 +10,7 @@ tags:
 ---
 {% include JB/setup %}
 
-From: 王子墨 <em>如何成为一名优秀的web前端工程师（前端攻城师）</em><http://julying.com/blog/how-to-become-a-good-web-front-end-engineer/>
+From: 王子墨 <em>[如何成为一名优秀的web前端工程师（前端攻城师）](http://julying.com/blog/how-to-become-a-good-web-front-end-engineer)</em>
 
 <div id="post-213" class="post-213 post type-post status-publish format-standard hentry category-web-knowledge-essay">
   <div class="entry-header">
