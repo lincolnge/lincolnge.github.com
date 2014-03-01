@@ -30,11 +30,11 @@ PS：
 
 + 记得要挂载那个iso文件，不然wubi会重新下载ubuntu到某临时文件夹，这将耗费大量时间
 + 可以考虑断网，因为有网络，ubuntu将需要下载安装一些必要的文件。不过断网的话，安装可能会出错，感觉这算是一个概率问题。
-+ 另外13.04的版本的wubi貌似对应的是64位系统，这意味着，你都镜像挂载要挂载64位系统版本的ubuntu，不然它会联网下载64位Ubuntu。
++ 另外13.04的版本的wubi貌似对应的是64位系统，这意味着，你的镜像挂载要挂载64位系统版本的ubuntu，不然它会联网下载64位Ubuntu。
  
 
 倘若ubuntu开机进不了桌面，可以通过重装桌面修复它。
 
 ubuntu12.04已经自带了ibus输入法框架和一些中文输入法。
 想要谷歌输入法可以移步到
-[URL](http://www.cnblogs.com/yejinru/archive/2013/03/31/2991851.html)
+[ubuntu 下的 google 拼音输入法](http://www.cnblogs.com/yejinru/archive/2013/03/31/2991851.html)
