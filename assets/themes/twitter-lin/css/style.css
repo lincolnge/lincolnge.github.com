@@ -88,3 +88,12 @@ embed{width: 100%;}
 
 /* 调整字体大小 */
 h2, .h2 {font-size: 26px;}
+
+/* 锚 */
+.anchor{
+  display: block;
+  height: 40px;
+  margin-top: -40px;
+  visibility: hidden;
+
+}
