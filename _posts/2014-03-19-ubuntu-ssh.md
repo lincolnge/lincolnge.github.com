@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ubuntu ssh"
+title: "Ubuntu ssh"
 description: ""
 category: 
 tags: []
