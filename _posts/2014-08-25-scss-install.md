@@ -13,6 +13,11 @@ SCSS 介绍
 
 Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 
+快捷安装
+----
+
+如果写好了 Gemfile, 直接在该目录下 `bundle install` 即可.
+
 SASS 与 SCSS 区别:
 ----
 
