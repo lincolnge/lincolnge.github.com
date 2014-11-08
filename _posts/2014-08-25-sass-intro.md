@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SCSS 介绍"
+title: "Sass 介绍"
 description: ""
 category: programming
 tags: []
@@ -8,8 +8,9 @@ tags: []
 {% include JB/setup %}
 
 
-SCSS 介绍
+Sass 介绍 
 ========
+Syntactically Awesome Stylesheets (Sass)
 
 Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.
 
@@ -17,6 +18,12 @@ Sass is the most mature, stable, and powerful professional grade CSS extension l
 ----
 
 如果写好了 Gemfile, 直接在该目录下 `bundle install` 即可.
+
+Gemfile 文件参考:
+
+	gem "compass", "~> 1.0.1"
+	gem "sass", "~> 3.4.5"
+	gem "susy", "~> 2.1.3"
 
 SASS 与 SCSS 区别:
 ----
@@ -27,7 +34,7 @@ SASS:
 		width: 30%
 		background-color: #faa
 
-.sass 文件  
+*.sass 文件  
 
 ---
 
@@ -38,18 +45,14 @@ SCSS:
 		background-color: #faa
 	}
 
-.scss 文件  
+*.scss 文件  
 
-SCSS 安装
+Sass 安装
 --------
 
-compass (0.12.2)  
-sass (3.2.5)  
-susy (1.0.7)  
-
-	$ [sudo] gem install compass -v 0.12.2
-	$ [sudo] gem install sass -v 3.2.5
-	$ [sudo] gem install susy -v 1.0.7
+	$ [sudo] gem install compass
+	$ [sudo] gem install sass
+	$ [sudo] gem install susy
 
 如果直接用 gem install 安装会安装最新版, 最新版不知道什么原因没有办法使用.
 
@@ -70,7 +73,14 @@ or
 	$ compass watch
 
 
+为什么使用 Sass
+--------
+
+- 缩短开发时间。
+- "不要重复自己" (DRY) 的准则。
+- 使代码更加清晰易读。
+
 References: 
 
-- <http://sass-lang.com/>
-- <http://thesassway.com/editorial/sass-vs-scss-which-syntax-is-better>
+- Sass: Syntactically Awesome Style Sheets. <http://sass-lang.com/>
+- Sass vs. SCSS: which syntax is better?. <http://thesassway.com/editorial/sass-vs-scss-which-syntax-is-better>
