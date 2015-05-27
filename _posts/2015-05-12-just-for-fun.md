@@ -3,7 +3,7 @@ layout: post
 title: "Just For Fun 读书笔记"
 date_time: "2015-05-12 23:23:48 +0800"
 description: ""
-category: 读书笔记
+category: reading
 tags: []
 ---
 {% include JB/setup %}
