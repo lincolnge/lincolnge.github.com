@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Sass 介绍"
+title: "Sass"
 description: ""
 category: programming
 tags: [CSS, Web开发]
@@ -41,8 +41,8 @@ SASS:
 SCSS:  
 
 	#sidebar {
-		width: 30%
-		background-color: #faa
+		width: 30%;
+		background-color: #faa;
 	}
 
 *.scss 文件  
