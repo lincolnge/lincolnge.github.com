@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python基本输入
+title: Python raw_input input
 categories:
 - programming
 tags:
@@ -43,3 +43,7 @@ Result:
     你再猜(请输入数字,或者带有引号的字符串)：3
     >>> print name2
     3
+
+说明：
+
+    # -*- coding: cp936 -*- 指定代码保存时候使用的字符集，建议使用UTF-8，cp936 是 Windows 系统使用的字符集。
