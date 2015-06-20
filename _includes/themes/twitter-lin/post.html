@@ -19,7 +19,7 @@
   <div class="span12">
     <div class="date">
       {% if page.date_time %}
-        <span>{{ page.date_time }}</span>
+        <span>{{ page.date_time | date_to_rfc822 }}</span>
       {% else %}
         <span>{{ page.date | date_to_long_string }}</span>
       {% endif %}

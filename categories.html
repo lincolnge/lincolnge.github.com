@@ -2,7 +2,7 @@
 layout: page
 title: Categories
 header: Posts By Category
-group: navigation
+group: 
 ---
 {% include JB/setup %}
 
@@ -10,7 +10,6 @@ group: navigation
   {% assign categories_list = site.categories %}
   {% include JB/categories_list %}
 </ul>
-
 
 {% for category in site.categories %} 
   <span class="anchor" id="{{ category[0] }}-ref"></span>
