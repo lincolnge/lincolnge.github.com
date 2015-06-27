@@ -3,7 +3,7 @@ layout: post
 title: "历史之源"
 date_time: "2015-06-16 21:49:56 +0800"
 description: ""
-category: 
+category: reading
 tags: []
 ---
 {% include JB/setup %}
