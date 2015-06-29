@@ -8,6 +8,8 @@ tags: []
 ---
 {% include JB/setup %}
 
+Linus Torvalds / David Diamond [《Just for Fun》](http://book.douban.com/subject/1451172/)阅读笔记
+
 Just For Fun by Linux, 这本书我已经不太记得什么时候开始看的了，印象中看了好久，这几天终于看完了。
 
 这本书是 Linus Torvalds的自传。Linux 是 Linux 内核的最早作者，随后发起了这个开源项目，担任Linux内核的首要架构师与项目协调者，是当今世界最著名的电脑程序员、黑客之一。他还发起了Git这个开源项目，并为主要的开发者。不管是 Linux 还是 Git，对工程师来说都是伟大的作品，能造成一个已经举世无双，他造出了这两个。
