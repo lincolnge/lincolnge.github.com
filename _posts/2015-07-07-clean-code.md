@@ -3,7 +3,7 @@ layout: post
 title: "代码整洁之道"
 date_time: "2015-07-07 21:45:37 +0800"
 description: ""
-category: 
+category: reading
 tags: []
 ---
 {% include JB/setup %}
