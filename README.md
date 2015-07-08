@@ -1,3 +1,15 @@
+## Command
+
+### Run gulp server
+
+$ gulp
+
+### other command
+
+New post:
+
+$ rake post title="title name"
+
 ## Jekyll
 
 Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. 
