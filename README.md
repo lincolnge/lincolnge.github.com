@@ -2,13 +2,13 @@
 
 ### Run gulp server
 
-$ gulp
+    $ gulp
 
 ### other command
 
 New post:
 
-$ rake post title="title name"
+    $ rake post title="title name"
 
 ## Jekyll
 
