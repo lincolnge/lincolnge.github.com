@@ -66,4 +66,6 @@ design pattern
 
 编译、反编译、反反编译
 
+出错，也只是发生了 shit happen，没事，never mind。
+
 ### 杂感
