@@ -3,7 +3,9 @@ layout: post
 title: ubuntu phpmyadmin
 categories:
 - programming
-tags: [ubuntu, PHP]
+tags: 
+- Ubuntu
+- PHP
 ---
 {% include JB/setup %}
 

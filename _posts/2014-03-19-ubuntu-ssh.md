@@ -3,7 +3,8 @@ layout: post
 title: "Ubuntu ssh"
 description: ""
 category: 
-tags: []
+tags: 
+- Ubuntu
 ---
 {% include JB/setup %}
 

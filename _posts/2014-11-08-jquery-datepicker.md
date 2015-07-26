@@ -4,7 +4,7 @@ title: "jQuery datepicker"
 date_time: "2014-11-08 12:14:36 +0800"
 description: ""
 category: programming
-tags: [jQuery, Web开发]
+tags: [jQuery, Web 开发]
 ---
 {% include JB/setup %}
 

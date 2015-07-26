@@ -1,10 +1,10 @@
 ---
 layout: post
-title: java problem
+title: Java Problem
 categories:
 - programming
 tags:
-- java
+- Java
 ---
 {% include JB/setup %}
 

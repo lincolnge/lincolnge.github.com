@@ -4,7 +4,7 @@ title: '[转载]git使用ssh密钥'
 categories:
 - Science and Technology
 tags:
-- git
+- Git
 - 转载
 status: publish
 type: post

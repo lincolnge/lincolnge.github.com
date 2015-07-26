@@ -1,17 +1,18 @@
 ---
 layout: post
-title: windows安装jekyll
+title: Windows install jekyll
 categories:
 - programming
 tags:
-- ruby
-- windows
+- Ruby
+- Windows
+- Blog
 ---
 {% include JB/setup %}
 
 ## Jekyll
 
-jekyll是一个简单的免费的Blog生成工具，它只是一个生成静态网页的工具，可以使用第三方服务，类似disqus作为它的评论。最关键的是它可以免费部署在Github上，并且绑定自己的域名。
+jekyll 是一个简单的免费的Blog生成工具，它只是一个生成静态网页的工具，可以使用第三方服务，类似disqus作为它的评论。最关键的是它可以免费部署在Github上，并且绑定自己的域名。
 
 windows 8 系统似乎还有问题，未解决
 
