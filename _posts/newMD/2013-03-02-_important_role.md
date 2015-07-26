@@ -1,13 +1,14 @@
 ---
 layout: post
-title: '!important的作用'
+title: '!important 的作用'
 categories:
 - programming
-tags: [CSS, Web开发]
+tags: 
+- CSS
 ---
 {% include JB/setup %}
 
-!important是CSS1就定义的语法，作用是提高指定样式规则的应用优先权
+!important是 CSS1 就定义的语法，作用是提高指定样式规则的应用优先权
 语法格式`{sRule!important }`，直接写在定义的最后面，如：
 
     p{color:green !important;}

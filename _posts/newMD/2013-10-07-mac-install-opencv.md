@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Mac install opencv
+title: Mac install OpenCV
 categories:
 - programming
 tags:
 - Mac
-- opencv
+- OpenCV
 ---
 {% include JB/setup %}
 

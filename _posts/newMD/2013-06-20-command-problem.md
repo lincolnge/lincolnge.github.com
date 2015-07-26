@@ -4,7 +4,7 @@ title: "bin/bash --login/"
 categories:
 - Science and Technology
 tags:
-- ubuntu
+- Ubuntu
 ---
 {% include JB/setup %}
 

@@ -5,8 +5,7 @@ categories:
 - programming
 tags:
 - 转载
-- js
-- Web开发
+- JS
 ---
 {% include JB/setup %}
 
