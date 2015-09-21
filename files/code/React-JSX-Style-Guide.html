@@ -1,0 +1,372 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://assets-cdn.github.com/assets/github-ce4c3f5b30639b5488b01748e2c1f8166ed48a0075b9b3987b035ccfc310bf1c.css">
+</head>
+
+<body>
+
+<article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1><a id="user-content-airbnb-reactjsx-style-guide" class="anchor" href="#airbnb-reactjsx-style-guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Airbnb React/JSX Style Guide</h1>
+
+<p><em>一份彙整了在 React 及 JSX 中被普遍使用的風格指南。</em></p>
+
+<p><a name="user-content-table-of-contents"></a></p>
+
+<h2><a id="user-content-目錄" class="anchor" href="#目錄" aria-hidden="true"><span class="octicon octicon-link"></span></a>目錄</h2>
+
+<ol>
+<li><a href="#basic-rules">基本規範</a></li>
+<li><a href="#naming">命名</a></li>
+<li><a href="#declaration">宣告</a></li>
+<li><a href="#alignment">對齊</a></li>
+<li><a href="#quotes">引號</a></li>
+<li><a href="#spacing">空格</a></li>
+<li><a href="#props">Props</a></li>
+<li><a href="#parentheses">括號</a></li>
+<li><a href="#tags">標籤</a></li>
+<li><a href="#methods">方法</a></li>
+<li><a href="#ordering">排序</a></li>
+</ol>
+
+<p><a name="user-content-basic-rules"></a></p>
+
+<h2><a id="user-content-基本規範" class="anchor" href="#基本規範" aria-hidden="true"><span class="octicon octicon-link"></span></a>基本規範</h2>
+
+<ul>
+<li>一個檔案只包含一個 React 元件。</li>
+<li>總是使用 JSX 語法。</li>
+<li>請別使用 <code>React.createElement</code> ，除非你從一個不轉換 JSX 的檔案初始化。</li>
+</ul>
+
+<h2><a id="user-content-class-vs-reactcreateclass" class="anchor" href="#class-vs-reactcreateclass" aria-hidden="true"><span class="octicon octicon-link"></span></a>Class vs React.createClass</h2>
+
+<ul>
+<li><p>使用類別繼承 React.Component，除非你有一個非常好的理由才使用 mixins</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
+<span class="pl-k">const</span> <span class="pl-c1">Listing</span> <span class="pl-k">=</span> React.createClass({
+  <span class="pl-en">render</span>() {
+    <span class="pl-k">return</span> <span class="pl-k">&lt;</span>div <span class="pl-k">/&gt;</span>;
+  }
+});
+
+<span class="pl-c">// good</span>
+<span class="pl-k">class</span> <span class="pl-en">Listing</span> <span class="pl-k">extends</span> <span class="pl-en">React.Component</span> {
+  <span class="pl-en">render</span>() {
+    <span class="pl-k">return</span> <span class="pl-k">&lt;</span>div <span class="pl-k">/&gt;</span>;
+  }
+}</pre></div></li>
+</ul>
+
+<p><a name="user-content-naming"></a></p>
+
+<h2><a id="user-content-命名" class="anchor" href="#命名" aria-hidden="true"><span class="octicon octicon-link"></span></a>命名</h2>
+
+<ul>
+<li><strong>副檔名</strong>：React 元件的副檔名請使用 <code>jsx</code>。</li>
+<li><strong>檔案名稱</strong>：檔案名稱請使用帕斯卡命名法。例如：<code>ReservationCard.jsx</code>。</li>
+<li><p><strong>參考命名規範</strong>: React 元件請使用帕斯卡命名法，元件的實例則使用駝峰式大小寫：</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
+<span class="pl-k">const</span> <span class="pl-c1">reservationCard</span> <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>./ReservationCard<span class="pl-pds">'</span></span>);
+
+<span class="pl-c">// good</span>
+<span class="pl-k">const</span> <span class="pl-c1">ReservationCard</span> <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>./ReservationCard<span class="pl-pds">'</span></span>);
+
+<span class="pl-c">// bad</span>
+<span class="pl-k">const</span> <span class="pl-c1">ReservationItem</span> <span class="pl-k">=</span> <span class="pl-k">&lt;</span>ReservationCard <span class="pl-k">/&gt;</span>;
+
+<span class="pl-c">// good</span>
+<span class="pl-k">const</span> <span class="pl-c1">reservationItem</span> <span class="pl-k">=</span> <span class="pl-k">&lt;</span>ReservationCard <span class="pl-k">/&gt;</span>;</pre></div>
+
+<p><strong>元件命名規範</strong>：檔案名稱須和元件名稱一致。所以 <code>ReservationCard.jsx</code> 的參考名稱必須為 <code>ReservationCard</code>。但對於目錄的根元件請使用 <code>index.jsx</code> 作為檔案名稱，並使用目錄名作為元件的名稱：</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
+<span class="pl-k">const</span> <span class="pl-c1">Footer</span> <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>./Footer/Footer.jsx<span class="pl-pds">'</span></span>)
+
+<span class="pl-c">// bad</span>
+<span class="pl-k">const</span> <span class="pl-c1">Footer</span> <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>./Footer/index.jsx<span class="pl-pds">'</span></span>)
+
+<span class="pl-c">// good</span>
+<span class="pl-k">const</span> <span class="pl-c1">Footer</span> <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>./Footer<span class="pl-pds">'</span></span>)</pre></div></li>
+</ul>
+
+<p><a name="user-content-declaration"></a></p>
+
+<h2><a id="user-content-宣告" class="anchor" href="#宣告" aria-hidden="true"><span class="octicon octicon-link"></span></a>宣告</h2>
+
+<ul>
+<li><p>不要使用 displayName 來命名元件，請使用參考來命名元件。</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
+<span class="pl-k">export</span> <span class="pl-k">default</span> React.createClass({
+  displayName<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>ReservationCard<span class="pl-pds">'</span></span>,
+  <span class="pl-c">// stuff goes here</span>
+});
+
+<span class="pl-c">// good</span>
+<span class="pl-k">class</span> <span class="pl-en">ReservationCard</span> <span class="pl-k">extends</span> <span class="pl-en">React.Component</span> {
+}
+
+<span class="pl-k">export</span> <span class="pl-k">default</span> ReservationCard;</pre></div></li>
+</ul>
+
+<p><a name="user-content-alignment"></a></p>
+
+<h2><a id="user-content-對齊" class="anchor" href="#對齊" aria-hidden="true"><span class="octicon octicon-link"></span></a>對齊</h2>
+
+<ul>
+<li><p>JSX 語法請遵循以下的對齊風格</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
+<span class="pl-k">&lt;</span>Foo superLongParam<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span>
+     anotherSuperLongParam<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>baz<span class="pl-pds">"</span></span> <span class="pl-k">/&gt;</span>
+
+<span class="pl-c">// good</span>
+<span class="pl-k">&lt;</span>Foo
+  superLongParam<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span>
+  anotherSuperLongParam<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>baz<span class="pl-pds">"</span></span>
+<span class="pl-k">/&gt;</span>
+
+<span class="pl-c">// 如果 props 適合放在同一行，就將它們放在同一行上</span>
+<span class="pl-k">&lt;</span>Foo bar<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span> <span class="pl-k">/&gt;</span>
+
+<span class="pl-c">// 通常子元素必須進行縮排</span>
+<span class="pl-k">&lt;</span>Foo
+  superLongParam<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span>
+  anotherSuperLongParam<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>baz<span class="pl-pds">"</span></span>
+<span class="pl-k">&gt;</span>
+  <span class="pl-k">&lt;</span>Spazz <span class="pl-k">/&gt;</span>
+<span class="pl-k">&lt;/</span>Foo<span class="pl-k">&gt;</span></pre></div></li>
+</ul>
+
+<p><a name="user-content-quotes"></a></p>
+
+<h2><a id="user-content-引號" class="anchor" href="#引號" aria-hidden="true"><span class="octicon octicon-link"></span></a>引號</h2>
+
+<ul>
+<li><p>總是在 JSX 的屬性使用雙引號（<code>"</code>），但是所有的 JS 請使用單引號。</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
+<span class="pl-k">&lt;</span>Foo bar<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>bar<span class="pl-pds">'</span></span> <span class="pl-k">/&gt;</span>
+
+<span class="pl-c">// good</span>
+<span class="pl-k">&lt;</span>Foo bar<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span> <span class="pl-k">/&gt;</span>
+
+<span class="pl-c">// bad</span>
+<span class="pl-k">&lt;</span>Foo style<span class="pl-k">=</span>{{ left<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>20px<span class="pl-pds">"</span></span> }} <span class="pl-k">/&gt;</span>
+
+<span class="pl-c">// good</span>
+<span class="pl-k">&lt;</span>Foo style<span class="pl-k">=</span>{{ left<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>20px<span class="pl-pds">'</span></span> }} <span class="pl-k">/&gt;</span></pre></div></li>
+</ul>
+
+<p><a name="user-content-spacing"></a></p>
+
+<h2><a id="user-content-空格" class="anchor" href="#空格" aria-hidden="true"><span class="octicon octicon-link"></span></a>空格</h2>
+
+<ul>
+<li><p>總是在自身結尾標籤前加上一個空格。</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
+<span class="pl-k">&lt;</span>Foo<span class="pl-k">/&gt;</span>
+
+<span class="pl-c">// very bad</span>
+<span class="pl-k">&lt;</span>Foo                 <span class="pl-k">/&gt;</span>
+
+<span class="pl-c">// bad</span>
+<span class="pl-k">&lt;</span>Foo
+ <span class="pl-k">/&gt;</span>
+
+<span class="pl-c">// good</span>
+<span class="pl-k">&lt;</span>Foo <span class="pl-k">/&gt;</span></pre></div></li>
+</ul>
+
+<p><a name="user-content-props"></a></p>
+
+<h2><a id="user-content-props" class="anchor" href="#props" aria-hidden="true"><span class="octicon octicon-link"></span></a>Props</h2>
+
+<ul>
+<li><p>總是使用駝峰式大小寫命名 prop。</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
+<span class="pl-k">&lt;</span>Foo
+  UserName<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>hello<span class="pl-pds">"</span></span>
+  phone_number<span class="pl-k">=</span>{<span class="pl-c1">12345678</span>}
+<span class="pl-k">/&gt;</span>
+
+<span class="pl-c">// good</span>
+<span class="pl-k">&lt;</span>Foo
+  userName<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>hello<span class="pl-pds">"</span></span>
+  phoneNumber<span class="pl-k">=</span>{<span class="pl-c1">12345678</span>}
+<span class="pl-k">/&gt;</span></pre></div></li>
+</ul>
+
+<p><a name="user-content-parentheses"></a></p>
+
+<h2><a id="user-content-括號" class="anchor" href="#括號" aria-hidden="true"><span class="octicon octicon-link"></span></a>括號</h2>
+
+<ul>
+<li><p>當 JSX 的標籤有多行時請使用括號將它們包起來：</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">/// bad</span>
+<span class="pl-en">render</span>() {
+  <span class="pl-k">return</span> <span class="pl-k">&lt;</span>MyComponent className<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>long body<span class="pl-pds">"</span></span> foo<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+           <span class="pl-k">&lt;</span>MyChild <span class="pl-k">/&gt;</span>
+         <span class="pl-k">&lt;/</span>MyComponent<span class="pl-k">&gt;</span>;
+}
+
+<span class="pl-c">// good</span>
+<span class="pl-en">render</span>() {
+  <span class="pl-k">return</span> (
+    <span class="pl-k">&lt;</span>MyComponent className<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>long body<span class="pl-pds">"</span></span> foo<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span>
+      <span class="pl-k">&lt;</span>MyChild <span class="pl-k">/&gt;</span>
+    <span class="pl-k">&lt;/</span>MyComponent<span class="pl-k">&gt;</span>
+  );
+}
+
+<span class="pl-c">// good, 當只有一行</span>
+<span class="pl-en">render</span>() {
+  <span class="pl-k">const</span> <span class="pl-c1">body</span> <span class="pl-k">=</span> <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>hello<span class="pl-k">&lt;/</span>div<span class="pl-k">&gt;</span>;
+  <span class="pl-k">return</span> <span class="pl-k">&lt;</span>MyComponent<span class="pl-k">&gt;</span>{body}<span class="pl-k">&lt;/</span>MyComponent<span class="pl-k">&gt;</span>;
+}</pre></div></li>
+</ul>
+
+<p><a name="user-content-tags"></a></p>
+
+<h2><a id="user-content-標籤" class="anchor" href="#標籤" aria-hidden="true"><span class="octicon octicon-link"></span></a>標籤</h2>
+
+<ul>
+<li><p>沒有子標籤時總是使用自身結尾標籤。</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
+<span class="pl-k">&lt;</span>Foo className<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>stuff<span class="pl-pds">"</span></span><span class="pl-k">&gt;&lt;/</span>Foo<span class="pl-k">&gt;</span>
+
+<span class="pl-c">// good</span>
+<span class="pl-k">&lt;</span>Foo className<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>stuff<span class="pl-pds">"</span></span> <span class="pl-k">/&gt;</span></pre></div></li>
+<li><p>如果你的元件擁有多行屬性，結尾標籤請放在新的一行。</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
+<span class="pl-k">&lt;</span>Foo
+  bar<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span>
+  baz<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>baz<span class="pl-pds">"</span></span> <span class="pl-k">/&gt;</span>
+
+<span class="pl-c">// good</span>
+<span class="pl-k">&lt;</span>Foo
+  bar<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>bar<span class="pl-pds">"</span></span>
+  baz<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">"</span>baz<span class="pl-pds">"</span></span>
+<span class="pl-k">/&gt;</span></pre></div></li>
+</ul>
+
+<p><a name="user-content-methods"></a></p>
+
+<h2><a id="user-content-方法" class="anchor" href="#方法" aria-hidden="true"><span class="octicon octicon-link"></span></a>方法</h2>
+
+<ul>
+<li><p>React 元件的內部方法不要使用底線當作前綴。</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
+React.createClass({
+  <span class="pl-en">_onClickSubmit</span>() {
+    <span class="pl-c">// do stuff</span>
+  }
+
+  <span class="pl-c">// other stuff</span>
+});
+
+<span class="pl-c">// good</span>
+<span class="pl-k">class</span> <span class="pl-k">extends</span> <span class="pl-en">React.Component</span> {
+  <span class="pl-en">onClickSubmit</span>() {
+    <span class="pl-c">// do stuff</span>
+  }
+
+  <span class="pl-c">// other stuff</span>
+});</pre></div></li>
+</ul>
+
+<p><a name="user-content-ordering"></a></p>
+
+<h2><a id="user-content-排序" class="anchor" href="#排序" aria-hidden="true"><span class="octicon octicon-link"></span></a>排序</h2>
+
+<ul>
+<li><p>類別繼承 React.Component 的排序:</p></li>
+</ul>
+
+<ol>
+<li>constructor</li>
+<li>optional static methods</li>
+<li>getChildContext</li>
+<li>componentWillMount</li>
+<li>componentDidMount</li>
+<li>componentWillReceiveProps</li>
+<li>shouldComponentUpdate</li>
+<li>componentWillUpdate</li>
+<li>componentDidUpdate</li>
+<li>componentWillUnmount</li>
+<li><em>clickHandlers or eventHandlers</em> like onClickSubmit() or onChangeDescription()</li>
+<li><em>getter methods for render</em> like getSelectReason() or getFooterContent()</li>
+<li><em>Optional render methods</em> like renderNavigation() or renderProfilePicture()</li>
+<li><p>render</p></li>
+</ol>
+
+<ul>
+<li><p>How to define propTypes, defaultProps, contextTypes, etc...  </p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">import</span> React, { Component, PropTypes } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react<span class="pl-pds">'</span></span>;
+
+<span class="pl-k">const</span> <span class="pl-c1">propTypes</span> <span class="pl-k">=</span> {
+  id<span class="pl-k">:</span> PropTypes.number.isRequired,
+  url<span class="pl-k">:</span> PropTypes.string.isRequired,
+  text<span class="pl-k">:</span> PropTypes.string,
+};
+
+<span class="pl-k">const</span> <span class="pl-c1">defaultProps</span> <span class="pl-k">=</span> {
+  text<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Hello World<span class="pl-pds">'</span></span>,
+};
+
+<span class="pl-k">class</span> <span class="pl-en">Link</span> <span class="pl-k">extends</span> <span class="pl-en">Component</span> {
+  <span class="pl-k">static</span> <span class="pl-en">methodsAreOk</span>() {
+    <span class="pl-k">return</span> <span class="pl-c1">true</span>;
+  }
+
+  <span class="pl-en">render</span>() {
+    <span class="pl-k">return</span> <span class="pl-k">&lt;</span>a href<span class="pl-k">=</span>{<span class="pl-v">this</span>.props.url} data<span class="pl-k">-</span>id<span class="pl-k">=</span>{<span class="pl-v">this</span>.props.<span class="pl-c1">id</span>}<span class="pl-k">&gt;</span>{<span class="pl-v">this</span>.props.<span class="pl-c1">text</span>}<span class="pl-k">&lt;/</span>a<span class="pl-k">&gt;</span>
+  }
+}
+
+<span class="pl-c1">Link</span>.propTypes <span class="pl-k">=</span> propTypes;
+<span class="pl-c1">Link</span>.defaultProps <span class="pl-k">=</span> defaultProps;
+
+<span class="pl-k">export</span> <span class="pl-k">default</span> <span class="pl-c1">Link</span>;</pre></div></li>
+<li><p>React.createClass 的排序：</p></li>
+</ul>
+
+<ol>
+<li>displayName</li>
+<li>propTypes</li>
+<li>contextTypes</li>
+<li>childContextTypes</li>
+<li>mixins</li>
+<li>statics</li>
+<li>defaultProps</li>
+<li>getDefaultProps</li>
+<li>getInitialState</li>
+<li>getChildContext</li>
+<li>componentWillMount</li>
+<li>componentDidMount</li>
+<li>componentWillReceiveProps</li>
+<li>shouldComponentUpdate</li>
+<li>componentWillUpdate</li>
+<li>componentDidUpdate</li>
+<li>componentWillUnmount</li>
+<li><em>clickHandlers or eventHandlers</em> like onClickSubmit() or onChangeDescription()</li>
+<li><em>getter methods for render</em> like getSelectReason() or getFooterContent()</li>
+<li><em>Optional render methods</em> like renderNavigation() or renderProfilePicture()</li>
+<li>render</li>
+</ol>
+
+<p><strong><a href="#table-of-contents">⬆ 回到頂端</a></strong></p>
+</article>
+
+</body>
+
+</html>
