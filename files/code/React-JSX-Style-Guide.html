@@ -8,11 +8,9 @@
 
 <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1><a id="user-content-airbnb-reactjsx-style-guide" class="anchor" href="#airbnb-reactjsx-style-guide" aria-hidden="true"><span class="octicon octicon-link"></span></a>Airbnb React/JSX Style Guide</h1>
 
-<p><em>React 及 JSX 中被普遍使用的风格指南。</em></p>
+<p><em>A mostly reasonable approach to React and JSX</em></p>
 
-<p><a name="user-content-table-of-contents"></a></p>
-
-<h2><a id="user-content-目录" class="anchor" href="#目录" aria-hidden="true"><span class="octicon octicon-link"></span></a>目录</h2>
+<h2 id="table-of-contents"><a id="user-content-table-of-contents" class="anchor" href="#table-of-contents" aria-hidden="true"><span class="octicon octicon-link"></span></a>Table of Contents</h2>
 
 <ol>
 <li><a href="#basic-rules">基本规范</a></li>
@@ -28,20 +26,18 @@
 <li><a href="#ordering">排序</a></li>
 </ol>
 
-<p><a name="user-content-basic-rules"></a></p>
-
 <h2><a id="user-content-基本规范" class="anchor" href="#基本规范" aria-hidden="true"><span class="octicon octicon-link"></span></a>基本规范</h2>
 
 <ul>
 <li>每个文件只包含一个 React 组件。</li>
 <li>总是使用 JSX 语法。</li>
-<li>请别使用 <code>React.createElement</code> ，除非你从一个不转换 JSX 的文件初始化。</li>
+<li>请别使用 React.createElement ，除非你从一个不转换 JSX 的文件初始化。</li>
 </ul>
 
 <h2><a id="user-content-class-vs-reactcreateclass" class="anchor" href="#class-vs-reactcreateclass" aria-hidden="true"><span class="octicon octicon-link"></span></a>Class vs React.createClass</h2>
 
 <ul>
-<li><p>使用扩展类 React.Component，除非你有一个非常好的理由才使用 mixins</p>
+<li><p>使用扩展类 React.Component，除非你有一个非常好的理由才使用 mixins。</p>
 
 <div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
 <span class="pl-k">const</span> <span class="pl-c1">Listing</span> <span class="pl-k">=</span> React.createClass({
@@ -58,13 +54,11 @@
 }</pre></div></li>
 </ul>
 
-<p><a name="user-content-naming"></a></p>
-
-<h2><a id="user-content-命名" class="anchor" href="#命名" aria-hidden="true"><span class="octicon octicon-link"></span></a>命名</h2>
+<h2><a id="user-content-naming" class="anchor" href="#naming" aria-hidden="true"><span class="octicon octicon-link"></span></a>Naming</h2>
 
 <ul>
-<li><strong>后缀名</strong>：React 组件的后缀名请使用 <code>jsx</code>。</li>
-<li><strong>文件名</strong>：文件名请使用帕斯卡命名法。例如：<code>ReservationCard.jsx</code>。</li>
+<li><strong>后缀名</strong>：React 组件的后缀名请使用 jsx。</li>
+<li><strong>文件名</strong>：文件名请使用帕斯卡命名法。例如：ReservationCard.jsx。</li>
 <li><p><strong>参考命名规范</strong>: React 组件请使用帕斯卡命名法，组件的实例则使用驼峰式大小写：</p>
 
 <div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
@@ -79,7 +73,7 @@
 <span class="pl-c">// good</span>
 <span class="pl-k">const</span> <span class="pl-c1">reservationItem</span> <span class="pl-k">=</span> <span class="pl-k">&lt;</span>ReservationCard <span class="pl-k">/&gt;</span>;</pre></div>
 
-<p><strong>组件命名规范</strong>：文件名须和组件名一致。所以 <code>ReservationCard.jsx</code> 的名称必须为 <code>ReservationCard</code>。但对于目录的根组件请使用 <code>index.jsx</code> 作为文件名，并使用目录名作为组件的名称：</p>
+<p><strong>组件命名规范</strong>：文件名须和组件名一致。所以 ReservationCard.jsx 的名称必须为 ReservationCard。但对于目录的根组件请使用 index.jsx 作为文件名，并使用目录名作为组件的名称：</p>
 
 <div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
 <span class="pl-k">const</span> <span class="pl-c1">Footer</span> <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>./Footer/Footer.jsx<span class="pl-pds">'</span></span>)
@@ -90,8 +84,6 @@
 <span class="pl-c">// good</span>
 <span class="pl-k">const</span> <span class="pl-c1">Footer</span> <span class="pl-k">=</span> <span class="pl-c1">require</span>(<span class="pl-s"><span class="pl-pds">'</span>./Footer<span class="pl-pds">'</span></span>)</pre></div></li>
 </ul>
-
-<p><a name="user-content-declaration"></a></p>
 
 <h2><a id="user-content-声明" class="anchor" href="#声明" aria-hidden="true"><span class="octicon octicon-link"></span></a>声明</h2>
 
@@ -105,13 +97,9 @@
 });
 
 <span class="pl-c">// good</span>
-<span class="pl-k">class</span> <span class="pl-en">ReservationCard</span> <span class="pl-k">extends</span> <span class="pl-en">React.Component</span> {
-}
-
-<span class="pl-k">export</span> <span class="pl-k">default</span> ReservationCard;</pre></div></li>
+<span class="pl-k">export</span> <span class="pl-k">default</span> <span class="pl-k">class</span> <span class="pl-en">ReservationCard</span> <span class="pl-k">extends</span> <span class="pl-en">React.Component</span> {
+}</pre></div></li>
 </ul>
-
-<p><a name="user-content-alignment"></a></p>
 
 <h2><a id="user-content-对齐" class="anchor" href="#对齐" aria-hidden="true"><span class="octicon octicon-link"></span></a>对齐</h2>
 
@@ -140,12 +128,10 @@
 <span class="pl-k">&lt;/</span>Foo<span class="pl-k">&gt;</span></pre></div></li>
 </ul>
 
-<p><a name="user-content-quotes"></a></p>
-
 <h2><a id="user-content-引号" class="anchor" href="#引号" aria-hidden="true"><span class="octicon octicon-link"></span></a>引号</h2>
 
 <ul>
-<li><p>总是在 JSX 的属性使用双引号（<code>"</code>），但是所有的 JS 请使用单引号。</p>
+<li><p>总是在 JSX 的属性使用双引号（"），但是所有的 JS 请使用单引号。</p>
 
 <div class="highlight highlight-source-js"><pre><span class="pl-c">// bad</span>
 <span class="pl-k">&lt;</span>Foo bar<span class="pl-k">=</span><span class="pl-s"><span class="pl-pds">'</span>bar<span class="pl-pds">'</span></span> <span class="pl-k">/&gt;</span>
@@ -159,8 +145,6 @@
 <span class="pl-c">// good</span>
 <span class="pl-k">&lt;</span>Foo style<span class="pl-k">=</span>{{ left<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>20px<span class="pl-pds">'</span></span> }} <span class="pl-k">/&gt;</span></pre></div></li>
 </ul>
-
-<p><a name="user-content-spacing"></a></p>
 
 <h2><a id="user-content-空格" class="anchor" href="#空格" aria-hidden="true"><span class="octicon octicon-link"></span></a>空格</h2>
 
@@ -181,8 +165,6 @@
 <span class="pl-k">&lt;</span>Foo <span class="pl-k">/&gt;</span></pre></div></li>
 </ul>
 
-<p><a name="user-content-props"></a></p>
-
 <h2><a id="user-content-props" class="anchor" href="#props" aria-hidden="true"><span class="octicon octicon-link"></span></a>Props</h2>
 
 <ul>
@@ -200,8 +182,6 @@
   phoneNumber<span class="pl-k">=</span>{<span class="pl-c1">12345678</span>}
 <span class="pl-k">/&gt;</span></pre></div></li>
 </ul>
-
-<p><a name="user-content-parentheses"></a></p>
 
 <h2><a id="user-content-括号" class="anchor" href="#括号" aria-hidden="true"><span class="octicon octicon-link"></span></a>括号</h2>
 
@@ -224,14 +204,12 @@
   );
 }
 
-<span class="pl-c">// good, 当只有一行</span>
+<span class="pl-c">// good, when single line</span>
 <span class="pl-en">render</span>() {
   <span class="pl-k">const</span> <span class="pl-c1">body</span> <span class="pl-k">=</span> <span class="pl-k">&lt;</span>div<span class="pl-k">&gt;</span>hello<span class="pl-k">&lt;/</span>div<span class="pl-k">&gt;</span>;
   <span class="pl-k">return</span> <span class="pl-k">&lt;</span>MyComponent<span class="pl-k">&gt;</span>{body}<span class="pl-k">&lt;/</span>MyComponent<span class="pl-k">&gt;</span>;
 }</pre></div></li>
 </ul>
-
-<p><a name="user-content-tags"></a></p>
 
 <h2><a id="user-content-标签" class="anchor" href="#标签" aria-hidden="true"><span class="octicon octicon-link"></span></a>标签</h2>
 
@@ -257,8 +235,6 @@
 <span class="pl-k">/&gt;</span></pre></div></li>
 </ul>
 
-<p><a name="user-content-methods"></a></p>
-
 <h2><a id="user-content-方法" class="anchor" href="#方法" aria-hidden="true"><span class="octicon octicon-link"></span></a>方法</h2>
 
 <ul>
@@ -283,12 +259,10 @@ React.createClass({
 });</pre></div></li>
 </ul>
 
-<p><a name="user-content-ordering"></a></p>
-
 <h2><a id="user-content-排序" class="anchor" href="#排序" aria-hidden="true"><span class="octicon octicon-link"></span></a>排序</h2>
 
 <ul>
-<li><p>扩展类 React.Component 的排序:</p></li>
+<li><p>扩展类 React.Component 的排序：</p></li>
 </ul>
 
 <ol>
@@ -305,11 +279,11 @@ React.createClass({
 <li><em>clickHandlers or eventHandlers</em> like onClickSubmit() or onChangeDescription()</li>
 <li><em>getter methods for render</em> like getSelectReason() or getFooterContent()</li>
 <li><em>Optional render methods</em> like renderNavigation() or renderProfilePicture()</li>
-<li>render</li>
+<li><p>render</p></li>
 </ol>
 
 <ul>
-<li><p>如何定义 propTypes, defaultProps, contextTypes, etc...  </p>
+<li><p>如何定义 propTypes, defaultProps, contextTypes, 等...</p>
 
 <div class="highlight highlight-source-js"><pre><span class="pl-k">import</span> React, { Component, PropTypes } <span class="pl-k">from</span> <span class="pl-s"><span class="pl-pds">'</span>react<span class="pl-pds">'</span></span>;
 
@@ -323,7 +297,7 @@ React.createClass({
   text<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">'</span>Hello World<span class="pl-pds">'</span></span>,
 };
 
-<span class="pl-k">class</span> <span class="pl-en">Link</span> <span class="pl-k">extends</span> <span class="pl-en">Component</span> {
+<span class="pl-k">export</span> <span class="pl-k">default</span> <span class="pl-k">class</span> <span class="pl-en">Link</span> <span class="pl-k">extends</span> <span class="pl-en">Component</span> {
   <span class="pl-k">static</span> <span class="pl-en">methodsAreOk</span>() {
     <span class="pl-k">return</span> <span class="pl-c1">true</span>;
   }
@@ -334,9 +308,7 @@ React.createClass({
 }
 
 <span class="pl-c1">Link</span>.propTypes <span class="pl-k">=</span> propTypes;
-<span class="pl-c1">Link</span>.defaultProps <span class="pl-k">=</span> defaultProps;
-
-<span class="pl-k">export</span> <span class="pl-k">default</span> <span class="pl-c1">Link</span>;</pre></div></li>
+<span class="pl-c1">Link</span>.defaultProps <span class="pl-k">=</span> defaultProps;</pre></div></li>
 <li><p>React.createClass 的排序：</p></li>
 </ul>
 
@@ -364,7 +336,7 @@ React.createClass({
 <li>render</li>
 </ol>
 
-<!-- <p><strong><a href="#table-of-contents">⬆ 回到頂端</a></strong></p> -->
+<p><strong><a href="#table-of-contents">⬆ back to top</a></strong></p>
 </article>
 
 </body>
