@@ -8,13 +8,18 @@ group: navigation
 
 不管做什么事，我都希望把一件事做完。学业泛而不精，性格乐观向上（不好好学习，就知道傻笑）
 
+### 联系方式
+
+- 邮箱：[newpxm7@gmail.com](mailto:newpxm7@gmail.com)
+- stackoverflow: <http://stackoverflow.com/users/3053562/lincolnge>
+
 ### 兴趣
 
 - 喜欢户外（徒步，爬山，轮滑，骑车，游泳）
 - 乐于专研（跨前后端 + Native + Linux 内核）
 - 博览史书（三国隋唐帝国荣耀等）
 
-### 标准 
+### 标准
 
 - [编码规范](https://github.com/google/styleguide)
 - 书写规范
@@ -38,3 +43,4 @@ group: navigation
 - 2013年7月 写了一篇博客，hosts 相关的，被新浪恶意删帖，遂开始转博客
 - 2013年3月 写了第一篇博客，CSS 相关的。
 - 2011年12月 [在新浪博客安家](http://blog.sina.com.cn/s/blog_626a2e8d0100ydrr.html)。
+
