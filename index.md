@@ -11,7 +11,7 @@ tagline:
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     <div class="list"><time>{{ post.date | date_to_string }}</time></div>
     <p>{{ post.content | truncatewords:20 }}</p>
-    <a href="{{ post.url }}">More...</a>
+    <p><a href="{{ post.url }}">More...</a></p>
     <hr />
   {% endfor %}
 
