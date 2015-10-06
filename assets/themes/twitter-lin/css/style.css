@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Custom container */
 .container-narrow {
   margin: 0 auto;
@@ -106,7 +107,8 @@ embed {
 
 /* 鼠标悬停在导航栏的颜色 */
 /* 调整字体大小 */
-h2, .h2 {
+h2,
+.h2 {
   font-size: 26px; }
 
 /* 锚 */
