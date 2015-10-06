@@ -10,7 +10,7 @@ tagline:
   {% for post in site.posts limit: 4  %}
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
     <div class="list"><time>{{ post.date | date_to_string }}</time></div>
-    <p>{{ post.content }}</p>
+    <p>{{ post.content | truncatewords:20 }}</p>
     <a href="{{ post.url }}">More...</a>
     <hr />
   {% endfor %}
@@ -23,7 +23,7 @@ tagline:
     {% endfor %}
   </ul>
 
-	<a href="/archive.html">Continue...</a>
+  <a href="/archive.html">Continue...</a>
 
 </div>
 
