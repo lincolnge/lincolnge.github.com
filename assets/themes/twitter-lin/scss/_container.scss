@@ -1,0 +1,146 @@
+/* Custom container */
+.container-narrow {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+.navbar .nav {
+    float: right;
+}
+/* posts index */
+
+.post > h3.title {
+    position: relative;
+    padding-top: 10px;
+}
+
+.post > h3.title span.date {
+    position: absolute;
+    right: 0;
+    font-size: 0.9em;
+}
+
+.post > .more {
+    margin: 10px 0;
+    text-align: left;
+}
+/* post-full*/
+
+.post-full .date {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+/* tag_box */
+
+.tag_box {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+}
+
+.tag_box li {
+    line-height: 28px;
+}
+
+.tag_box li i {
+    opacity: 0.9;
+}
+
+.tag_box.inline li {
+    float: left;
+}
+
+.tag_box a {
+    padding: 3px 6px;
+    margin: 2px;
+    background: #eee;
+    color: #555;
+    border-radius: 3px;
+    text-decoration: none;
+    border: 1px dashed #cccccc;
+}
+
+.tag_box a span {
+    vertical-align: super;
+    font-size: 0.8em;
+}
+
+.tag_box a:hover {
+    background-color: #e5e5e5;
+}
+
+.tag_box a.active {
+    background: #57A957;
+    border: 1px solid #4c964d;
+    color: #FFF;
+}
+
+.navbar {
+    background-color: rgba(248, 248, 248, 0.8);
+}
+/* 调整导航栏排版 */
+
+.navbar .navbar-right>li>a {
+    padding: 10px 0px 10px;
+}
+
+.navbar-left {
+    padding-left: 15px;
+}
+
+.navbar-brand {
+    padding-left: 0px;
+}
+/* navbar 顶格 */
+
+.tag_box {
+    padding-left: 0px;
+}
+/* tags 顶格 */
+
+.navbar-left {
+    padding-left: 35px;
+}
+/*  适配 */
+
+img {
+    width: 100%;
+    height: 100%
+}
+
+embed {
+    width: 100%;
+}
+/* From bootstrap.2.2.2.min.css */
+
+.hidden-desktop {
+    display: none !important;
+}
+/* overwrite boostrap style */
+
+.navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: -32px
+}
+
+.navbar-default .navbar-left>li>a:hover {
+    background-color: rgba(231, 231, 231, 0.50);
+}
+/* 鼠标悬停在导航栏的颜色 */
+/* 调整字体大小 */
+
+h2,
+.h2 {
+    font-size: 26px;
+}
+/* 锚 */
+
+.anchor {
+    display: block;
+    height: 40px;
+    margin-top: -40px;
+    visibility: hidden;
+}
