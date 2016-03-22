@@ -36,3 +36,19 @@ Number(true) || +true // 1
 !!~0 // true index 场景下可用
 !!~-1 // false
 {% endhighlight %}
+
+### hash 无法通过 url 直接传递给后端
+
+可以用 JS 获取：
+
+{% highlight JavaScript %}
+$ var type = window.location.hash.substr(1);
+{% endhighlight %}
+
+或者用 encodeURIComponent() 方法转义:
+
+    encodeURIComponent('#')
+    "%23"
+
+### References:
+<http://www.ruanyifeng.com/blog/2011/03/url_hash.html>
