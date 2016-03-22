@@ -258,3 +258,7 @@ h2,
   height: 40px;
   margin-top: -40px;
   visibility: hidden; }
+
+img {
+  border: 1px solid gray;
+  border-radius: 4px; }
