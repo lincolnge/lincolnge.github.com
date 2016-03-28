@@ -2,8 +2,9 @@
 layout: post
 title: "[转载]Web Developer"
 description: ""
-category: Science and Technology
-tags: 
+category:
+- science
+tags:
 - 转载
 - JS
 - Web 开发

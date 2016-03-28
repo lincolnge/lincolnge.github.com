@@ -3,7 +3,8 @@ layout: post
 title: "Serendipity"
 date_time: "2016-03-20 10:35:32 +0800"
 description: ""
-category: programming
+category:
+- programming
 tags:
 - Conclusion
 ---

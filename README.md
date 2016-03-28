@@ -4,15 +4,23 @@
 
     $ gulp
 
-### other command
+### other command: Rakefile
 
 New post:
 
     $ rake post title="title name"
 
+Create a Page:
+
+    $ rake page name="about.md"
+
+## Lincoln's World
+
+<lincolnge.github.io>
+
 ## Jekyll
 
-Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. 
+Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites.
 
 For all usage and documentation please see: <http://jekyllrb.com/docs/home/>
 
