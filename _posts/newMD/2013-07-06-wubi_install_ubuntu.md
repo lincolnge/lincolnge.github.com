@@ -2,7 +2,7 @@
 layout: post
 title: wubi 安装 Ubuntu
 categories:
-- Science and Technology
+- science
 tags:
 - ubuntu
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Mac PROBLEMS
 categories:
-- Science and Technology
+- science
 tags:
 - Mac
 ---

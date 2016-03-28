@@ -2,7 +2,7 @@
 layout: post
 title: '[转载]git使用ssh密钥'
 categories:
-- Science and Technology
+- science
 tags:
 - Git
 - 转载

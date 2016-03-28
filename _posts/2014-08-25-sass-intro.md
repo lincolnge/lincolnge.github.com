@@ -2,13 +2,14 @@
 layout: post
 title: "Sass"
 description: ""
-category: programming
+category:
+- programming
 tags: [CSS, Web 开发]
 ---
 {% include JB/setup %}
 
 
-Sass 介绍 
+Sass 介绍
 ========
 Syntactically Awesome Stylesheets (Sass)
 
@@ -60,15 +61,15 @@ Sass 安装
 基本命令
 --------
 
-创建工程: 
-	
+创建工程:
+
 	$ compass create --bare --sass-dir "sass" --css-dir "css" --javascripts-dir "js" --images-dir "images"
 
 or
 
 	$ compass create pp -r susy -u susy
 
-监控: 
+监控:
 
 	$ compass watch
 
@@ -80,7 +81,7 @@ or
 - "不要重复自己" (DRY) 的准则。
 - 使代码更加清晰易读。
 
-References: 
+References:
 
 - Sass: Syntactically Awesome Style Sheets. <http://sass-lang.com/>
 - Sass vs. SCSS: which syntax is better?. <http://thesassway.com/editorial/sass-vs-scss-which-syntax-is-better>

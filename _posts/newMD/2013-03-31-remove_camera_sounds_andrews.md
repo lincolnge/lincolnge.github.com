@@ -2,7 +2,7 @@
 layout: post
 title: 静音
 categories:
-- Science and Technology
+- science
 tags:
 - Android
 ---
