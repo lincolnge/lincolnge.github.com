@@ -2,7 +2,7 @@
 layout: post
 title: '软文一则'
 categories:
-- Science and Technology
+- science
 tags:
 - '软文'
 ---

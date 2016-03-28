@@ -3,7 +3,8 @@ layout: post
 title: "Style Guide"
 date_time: "2015-09-16 11:42:21 +0800"
 description: ""
-category: programming
+category:
+- programming
 tags:
 - Conclusion
 ---

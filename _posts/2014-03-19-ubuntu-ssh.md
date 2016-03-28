@@ -2,8 +2,9 @@
 layout: post
 title: "Ubuntu ssh"
 description: ""
-category: 
-tags: 
+category:
+- programming
+tags:
 - Ubuntu
 ---
 {% include JB/setup %}
@@ -17,7 +18,7 @@ SSH是指Secure Shell,是一种安全的传输协议，Ubuntu客户端可以通�
 --------
 
 Ubuntu 安装 SSH Server:
-    
+
     $ sudo apt-get install openssh-server
 
 确认是否开启服务
@@ -26,8 +27,8 @@ Ubuntu 安装 SSH Server:
 
 如果看到 sshd 那说明 ssh-server 已经启动了
 
-如果没有则可以这样启动: 
-    
+如果没有则可以这样启动:
+
     $ sudo /etc/init.d/ssh start
 
 References:

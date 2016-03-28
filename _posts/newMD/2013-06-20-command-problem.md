@@ -2,7 +2,7 @@
 layout: post
 title: "bin/bash --login/"
 categories:
-- Science and Technology
+- science
 tags:
 - Ubuntu
 ---

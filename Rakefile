@@ -66,6 +66,7 @@ task :post do
     post.puts "date_time: \"#{Time.now}\""
     post.puts 'description: ""'
     post.puts "category:"
+    post.puts "- draft"
     post.puts "tags:"
     post.puts "---"
     post.puts "{% include JB/setup %}"
