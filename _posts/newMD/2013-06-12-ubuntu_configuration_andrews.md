@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu 配置安卓
 categories:
-- Science and Technology
+- science
 tags:
 - Android
 - Ubuntu

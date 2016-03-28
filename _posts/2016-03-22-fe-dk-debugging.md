@@ -4,6 +4,7 @@ title: "FE DK Debugging"
 date_time: "2016-03-22 11:23:24 +0800"
 description: ""
 category:
+- programming
 tags:
 ---
 {% include JB/setup %}

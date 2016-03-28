@@ -4,7 +4,7 @@ title: "MacTalk 跨越边界"
 date_time: "2016-03-28 00:20:58 +0800"
 description: ""
 category:
-- Science and Technology
+- science
 tags:
 ---
 {% include JB/setup %}

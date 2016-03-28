@@ -2,7 +2,7 @@
 layout: post
 title: 安卓SD卡输入输出
 categories:
-- Science and Technology
+- science
 tags: [Android]
 ---
 {% include JB/setup %}
