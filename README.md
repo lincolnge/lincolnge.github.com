@@ -16,7 +16,7 @@ Create a Page:
 
 ## Lincoln's World
 
-<lincolnge.github.io>
+<http://lincolnge.github.io>
 
 ## Jekyll
 
