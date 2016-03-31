@@ -9,6 +9,8 @@ tags:
 ---
 {% include JB/setup %}
 
+最近在看 MacTalk 的《跨越边境》，这是一本对我来说很值得拜读的书，给我启发很大，在这摘录了一些有意思的片段。
+
 ![](/files/images/mactalk_beyond/2.pic_hd.jpg)
 
 ![](/files/images/mactalk_beyond/3.pic_hd.dftemp.jpg)
