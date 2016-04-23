@@ -21,6 +21,7 @@ group: navigation
 
 ### 标准
 
+- [原则](science/2016/04/24/principle.html)
 - [编码规范](https://github.com/google/styleguide)
 - 书写规范
 - 完成的定义
@@ -43,4 +44,3 @@ group: navigation
 - 2013年7月 写了一篇博客，hosts 相关的，被新浪恶意删帖，遂开始转博客
 - 2013年3月 写了第一篇博客，CSS 相关的。
 - 2011年12月 [在新浪博客安家](http://blog.sina.com.cn/s/blog_626a2e8d0100ydrr.html)。
-
