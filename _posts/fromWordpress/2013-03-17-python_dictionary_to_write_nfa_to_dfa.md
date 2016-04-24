@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python用字典写NFA to DFA
+title: Python 用字典写 NFA to DFA
 categories:
 - programming
 tags:
@@ -53,13 +53,11 @@ dictNFA = {
 <div>q1的关键是它的'start'是true</div>
 <div>那么只能用循环一个一个找</div>
 
-<div>
     def seachStartOrAccept(startOrAccept): #这个是用来查账它开始start或者结束accept（accept就是两个圈）
         for x in xrange(0, len(dictNFA.keys())):
             if dictNFA.values()[x][startOrAccept]:
                 return dictNFA.keys()[x]
     dictNFA.values()[x][startOrAccept]其实是dictNFA.values()[x]['start']
-</div>
 
 <br />
 <pre>tmpII = list(set(tmpII))用这个函数是为了除掉列表里面的重复项，列表重复是允许的，字典里面重复是不允许的。</pre>
@@ -97,11 +95,11 @@ dictNFA = {
 <div>最后得到这个结构的字典：</div>
 
     dictDFAend = {
-        str(qA): { ’0′: 0, ’1′: 1, ‘start’: False, ‘acep’: False },
-        str(qB): { ’0′: 0, ’1′: 1, ‘start’: False, ‘acep’: False },
-        str(qC): { ’0′: 0, ’1′: 1, ‘start’: False, ‘acep’: False },
-        str(qD): { ’0′: 0, ’1′: 1, ‘start’: False, ‘acep’: False },
-        str(qE): { ’0′: 0, ’1′: 1, ‘start’: False, ‘acep’: False },
+        str(qA): { '0': 0, '1': 1, 'start': False, 'acep': False },
+        str(qB): { '0': 0, '1': 1, 'start': False, 'acep': False },
+        str(qC): { '0': 0, '1': 1, 'start': False, 'acep': False },
+        str(qD): { '0': 0, '1': 1, 'start': False, 'acep': False },
+        str(qE): { '0': 0, '1': 1, 'start': False, 'acep': False },
     }
 
 <div>NFA to DFA 原理如此图</div>
@@ -122,4 +120,3 @@ dictNFA = {
 <div>
 <img alt="" src="/files/images/626a2e8dgd81895f987bd&amp;690.jpg" width="397" height="800" name="image_operate_62251363500041337" />
 </div>
-
