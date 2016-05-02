@@ -5,24 +5,62 @@ tagline:
 ---
 {% include JB/setup %}
 
-<div>
+<!-- This loops through the paginated posts -->
+{% for post in paginator.posts %}
+  <h1>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+  </p>
+  <div class="content">
+    {{ post.content }}
+  </div>
+{% endfor %}
 
-  {% for post in site.posts limit: 4  %}
-    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <div class="list"><time>{{ post.date | date_to_string }}</time></div>
-    <p>{{ post.content | truncatewords:15 }}</p>
-    <p><a href="{{ post.url }}">More...</a></p>
-    <hr />
-  {% endfor %}
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+<nav>
+  <ul class="pagination">
+    {% if paginator.previous_page %}
+      <li>
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+      </li>
+    {% else %}
+      <li class="disabled">
+        <span>
+          <span aria-hidden="true">&laquo;</span>
+        </span>
+      </li>
+    {% endif %}
 
-  <ul>
-    {% for post in site.posts limit: 5 offset: 4 %}
-    <li class="list">
-      <time>{{ post.date | date_to_string }}</time> <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+    {% for page in (1..paginator.total_pages) %}
+      {% if page == paginator.page %}
+        <li class="active">
+          <a href="#">{{ page }}<span class="sr-only">(current)</span></a>
+        </li>
+      {% elsif page == 1 %}
+        <li>
+          <a href="/">{{ page }}</a>
+        </li>
+      {% else %}
+        <li>
+          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        </li>
+      {% endif %}
     {% endfor %}
+
+    {% if paginator.next_page %}
+      <li>
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+      </li>
+    {% else %}
+      <li class="disabled">
+        <span>
+          <span aria-hidden="true">&raquo;</span>
+        </span>
+      </li>
+    {% endif %}
   </ul>
-
-  <a href="/archive.html">Continue...</a>
-
-</div>
+<nav>
+{% endif %}
