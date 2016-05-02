@@ -9,7 +9,7 @@ tags:
 ---
 {% include JB/setup %}
 
-https://movie.douban.com/review/7877003/
+<https://movie.douban.com/review/7877003/>
 
 2016.05.02
 
@@ -41,7 +41,7 @@ https://movie.douban.com/review/7877003/
 
 想到现在国内的很多开发者大会，大家都是把很多好像核心技术的东西藏着掖着，而国外的开发者大会交流技术就是真的交流，没有什么留一手。我朋友参加完新加坡 blackhat 后回来跟我讲的。
 
-看完小说《师傅》，觉得电影比小说精彩。小说链接：https://www.douban.com/note/492185228/
+看完小说《师傅》，觉得电影比小说精彩。小说链接：<https://www.douban.com/note/492185228/>
 
 好看的电影是不是因为看不太懂，打了星，点了赞发现意犹未尽，遥想那江湖，不曾有念想，『你更漂亮，我不敢动一点心』。
 
