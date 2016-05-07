@@ -1,8 +1,8 @@
 ## Command
 
-### Run gulp server
+### Run server
 
-    $ gulp
+    $ npm run dev-server
 
 ### other command: Rakefile
 
