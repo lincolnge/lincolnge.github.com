@@ -57,7 +57,7 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('assets/themes/twitter-lin/scss/*.scss', ['sass']);
-    gulp.watch(['*.md', '_layouts/*.html', '_posts/*', '*.html', '_config.yml', 'assets/themes/twitter-lin/js/*.js'], ['jekyll-rebuild']);
+    gulp.watch(['*.md', '_layouts/*.html', '_posts/**/*', '*.html', '_config.yml', 'assets/themes/twitter-lin/js/*.js'], ['jekyll-rebuild']);
 });
 
 /**
