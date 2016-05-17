@@ -58,7 +58,8 @@ public @ResponseBody ModelMap printHello(@RequestBody ModelMap model) {
 
 ## Warninig：
 
-有个槽点，我在 Java 老是想用单引号，然后报错了。。。
+- 有个槽点，我在 Java 老是想用单引号，然后报错了。。。
+- ResponseBody 和 RequestBody 是不一样的，同样的坑踩多了就愚蠢了。
 
 ## References:
 
