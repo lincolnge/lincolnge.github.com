@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "reflect on myself thrice a day"
+title: "每日三省吾身，早上吃什么，中午吃什么，晚上吃什么"
 date_time: "2016-05-18 09:30:50 +0800"
 description: ""
 category:
