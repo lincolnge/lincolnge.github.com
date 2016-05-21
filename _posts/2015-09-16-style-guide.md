@@ -10,6 +10,10 @@ tags:
 ---
 {% include JB/setup %}
 
+## Style guides for Google-originated open-source projects
+
+<https://github.com/google/styleguide>
+
 ## 用更合理的方式写 JavaScript
 
 <https://github.com/lincolnge/javascript>
