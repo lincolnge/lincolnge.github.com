@@ -22,8 +22,8 @@ group: navigation
 ### 标准
 
 - [原则](science/2016/04/24/principle.html)
-- [编码规范](https://github.com/google/styleguide)
-- 书写规范
+- [编码规范](programming/2015/09/16/style-guide.html)
+- [书写规范](science/2016/05/21/copywriting-style-guid.html)
 - 完成的定义
 
 ### 作品
