@@ -29,6 +29,7 @@ group: navigation
 ### 作品
 
 - 请移步到 [Github](https://github.com/lincolnge)
+- 或 [portfolio](/portfolio.html)
 
 ### 技术
 

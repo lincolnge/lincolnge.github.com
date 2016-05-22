@@ -151,6 +151,11 @@
 .navbar .nav {
   float: right; }
 
+/* page */
+.page .content {
+  border-bottom: 1px dashed lightgray; }
+
+/* page end */
 /* posts index */
 .post > h3.title {
   position: relative;
@@ -165,11 +170,13 @@
   margin: 10px 0;
   text-align: left; }
 
-/* post-full*/
+/* posts index end */
+/* post-full */
 .post-full .date {
   margin-bottom: 20px;
   font-weight: bold; }
 
+/* post-full end */
 /* tag_box */
 .tag_box {
   list-style: none;
