@@ -11,8 +11,14 @@
 .navbar .nav {
     float: right;
 }
-/* posts index */
 
+/* page */
+.page .content {
+    border-bottom: 1px dashed lightgray;
+}
+/* page end */
+
+/* posts index */
 .post > h3.title {
     position: relative;
     padding-top: 10px;
@@ -28,14 +34,16 @@
     margin: 10px 0;
     text-align: left;
 }
-/* post-full*/
+/* posts index end */
 
+/* post-full */
 .post-full .date {
     margin-bottom: 20px;
     font-weight: bold;
 }
-/* tag_box */
+/* post-full end */
 
+/* tag_box */
 .tag_box {
     list-style: none;
     margin: 0;
@@ -82,8 +90,8 @@
 .navbar {
     background-color: rgba(248, 248, 248, 0.8);
 }
-/* 调整导航栏排版 */
 
+/* 调整导航栏排版 */
 .navbar .navbar-right>li>a {
     padding: 10px 0px 10px;
 }
@@ -115,13 +123,13 @@ img {
 embed {
     width: 100%;
 }
-/* From bootstrap.2.2.2.min.css */
 
+/* From bootstrap.2.2.2.min.css */
 .hidden-desktop {
     display: none !important;
 }
-/* overwrite boostrap style */
 
+/* overwrite boostrap style */
 .navbar-collapse .navbar-nav.navbar-right:last-child {
     margin-right: -32px
 }
@@ -130,14 +138,14 @@ embed {
     background-color: rgba(231, 231, 231, 0.50);
 }
 /* 鼠标悬停在导航栏的颜色 */
-/* 调整字体大小 */
 
+/* 调整字体大小 */
 h2,
 .h2 {
     font-size: 26px;
 }
-/* 锚 */
 
+/* 锚 */
 .anchor {
     display: block;
     height: 40px;
