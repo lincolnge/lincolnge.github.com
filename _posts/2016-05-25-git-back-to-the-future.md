@@ -53,7 +53,7 @@ tags:
     * 17aa86b Add copywriter style and update about.
     * 3d60303 Update content ponctuation
 
-执行 `$ git rebase -i HEAD~5`，没有进行任何操作，就退出，执行 `￥ git log --oneline --graph --decorate --all` 可以看到，现在我们的 git flow 是：
+执行 `$ git rebase -i HEAD~5`，没有进行任何操作，就退出，执行 `$ git log --oneline --graph --decorate --all` 可以看到，现在我们的 git flow 是：
 
     * f423ed9 (HEAD -> test) add draft
     | * 79bdd26 (origin/master, origin/HEAD, master) add post git back to the future
@@ -197,33 +197,87 @@ tags:
     hint: with 'git add <paths>' or 'git rm <paths>'
     hint: and commit the result with 'git commit'
 
-这三句就是冲突的意思了。解决一下冲突，然后执行 `$ git cherry-pick --continue`，不像 git rebase，git cherry-pick 没有 --skip 方法。
+这三句就是冲突的意思了。解决一下冲突，然后执行 `$ git cherry-pick --continue`，不像 git rebase，git cherry-pick 没有 --skip 方法。和 rebase 一样可以执行 `git cherry-pick --abort` 终止命令。
 
 ## git filter-branch
 
-批量修改 branch
+`git filter-branch` 这个命令非常强大，可以批量改写历史，当前 branch 中所有的 commit 的历史或者所有分支，可以选择适用的范围。
+
+批量删除指定的 filename 文件：
 
     $ git filter-branch --tree-filter 'rm -f filename' -- --all
+
+例如：
+
+    $ git filter-branch --tree-filter 'rm -f test' -- --all
+    Cannot rewrite branches: You have unstaged changes.
+
+当然当前不能有修改，可以先执行 `$ git stash` 命令。
+
+    $ git filter-branch --tree-filter 'rm -f test' -- --all
+    Cannot create a new backup.
+    A previous backup already exists in refs/original/
+    Force overwriting the backup with -f
+
+出现这一句说明之前曾经执行过 git filter-branch，然后在 refs/original/ 有一个备份，这个时候只要删掉那个备份即可，删除备份命令为 `git update-ref -d refs/original/refs/heads/master`，或执行 `$ git filter-branch -f --tree-filter -f 'rm -f test' -- --all`。
+
+    $ git filter-branch -f --tree-filter 'rm -f test' -- --all
+    Rewrite 283f0899973f574fd879f565b69da2705dc3ede7 (406/412) (24 seconds passed, remaining 0 predicted)
+    WARNING: Ref 'refs/heads/master' is unchanged
+    WARNING: Ref 'refs/heads/release' is unchanged
+    Ref 'refs/heads/test' was rewritten
+    Ref 'refs/heads/test2' was rewritten
+    Ref 'refs/heads/test3' was rewritten
+    Ref 'refs/heads/test4' was rewritten
+    Ref 'refs/heads/test5' was rewritten
+    Ref 'refs/heads/test6' was rewritten
+    WARNING: Ref 'refs/remotes/origin/master' is unchanged
+    WARNING: Ref 'refs/remotes/origin/master' is unchanged
+    WARNING: Ref 'refs/remotes/origin/release' is unchanged
+    WARNING: Ref 'refs/stash' is unchanged
+
+看看改了什么 `$ git status`：
+
+    $ git st
+    On branch master
+    Your branch is ahead of 'origin/master' by 2 commits.
+      (use "git push" to publish your local commits)
+    nothing to commit, working directory clean
+
+看看 `.git/refs/original/` 里有啥：
+
+    $ l .git/refs/original/refs/heads/
+    total 24K
+    drwxr-xr-x 8 wanggengzhou staff 272 May 30 00:12 ./
+    drwxr-xr-x 3 wanggengzhou staff 102 May 30 00:09 ../
+    -rw-r--r-- 1 wanggengzhou staff  41 May 30 00:11 test
+    -rw-r--r-- 1 wanggengzhou staff  41 May 30 00:11 test2
+    -rw-r--r-- 1 wanggengzhou staff  41 May 30 00:11 test3
+    -rw-r--r-- 1 wanggengzhou staff  41 May 30 00:11 test4
+    -rw-r--r-- 1 wanggengzhou staff  41 May 30 00:12 test5
+    -rw-r--r-- 1 wanggengzhou staff  41 May 30 00:12 test6
+
+    $ cat .git/refs/original/refs/heads/test
+    a1029f5cce896f6d65dfbc5edfcf3487459aad3b
+
+`refs/original/` 里保存的就是 hash 值。其他命令介绍。
 
 更改历史提交中某一提交者的姓名及邮件地址。
 
     $ git filter-branch --commit-filter '
-          if [ "$GIT_AUTHOR_NAME" = "Xin Jiang" ]; then
-              GIT_AUTHOR_NAME="Jiang Xin"
-              GIT_AUTHOR_EMAIL="jiangxin@ossxp.com"
-              GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-              GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+          if [ "$GIT_AUTHOR_NAME" = "WangGengZhou" ]; then
+              GIT_AUTHOR_NAME="lincolnge"
+              GIT_AUTHOR_EMAIL="326684793@qq.com"
           fi
           git commit-tree "$@";
           ' HEAD
 
-<http://www.worldhello.net/gotgit/06-migrate/050-git-to-git.html>
-
 为了避免因操作错误造 repo 损坏，git 会在 filter-branch 操作实际改写历史时，自动将原 refs 备份到 refs/original/ 下。
-
-<http://loveky2012.blogspot.com/2012/08/git-command-git-filter-branch.html>
-<https://git-scm.com/docs/git-filter-branch>
 
 ## Reference:
 
-- <https://git-scm.com/docs/git-rebase>
+- Git Documentation. <https://git-scm.com/docs/git-rebase>
+- Git Documentation. <https://git-scm.com/docs/git-cherry-pick>
+- Git Documentation. <https://git-scm.com/docs/git-filter-branch>
+- GotGit. <http://www.worldhello.net/gotgit/06-migrate/050-git-to-git.html>
+- loveky的一亩三分地. <http://loveky2012.blogspot.com/2012/08/git-command-git-filter-branch.html>
