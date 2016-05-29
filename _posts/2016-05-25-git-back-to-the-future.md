@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "git 回到未来"
+title: "Git 回到未来"
 date_time: "2016-05-25 21:02:46 +0800"
 description: ""
 category:
@@ -141,6 +141,32 @@ tags:
     * 3d60303 Update content ponctuation
 
 这就是我们对过去进行了矫正，然后影响了我们的未来。
+
+    # r, reword = use commit, but edit the commit message$
+    # e, edit = use commit, but stop for amending$
+    # s, squash = use commit, but meld into previous commit$
+    # f, fixup = like "squash", but discard this commit's log message$
+    # x, exec = run command (the rest of the line) using shell$
+    # d, drop = remove commit$
+
+看一下我们剩下的还有什么命令，edit、squash、fixup、exec、drop。顾名思义，edit 就是回到我们过去的那个时间点，然后对当时的 commit 进行修改，你可以直接在那个 commit 时间下添加新的 commit 或者你做你想做的任何一件事，结束后就执行 `git rebase --continue` 回到未来。
+
+在 edit 状态下，我们同样可以执行 `git rebase --edit-todo` 看未来的 commit 或者对未来的 commit 执行类似 edit、squash、fixup、exec、drop 操作。
+
+- squash 就是把指定的 commit 与它之前的 commit 合并，比如说你写了很多 fix bug、fix bug 的 commit，可以用这个 squash 统一变成一个 commit。
+- fixup 与 squash 类似，但是它放弃了自己的部分权利，就是修改 commit comment 的信息。直接就合到它之前的 commit 了。
+- drop 放弃这个 commit
+- exec 也是一个很有趣的命令，它能让你到某个过去，然后执行指定的命令。
+
+    pick 3d60303 Update content ponctuation$
+    exec npm run test
+    pick 17aa86b Add copywriter style and update about.$
+    exec npm run test
+    pick 27729ba Update style guide$
+    exec npm run test
+    pick 3f90bbf Update css and about$
+    exec npm run test
+    pick 86a43d2 add draft$
 
 ## git cherry-pick
 
