@@ -44,6 +44,8 @@ tags:
 
 原本我们的 git flow 是：
 
+    $ git log --oneline --graph --decorate --all
+
     * ed4c919 add draft
     *   f105e3d Merge pull request #11 from lincolnge/release
     |\
@@ -177,6 +179,7 @@ tags:
 这个命令相对于 git rebase 来说，简单得多了，它就是把某个 commit 提取出来，放置到当前 branch 的 HEAD 上。
 
     $ git cherry-pick 27729ba 17aa86b 3d60303 b2811ee f891ff0 7d3e6ae 7256dc9 30cb9d5 d9c90e4
+
     [test 1de481e] Update style guide
     Author: lincolnge <326684793@qq.com>
     Date: Sat May 21 22:07:37 2016 +0800
@@ -210,18 +213,23 @@ tags:
 例如：
 
     $ git filter-branch --tree-filter 'rm -f test' -- --all
+
     Cannot rewrite branches: You have unstaged changes.
 
-当然当前不能有修改，可以先执行 `$ git stash` 命令。
+当然不能有修改，可以先执行 `$ git stash` 命令。
 
     $ git filter-branch --tree-filter 'rm -f test' -- --all
+
     Cannot create a new backup.
     A previous backup already exists in refs/original/
     Force overwriting the backup with -f
 
 出现这一句说明之前曾经执行过 git filter-branch，然后在 refs/original/ 有一个备份，这个时候只要删掉那个备份即可，删除备份命令为 `git update-ref -d refs/original/refs/heads/master`，或执行 `$ git filter-branch -f --tree-filter -f 'rm -f test' -- --all`。
 
+为了避免因操作错误造 repo 损坏，git 会在 filter-branch 操作实际改写历史时，自动将原 refs 备份到 refs/original/ 下。
+
     $ git filter-branch -f --tree-filter 'rm -f test' -- --all
+
     Rewrite 283f0899973f574fd879f565b69da2705dc3ede7 (406/412) (24 seconds passed, remaining 0 predicted)
     WARNING: Ref 'refs/heads/master' is unchanged
     WARNING: Ref 'refs/heads/release' is unchanged
@@ -239,6 +247,7 @@ tags:
 看看改了什么 `$ git status`：
 
     $ git st
+
     On branch master
     Your branch is ahead of 'origin/master' by 2 commits.
       (use "git push" to publish your local commits)
@@ -247,6 +256,7 @@ tags:
 看看 `.git/refs/original/` 里有啥：
 
     $ l .git/refs/original/refs/heads/
+
     total 24K
     drwxr-xr-x 8 wanggengzhou staff 272 May 30 00:12 ./
     drwxr-xr-x 3 wanggengzhou staff 102 May 30 00:09 ../
@@ -271,8 +281,6 @@ tags:
           fi
           git commit-tree "$@";
           ' HEAD
-
-为了避免因操作错误造 repo 损坏，git 会在 filter-branch 操作实际改写历史时，自动将原 refs 备份到 refs/original/ 下。
 
 ## Reference:
 
