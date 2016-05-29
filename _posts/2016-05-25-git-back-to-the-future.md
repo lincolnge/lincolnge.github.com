@@ -158,6 +158,8 @@ tags:
 - drop 放弃这个 commit
 - exec 也是一个很有趣的命令，它能让你到某个过去，然后执行指定的命令。
 
+如下：
+
     pick 3d60303 Update content ponctuation$
     exec npm run test
     pick 17aa86b Add copywriter style and update about.$
@@ -168,9 +170,34 @@ tags:
     exec npm run test
     pick 86a43d2 add draft$
 
+友情提示，我们在解决冲突的时候有个命令叫 `$ git rebase --skip`，可以认为是去掉冲突的代码，也就是和遵从 git rebase <branch0>，branch0 的那个分支。
+
 ## git cherry-pick
 
-把某个 commit 提取出来，放置到当前 branch 的 HEAD 上。
+这个命令相对于 git rebase 来说，简单得多了，它就是把某个 commit 提取出来，放置到当前 branch 的 HEAD 上。
+
+    $ git cherry-pick 27729ba 17aa86b 3d60303 b2811ee f891ff0 7d3e6ae 7256dc9 30cb9d5 d9c90e4
+    [test 1de481e] Update style guide
+    Author: lincolnge <326684793@qq.com>
+    Date: Sat May 21 22:07:37 2016 +0800
+    1 file changed, 4 insertions(+)
+    [test a5b1c9b] Add copywriter style and update about.
+    Author: lincolnge <326684793@qq.com>
+    Date: Sat May 21 22:06:21 2016 +0800
+    2 files changed, 23 insertions(+), 2 deletions(-)
+    create mode 100644 _posts/2016-05-21-copywriting-style-guid.md
+    error: could not apply 3d60303... Update content ponctuation
+    hint: after resolving the conflicts, mark the corrected paths
+    hint: with 'git add <paths>' or 'git rm <paths>'
+    hint: and commit the result with 'git commit'
+
+遇到冲突（conflict），
+
+    hint: after resolving the conflicts, mark the corrected paths
+    hint: with 'git add <paths>' or 'git rm <paths>'
+    hint: and commit the result with 'git commit'
+
+这三句就是冲突的意思了。解决一下冲突，然后执行 `$ git cherry-pick --continue`，不像 git rebase，git cherry-pick 没有 --skip 方法。
 
 ## git filter-branch
 
@@ -192,7 +219,7 @@ tags:
 
 <http://www.worldhello.net/gotgit/06-migrate/050-git-to-git.html>
 
-为了避免因操作错误造repo损坏，git会在filter-branch操作实际改写历史时，自动将原refs备份到refs/original/下。
+为了避免因操作错误造 repo 损坏，git 会在 filter-branch 操作实际改写历史时，自动将原 refs 备份到 refs/original/ 下。
 
 <http://loveky2012.blogspot.com/2012/08/git-command-git-filter-branch.html>
 <https://git-scm.com/docs/git-filter-branch>
