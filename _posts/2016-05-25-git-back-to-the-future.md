@@ -202,6 +202,89 @@ tags:
 
 这三句就是冲突的意思了。解决一下冲突，然后执行 `$ git cherry-pick --continue`，不像 git rebase，git cherry-pick 没有 --skip 方法。和 rebase 一样可以执行 `git cherry-pick --abort` 终止命令。
 
+### 拓展与 git rebase & git merge 的联合使用。
+
+我们可以测试一下当我们 cherry-pick 某个分支的某个 commit 之后，重新去合对应的分支，是否会产生冲突。
+
+    $ git co -b test2
+
+    $ git log --oneline --graph --decorate
+    * ed4c919 (HEAD -> test, master) add draft
+    *   f105e3d Merge pull request #11 from lincolnge/release
+    |\
+    | * 3f90bbf Update css and about
+    |/
+    * 27729ba Update style guide
+    * 17aa86b Add copywriter style and update about.
+    * 3d60303 Update content ponctuation
+
+看到我们的树状结构是这样的。
+
+    $ git reset --hard HEAD~3
+    HEAD is now at 17aa86b Add copywriter style and update about.
+
+    $ git log --oneline --graph --decorate
+    * 17aa86b (HEAD -> test) Add copywriter style and update about.
+    * 3d60303 Update content ponctuation
+    * b2811ee Update post content
+    * f891ff0 Update post title
+    * 7d3e6ae Update post title
+
+    $ git cherry-pick ed4c919
+    [test eeadbc2] add draft
+     Author: wanggengzhou <326684793@qq.com>
+     Date: Sat Oct 3 15:01:24 2015 0800
+     3 files changed, 978 insertions()
+     create mode 100644 _posts/2015-06-09-web.md
+     create mode 100644 _posts/reading/2015-06-24-the-art-of-speak.md
+     create mode 100644 _posts/reading/2015-08-23-tan-xiu-yang.md
+
+    $ git log --oneline --graph --decorate
+    * eeadbc2 (HEAD -> test) add draft
+    | * ed4c919 (master) add draft
+    | *   f105e3d Merge pull request #11 from lincolnge/release
+    | |\
+    | | * 3f90bbf Update css and about
+    | |/
+    | * 27729ba Update style guide
+    |/
+    * 17aa86b Add copywriter style and update about.
+    * 3d60303 Update content ponctuation
+
+看到我们这个时候的状态，我们可以选择 git merge 或 git rebase master 分支。
+
+    $ git co -b test2
+
+checkout 一个新的分支，test 用来执行 git rebase，test2 用来执行 git merge。
+
+    $ git merge master
+
+    *   395d3bd (HEAD -> test2) Merge branch 'master' into test2
+    |\
+    | * ed4c919 (master) add draft
+    | *   f105e3d Merge pull request #11 from lincolnge/release
+    | |\
+    | | * 3f90bbf Update css and about
+    | |/
+    | * 27729ba Update style guide
+    * | eeadbc2 (test) add draft
+    |/
+    * 17aa86b Add copywriter style and update about.
+
+    $ git rebase master
+
+    * ed4c919 (HEAD -> test, master) add draft
+    *   f105e3d Merge pull request #11 from lincolnge/release
+    |\
+    | * 3f90bbf Update css and about
+    |/
+    * 27729ba Update style guide
+    * 17aa86b Add copywriter style and update about.
+    * 3d60303 Update content ponctuation
+    * b2811ee Update post content
+
+我们可以发现执行完 rebase 得到的结果，与 master 的结果是一样的。结论：rebase 是个神奇的命令。使用 cherry-pick 不会产生的冲突。
+
 ## git filter-branch
 
 `git filter-branch` 这个命令非常强大，可以批量改写历史，当前 branch 中所有的 commit 的历史或者所有分支，可以选择适用的范围。
