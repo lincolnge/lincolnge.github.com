@@ -119,10 +119,12 @@ Pic:
 Java Spring Code:
 
 {% highlight Java linenos %}
-@RequestMapping(value="/api/testJson")
-public @ResponseBody ModelMap printHello(@RequestBody ModelMap model) {
+@ResponseBody
+@RequestMapping(value="/api/test.json")
+public ModelMap printJson(@RequestBody ModelMap model) {
     System.out.println("Hello, model");
     System.out.println(model);
+    System.out.println(model.get("id")); // if not id, it will be null
     return model;
 }
 {% endhighlight %}
