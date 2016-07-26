@@ -22,6 +22,10 @@ JavaScript 秘密花园在 MIT license 许可协议下发布，并存放在 GitH
 
 <http://bonsaiden.github.io/JavaScript-Garden/zh/>
 
+### Others
+
+[有哪些短小却令人惊叹的javascript代码？](https://www.zhihu.com/question/46943112)
+
 ### 奇技淫巧：
 
 {% highlight JavaScript linenos %}
