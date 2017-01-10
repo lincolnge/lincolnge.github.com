@@ -4,7 +4,7 @@ title: "重构（一）"
 date_time: "2016-07-06 08:55:27 +0800"
 description: ""
 category:
-- draft
+- reading
 tags:
 ---
 {% include JB/setup %}

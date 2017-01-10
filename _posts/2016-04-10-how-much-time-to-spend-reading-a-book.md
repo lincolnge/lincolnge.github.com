@@ -4,7 +4,7 @@ title: "读一本书需要花多少时间"
 date_time: "2016-04-10 23:11:30 +0800"
 description: ""
 category:
-- draft
+- science
 tags:
 ---
 {% include JB/setup %}

@@ -4,7 +4,7 @@ title: "why post data choose json not form"
 date_time: "2016-06-09 11:04:14 +0800"
 description: ""
 category:
-- draft
+- science
 tags:
 ---
 {% include JB/setup %}
