@@ -134,6 +134,6 @@ JB :
 
 # PAGINATION
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate: 10
 paginate_path: "/blog/page/:num/"
