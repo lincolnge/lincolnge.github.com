@@ -4,7 +4,7 @@ title: "Rem 自适应页面的布局配置"
 date_time: "2017-09-24 23:42:36 +0800"
 description: ""
 category:
-- draft
+- programming
 tags:
 ---
 {% include JB/setup %}
@@ -53,7 +53,7 @@ w[on]('load', setRem, false);
 
 只是如上设置发现，有问题的设备将会闪一下，毕竟 rem 突然变化了一下，简单的做法就是先 display none，好了再 display block。
 
-但是设置 display none，会发现没有问题的设备白屏时间过长。这个不难忍。经测试只有安卓的设备会有问题，iOS 上没有看到问题，因此这些操作可以只在安卓生效。安卓一开始可以拿到一个错误的 innerWidth 然后 inneWidth 很大，通常大于 500，因此可以这么设定。
+但是设置 display none，会发现没有问题的设备白屏时间过长。这个不能忍。经测试只有安卓的设备会有问题，iOS 上没有看到问题，因此这些操作可以只在安卓生效。安卓一开始可以拿到一个错误的 innerWidth 然后 inneWidth 很大，通常大于 500，因此可以这么设定。
 
 {% highlight JavaScript linenos %}
 if (w.innerWidth > 500 && isAnd) {
@@ -169,3 +169,4 @@ w[on]('resize', setRem, false);
 ## References:
 
 * 移动端网页 rem响应式布局 最佳实践代码. <https://github.com/jieyou/rem_layout>
+* CSS3动画那么强，requestAnimationFrame还有毛线用？. <http://www.zhangxinxu.com/wordpress/2013/09/css3-animation-requestanimationframe-tween-%E5%8A%A8%E7%94%BB%E7%AE%97%E6%B3%95/>
