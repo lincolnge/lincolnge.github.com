@@ -7,6 +7,14 @@ exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 highlighter: rouge
 # auto: true # 不再需要这一行
 
+jekyll_admin:
+  # hidden_links:
+  #   - posts
+  #   - pages
+  #   - staticfiles
+  #   - datafiles
+  #   - configuration
+
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
