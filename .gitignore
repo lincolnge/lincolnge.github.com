@@ -11,3 +11,6 @@ Thumbs.db
 .rvmrc
 
 Gemfile.lock
+
+*.log
+tmp/
