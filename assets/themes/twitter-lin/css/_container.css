@@ -148,3 +148,7 @@ td {
 pre.lineno {
   width: 40px;
 }
+.navbar-search {
+  margin: 8px;
+  width: 80px;
+}

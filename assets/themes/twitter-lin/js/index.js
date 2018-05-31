@@ -1,6 +1,12 @@
 /* */
 $(function () {
-
+  $('body').on('keyup', '.JS_search', function(e) {
+    var url = 'https://www.google.com.hk/search?q=site%3Alincolnge.github.io+';
+    var value =  e.target.value;
+    if (e.keyCode === 13) {
+      window.open(url + value);
+    }
+  });
 });
 
 // SetRem
