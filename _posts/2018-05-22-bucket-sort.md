@@ -44,6 +44,35 @@ tags:
 - 最大值如果一开始已知就设置，若未知可先设置某个值，之后加桶
 - 知道最大值的情况下，不限制空间。均匀分布的数字数组。
 
+简单的代码实现
+
+```
+function bucketSort (arr) {
+  // 假设我们排序的范围为0-10 那么我们准备11个桶来放这些数字
+  let buckets = new Array(11).fill(0)
+  let newArr = []
+
+  // 装桶
+  arr.forEach(val => {
+    console.log('val', val)
+    buckets[val]++
+  })
+  console.log('arr', arr)
+  console.log('buckets', buckets)
+
+  buckets.forEach((val, index) => {
+    console.log('in val, index', val, index);
+    for (let i = 1; i <= val; i++) {
+      newArr.push(index)
+    }
+  })
+
+  return newArr
+}
+
+console.log(bucketSort([5, 3, 5, 2, 8]))
+```
+
 TODO: 使用场景可能需要补充或调整
 
 to be continue...
