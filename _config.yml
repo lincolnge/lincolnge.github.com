@@ -3,7 +3,7 @@
 # permalink: /:categories/:year/:month/:day/:title
 markdown: kramdown
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "node_modules"]
 highlighter: rouge
 # auto: true # 不再需要这一行
 
