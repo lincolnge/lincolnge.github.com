@@ -4,6 +4,7 @@
   "description": "A starter project including full setup for Jekyll, GulpJS, SASS & BrowserSync",
   "main": "gulpfile.js",
   "scripts": {
+    "dev": "node_modules/.bin/gulp",
     "dev-server": "node_modules/.bin/gulp",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postshrinkwrap": "bash ./bin/postshrinkwrap.sh"
