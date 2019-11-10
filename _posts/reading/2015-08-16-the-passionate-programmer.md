@@ -6,7 +6,6 @@ description: ""
 category: reading
 tags: []
 ---
-{% include JB/setup %}
 
 [美] Chad Fowler [《我编程，我快乐》](http://book.douban.com/subject/4923179/) 阅读笔记
 

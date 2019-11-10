@@ -7,7 +7,6 @@ category:
 - science
 tags:
 ---
-{% include JB/setup %}
 
 写了那么多语言了，面向对象和结构化编程都理解了吗？各种语言的面向对象的继承有什么不一样呢？
 

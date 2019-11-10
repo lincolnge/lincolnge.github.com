@@ -6,7 +6,6 @@ description: ""
 category: reading
 tags: []
 ---
-{% include JB/setup %}
 
 [英国]约翰·H. 阿诺德 [《历史之源》](http://book.douban.com/subject/3225821/) 读书笔记
 

@@ -6,7 +6,6 @@ categories:
 tags:
 - API
 ---
-{% include JB/setup %}
 
 <iframe src="/files/code/map.html" width="100%" height="100%" frameborder="0" scrolling="no"> </iframe>
 

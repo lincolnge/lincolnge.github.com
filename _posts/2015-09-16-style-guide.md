@@ -8,7 +8,6 @@ category:
 tags:
 - Conclusion
 ---
-{% include JB/setup %}
 
 ## Style guides for Google-originated open-source projects
 

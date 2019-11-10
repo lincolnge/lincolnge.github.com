@@ -7,7 +7,6 @@ tags:
 - Robot
 - BASIC
 ---
-{% include JB/setup %}
 
     实验一：I/O控制
     ' {$STAMP BS2}
@@ -15,7 +14,7 @@ tags:
     DO
     LOW   0      :I/O口输出低电平
     LOW    1      :I/O口输出低电平
-    PAUSE  1000   :延时1000ms  
+    PAUSE  1000   :延时1000ms
     HIGH   0      :I/O口输出高电平
     HIGH   1      :I/O口输出高电平
     LOOP
@@ -36,7 +35,7 @@ tags:
     count2 VAR byte      ：count2为8位变量0-255
     count3 VAR nib       ：count3为4位变量0-15
     count4 VAR bit       ：count4为1位变量0-1
-    FOR count1 =1 TO 100   
+    FOR count1 =1 TO 100
       PULSOUT 12,735
       PULSOUT 13,755
       PAUSE  20
@@ -49,7 +48,7 @@ tags:
     count3 VAR Nib
     count4 VAR Bit
     DO
-      GOSUB Backward         ：调用子程序Backward  
+      GOSUB Backward         ：调用子程序Backward
       GOSUB liftward           ：调用子程序liftward
       GOSUB Forward          ：调用子程序Forward
     LOOP

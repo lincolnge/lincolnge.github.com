@@ -6,7 +6,6 @@ categories:
 tags:
 - Android
 ---
-{% include JB/setup %}
 
 去掉安卓相机声音
 =========
@@ -17,7 +16,7 @@ Root 安卓
 
 百度百科: [安卓root权限](http://baike.baidu.com/link?url=8-zk0r3F5zdymwIb7Afbq0eQoUX87X3jY7Q4pbXIchU7iyiRO9yVn-80eiBFZppxzUVFXtsVWEs2CEoW9bkhq_)
 
-简而言之: 就是类似苹果的越狱  
+简而言之: 就是类似苹果的越狱
 ps: 找工具 root, 本文暂时不提供 root 方法.
 
 安装 RE 文件管理器(Root Explorer)

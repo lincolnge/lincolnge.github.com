@@ -5,7 +5,6 @@ categories:
 - science
 tags: [Android]
 ---
-{% include JB/setup %}
 
 
 1、首先AndroidManifest.xml里面要写权限，如下：

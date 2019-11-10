@@ -6,7 +6,6 @@ description: ""
 category: reading
 tags: []
 ---
-{% include JB/setup %}
 
  [美] 凯利·麦格尼格尔 [《自控力》](http://book.douban.com/subject/10786473/) 读书笔记
 

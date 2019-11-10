@@ -6,7 +6,6 @@ description: ""
 category: reading
 tags: []
 ---
-{% include JB/setup %}
 
 蔡学镛 [《Java夜未眠》](http://book.douban.com/subject/1106248/) 阅读笔记
 

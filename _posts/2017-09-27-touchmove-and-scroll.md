@@ -7,4 +7,3 @@ category:
 - draft
 tags:
 ---
-{% include JB/setup %}

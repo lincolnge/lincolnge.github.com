@@ -6,7 +6,6 @@ description: ""
 category: reading
 tags: []
 ---
-{% include JB/setup %}
 
 [美] Eric A. Meyer [《CSS 3权威指》](http://book.douban.com/subject/1240134/) 阅读笔记
 

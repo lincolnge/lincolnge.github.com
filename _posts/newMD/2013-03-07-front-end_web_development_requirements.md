@@ -6,9 +6,8 @@ categories:
 tags:
 - Web 开发
 ---
-{% include JB/setup %}
 
-    要求  
+    要求
     - 高超的原生JavaScript开发水平和丰富经验。最好参与过框架研发或深入研读开源js框架代码。
     - 精通HTML5、CSS，AJAX及前端性能优化，能高效开发兼容各种现代浏览器的前端代码。
     - 熟练使用jQuery，了解其它几种js框架的设计与使用。研读过jQuery等框架代码最佳。

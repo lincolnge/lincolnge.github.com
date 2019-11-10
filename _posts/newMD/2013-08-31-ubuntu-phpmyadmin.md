@@ -3,11 +3,10 @@ layout: post
 title: ubuntu phpmyadmin
 categories:
 - programming
-tags: 
+tags:
 - Ubuntu
 - PHP
 ---
-{% include JB/setup %}
 
 安装phpmyadmin在/usr/share/phpmyadmin目录下：sudo apt-get install phpmyadmin
 

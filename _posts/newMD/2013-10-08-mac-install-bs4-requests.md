@@ -7,12 +7,11 @@ tags:
 - Mac
 - Python
 ---
-{% include JB/setup %}
 
 As I want to run a crawler which in [https://github.com/lvyaojia/crawler](https://github.com/lvyaojia/crawler)
 
 but the error is
-from bs4 import BeautifulSoup 
+from bs4 import BeautifulSoup
 ImportError: No module named bs4
 
 ## install BeautifulSoup

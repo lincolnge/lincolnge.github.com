@@ -6,7 +6,6 @@ categories:
 tags:
 - Ubuntu
 ---
-{% include JB/setup %}
 
 If you run "rvm use XXX"
 then output "'/bin/bash --login' as the command"

@@ -7,7 +7,6 @@ category: reading
 tags:
 - draft
 ---
-{% include JB/setup %}
 
 林语堂 [《说话的艺术》](http://book.douban.com/subject/3351145/) 读书笔记
 

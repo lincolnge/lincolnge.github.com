@@ -7,7 +7,6 @@ category:
 - film
 tags:
 ---
-{% include JB/setup %}
 
 <https://movie.douban.com/review/7877003/>
 

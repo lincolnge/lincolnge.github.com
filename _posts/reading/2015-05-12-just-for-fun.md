@@ -6,7 +6,6 @@ description: ""
 category: reading
 tags: []
 ---
-{% include JB/setup %}
 
 Linus Torvalds / David Diamond [《Just for Fun》](http://book.douban.com/subject/1451172/)阅读笔记
 

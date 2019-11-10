@@ -7,9 +7,8 @@ category:
 - programming
 tags: [jQuery, Web 开发]
 ---
-{% include JB/setup %}
 
-jQuery UI datepicker 的一些实际应用.  
+jQuery UI datepicker 的一些实际应用.
 演示效果请移步: <http://plnkr.co/edit/q5mLhKQ3S1KJP8KXg6dn>
 
 ### 第二个日期自动弹出.

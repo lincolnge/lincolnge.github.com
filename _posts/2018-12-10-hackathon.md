@@ -7,7 +7,6 @@ category:
 - science
 tags:
 ---
-{% include JB/setup %}
 
 短短 2 天 hackathon 就结束了。没有得奖，聊以为重在参与。
 

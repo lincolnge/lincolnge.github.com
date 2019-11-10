@@ -6,7 +6,6 @@ categories:
 tags:
 - C++
 ---
-{% include JB/setup %}
 
     c = ((((i&0×8)==0)^((j&0×8))==0))*255的意义
 

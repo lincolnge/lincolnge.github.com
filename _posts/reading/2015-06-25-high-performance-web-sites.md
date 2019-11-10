@@ -3,10 +3,9 @@ layout: post
 title: "高性能网站建设指南"
 date_time: "2015-06-25 01:08:55 +0800"
 description: ""
-category: reading 
+category: reading
 tags: []
 ---
-{% include JB/setup %}
 
 Steve Souders [《高性能网站建设指南》](http://book.douban.com/subject/3132277/) 读书笔记
 
@@ -16,8 +15,8 @@ Steve Souders [《高性能网站建设指南》](http://book.douban.com/subject
 
 首先这是 O'Reilly Media, Inc 系列的书，该系列的书非常值得阅读。
 
-后端：分析用户请求、执行数据查询并对结果进行组织，形成浏览器可以呈现的内容；  
-前端：负责将后端生成的内容通过网络发给客户端浏览器。  
+后端：分析用户请求、执行数据查询并对结果进行组织，形成浏览器可以呈现的内容；
+前端：负责将后端生成的内容通过网络发给客户端浏览器。
 
 我们固有的印象是后端更复杂，以“后端开发”为荣，当有性能问题的时候也优先考虑后端上面的优化。而其实前端对网站性能的影响也是同样重大，我们需要正视前端的问题，并着手解决。
 

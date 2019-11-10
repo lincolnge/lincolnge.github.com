@@ -7,7 +7,6 @@ category:
 - programming
 tags:
 ---
-{% include JB/setup %}
 
 ## 使用 Rem 适配屏幕
 

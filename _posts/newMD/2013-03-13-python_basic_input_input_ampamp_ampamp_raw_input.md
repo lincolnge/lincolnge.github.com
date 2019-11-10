@@ -11,7 +11,6 @@ published: true
 meta:
   duoshuo_thread_id: '1365771562581491746'
 ---
-{% include JB/setup %}
 
 程序如下：
 

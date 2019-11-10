@@ -8,7 +8,6 @@ category:
 tags:
 - Conclusion
 ---
-{% include JB/setup %}
 
 ## 憧憬
 

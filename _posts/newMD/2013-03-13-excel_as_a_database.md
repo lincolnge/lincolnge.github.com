@@ -6,7 +6,6 @@ categories:
 tags:
 - C#
 ---
-{% include JB/setup %}
 
 C++操作excel：<a href="http://www.cnblogs.com/wdhust/archive/2011/04/20/2022963.html">使用C++读写Excel</a>
 

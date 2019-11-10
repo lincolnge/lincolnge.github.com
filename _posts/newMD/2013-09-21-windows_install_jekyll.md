@@ -8,7 +8,6 @@ tags:
 - Windows
 - Blog
 ---
-{% include JB/setup %}
 
 ## Jekyll
 
@@ -22,14 +21,14 @@ windows 8 系统似乎还有问题，未解决
 
 ## 安装
 安装RubyInstaller到c盘
-设置环境变量，path中配置形如C:\Ruby193\bin目录，然后在命令行终端下输入`gem update --system`来升级gem  
+设置环境变量，path中配置形如C:\Ruby193\bin目录，然后在命令行终端下输入`gem update --system`来升级gem
 Devkit解压到C:\DevKit
 
     $ cd C:\DevKit
     $ ruby dk.rb init
     $ ruby dk.rb install
 
-上面这段code的目的是让Devkit目录下的config.yml中有形如  
+上面这段code的目的是让Devkit目录下的config.yml中有形如
 `- C:/Ruby193`
 e.g.
 ![](/files/images/5A95C53B-C071-4FDA-ADF8-D360F12B3774.png)

@@ -6,7 +6,6 @@ categories:
 tags:
 - '软文'
 ---
-{% include JB/setup %}
 
 摘自《互联网——降级论》片段 from <http://news.cnblogs.com/n/148842/>
 

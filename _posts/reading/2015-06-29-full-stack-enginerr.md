@@ -6,7 +6,6 @@ description: ""
 category: reading
 tags: []
 ---
-{% include JB/setup %}
 
 余果 [《谈谈全栈工程师》](http://read.douban.com/column/226077/?icn=from-author-page)阅读笔记
 

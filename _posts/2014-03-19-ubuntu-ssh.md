@@ -7,7 +7,6 @@ category:
 tags:
 - Ubuntu
 ---
-{% include JB/setup %}
 
 Ubuntu 环境下 SSH 的安装及使用
 ========

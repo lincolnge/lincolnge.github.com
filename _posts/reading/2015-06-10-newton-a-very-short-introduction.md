@@ -6,7 +6,6 @@ description: ""
 category: reading
 tags: []
 ---
-{% include JB/setup %}
 
  [英] 罗布·艾利夫 [《牛顿新传》](http://book.douban.com/subject/4048021/) 读书笔记
 

@@ -8,7 +8,6 @@ tags:
 - Python
 - SAE
 ---
-{% include JB/setup %}
 
 ## SAE
 
@@ -30,11 +29,11 @@ source这一句是启动SAE本地环境，启动后 Terminal(终端) 最左会�
 
 一般来说需要安装下列的Python package (using pip install package) 安装如下的package
 
-+ sae-python-dev,  
-+ django(django==1.5) or webpy,  
-+ mysqldb(mysql-python),  
-+ pylibmc,  
-+ PIL,  
++ sae-python-dev,
++ django(django==1.5) or webpy,
++ mysqldb(mysql-python),
++ pylibmc,
++ PIL,
 ...
 
 安装如：
@@ -53,11 +52,11 @@ pip mysql的安装：
 运行
 
     $ saecloud install mezzanine
-    
+
 由于saecloud安装的问题，此时你的文件夹site-packages里面有很多无用的文件。
 
     filebrowser_safe/ mezzanine/ requests/ requirements/ grappelli_safe/ oauthlib/ requests_oauthlib/
-    
+
 只保留这几个文件。接着运行：
 
     $ mezzanine-project 1
@@ -104,13 +103,13 @@ svn checkout 你的project：
 
 
 运行脚本：
-  
+
     $ dev_server.py --mysql=root:root@localhost:3306 --host=127.0.0.1 --storage-path=/tmp
 
 至此本地环境配置完毕。
 打包上传到SAE。
 
 ## References:
-* Virtualenv. <em>Installation</em>. <a href="http://www.virtualenv.org/en/latest/" title="virtualenv">http://www.virtualenv.org/en/latest/</a>  
+* Virtualenv. <em>Installation</em>. <a href="http://www.virtualenv.org/en/latest/" title="virtualenv">http://www.virtualenv.org/en/latest/</a>
 * Marchliu. [URL](http://marchliu.github.io/tech/2013/10/09/sae-developer-env-in-local/)
 * SAE Python Developer's Guide 1.0(beta) documentation [URL](http://python.sinaapp.com/doc/tools.html#howto-use-saecloud-install)

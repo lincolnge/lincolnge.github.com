@@ -7,7 +7,6 @@ category:
 - draft
 tags:
 ---
-{% include JB/setup %}
 
 git 操作。。。
 

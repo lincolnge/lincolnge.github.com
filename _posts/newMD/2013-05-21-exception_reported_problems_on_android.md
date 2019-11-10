@@ -6,7 +6,6 @@ categories:
 tags:
 - Android
 ---
-{% include JB/setup %}
 
 android 程序只要你写错了就报异常，莫名其妙退出
 

@@ -7,7 +7,6 @@ category:
 - reading
 tags:
 ---
-{% include JB/setup %}
 
 第一步
 写测试

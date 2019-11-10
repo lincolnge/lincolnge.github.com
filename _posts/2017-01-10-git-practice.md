@@ -7,7 +7,6 @@ category:
 - programming
 tags:
 ---
-{% include JB/setup %}
 
 ### 背景
 

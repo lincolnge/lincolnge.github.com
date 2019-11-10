@@ -6,7 +6,6 @@ categories:
 tags:
 - Mac
 ---
-{% include JB/setup %}
 
 ## Mac command line
 
@@ -29,7 +28,7 @@ tags:
 ### Install homebrew
 
 Mac install homebrew，we can use git as from: <http://blog.jjgod.org/2009/12/21/homebrew-package-management/>
-    
+
     $ sudo chown -R `wanggengzhou` /usr/local
     $ cd /usr/local
     $ git init
@@ -46,7 +45,7 @@ Configure the path: PATH=$(brew --prefix ruby)/bin:$PATH
 
     $ vim ~/.bash_profile
 
-input: 
+input:
 
     export PATH=$(brew --prefix ruby)/bin:$PATH
 
@@ -61,7 +60,7 @@ input:
 
     $ sudo vim /usr/share/vim/vimrc
 
-input: 
+input:
 
     set ai                  " auto indenting
     set history=100         " keep 100 lines of history
@@ -80,7 +79,7 @@ input:
 
 
 ## File System
-The path of QQ information: 
+The path of QQ information:
 
     ~/Library/Containers/com.tencent.qq/Data/Library/Application Support/QQ
 
@@ -99,6 +98,6 @@ cannot open .git/FETCH_HEAD: Permission denied
 Mac ssh need not to be root accout
 
 
-Lauchpad icon information is in 
+Lauchpad icon information is in
 
     ~/Library/Application\ Support/Dock/*.db

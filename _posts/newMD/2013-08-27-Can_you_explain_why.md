@@ -7,7 +7,6 @@ tags:
 - 转载
 - JS
 ---
-{% include JB/setup %}
 
 ## 转自：珠海GDG微信
 <img alt="qrcode_for_gh_5e32c47b5b23_258.jpg" src="/files/images/qrcode_for_gh_5e32c47b5b23_258.jpg" />

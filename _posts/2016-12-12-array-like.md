@@ -7,7 +7,6 @@ category:
 - programming
 tags:
 ---
-{% include JB/setup %}
 
 {% highlight HTML linenos %}
 <!DOCTYPE html>

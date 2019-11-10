@@ -7,7 +7,6 @@ category:
 - science
 tags:
 ---
-{% include JB/setup %}
 
 ### 只讨论，不争论
 

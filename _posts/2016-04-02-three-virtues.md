@@ -8,7 +8,6 @@ category:
 tags:
 - 转载
 ---
-{% include JB/setup %}
 
 Three Virtues
 ====

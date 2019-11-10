@@ -7,7 +7,6 @@ category:
 - science
 tags:
 ---
-{% include JB/setup %}
 
 <http://open.leancloud.cn/copywriting-style-guide.html>
 

@@ -6,14 +6,13 @@ categories:
 tags:
 - Android
 ---
-{% include JB/setup %}
 
 ## 安卓itro
 <http://android.yaohuiji.com/about>
 
 
 ## Android layout
-`fill_parent`布局指将视图（在Windows中称为控件）扩展以填充所在容器的全部空间。 
+`fill_parent`布局指将视图（在Windows中称为控件）扩展以填充所在容器的全部空间。
 `wrap_content`布局指根据视图内部内容自动扩展以适应其大小
 
 界面的设计和CSS设计方式很像

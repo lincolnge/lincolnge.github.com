@@ -7,7 +7,6 @@ category:
 - science
 tags:
 ---
-{% include JB/setup %}
 
 阅读
 

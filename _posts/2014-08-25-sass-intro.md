@@ -6,7 +6,6 @@ category:
 - programming
 tags: [CSS, Web 开发]
 ---
-{% include JB/setup %}
 
 
 Sass 介绍
@@ -29,24 +28,24 @@ Gemfile 文件参考:
 SASS 与 SCSS 区别:
 ----
 
-SASS:  
+SASS:
 
 	#sidebar
 		width: 30%
 		background-color: #faa
 
-*.sass 文件  
+*.sass 文件
 
 ---
 
-SCSS:  
+SCSS:
 
 	#sidebar {
 		width: 30%;
 		background-color: #faa;
 	}
 
-*.scss 文件  
+*.scss 文件
 
 Sass 安装
 --------

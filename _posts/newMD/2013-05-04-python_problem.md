@@ -6,7 +6,6 @@ categories:
 tags:
 - Python
 ---
-{% include JB/setup %}
 
     今天遇到一个新的运算符合 |= 一竖加等号
 

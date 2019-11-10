@@ -7,7 +7,6 @@ category:
 - science
 tags:
 ---
-{% include JB/setup %}
 
 JSON 传输是带类型的，你说的传统的POST是Content-Type:application/x-www-form-urlencoded，就表示虽然也按键/值传递了，但确实字符串，本来数据该有的类型被忽略了。
 JSON 类型的数据可以比较好的支持嵌套的数据格式，这种数据格式在后端可以和文档数据库（比如 mongodb）的存储结构直接对应；在前端可以和 js 的数据对象直接对应。

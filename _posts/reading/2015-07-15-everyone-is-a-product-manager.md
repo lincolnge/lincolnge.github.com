@@ -6,7 +6,6 @@ description: ""
 category: reading
 tags: []
 ---
-{% include JB/setup %}
 
 苏杰 [《人人都是产品经理》](http://book.douban.com/subject/10785377/) 阅读笔记
 第一反映是为啥这书不是叫《人人都是工程师》

@@ -7,7 +7,6 @@ category:
 - learning
 tags:
 ---
-{% include JB/setup %}
 
 记一次学习桶排序
 [Algorithm in Javascript Bucket Sort](https://juejin.im/post/5853542c61ff4b006848e8bb)

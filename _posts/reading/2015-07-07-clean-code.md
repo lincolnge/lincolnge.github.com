@@ -6,7 +6,6 @@ description: ""
 category: reading
 tags: []
 ---
-{% include JB/setup %}
 
 [美]Robert C. Martin [《代码整洁之道》](http://book.douban.com/subject/4199741/) 阅读笔记
 

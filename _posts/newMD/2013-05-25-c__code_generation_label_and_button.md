@@ -6,7 +6,6 @@ categories:
 tags:
 - C#
 ---
-{% include JB/setup %}
 
     //自动生成label
     for (int x = 0; x < 5;x++ )
@@ -28,7 +27,7 @@ tags:
         _Height += sy.Height;
         sy.Text = i.ToString();
         Controls.Add(sy);
-    } 
+    }
 
     //生成button
     Button[] buttons = new Button[50];
@@ -48,7 +47,7 @@ tags:
 
             //panel1.Controls.Add(buttons[i]);
             buttons[i].BringToFront();//置于顶层
-            buttons[i].Click += new EventHandler(Buttons_Click);                        
+            buttons[i].Click += new EventHandler(Buttons_Click);
         }
         else
         {

@@ -7,6 +7,5 @@ category: reading
 tags:
 - draft
 ---
-{% include JB/setup %}
 
 朱光潜 [《谈修养》](http://book.douban.com/subject/1004719/) 阅读笔记

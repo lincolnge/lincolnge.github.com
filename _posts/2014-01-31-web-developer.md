@@ -9,7 +9,6 @@ tags:
 - JS
 - Web 开发
 ---
-{% include JB/setup %}
 
 From: 王子墨 <em>[如何成为一名优秀的web前端工程师（前端攻城师）](http://julying.com/blog/how-to-become-a-good-web-front-end-engineer)</em>
 
@@ -121,7 +120,7 @@ Javascript 的书籍 推荐看老外写的，国内很多 Javascript 书籍的�
       </div><!-- .entry-content -->
 
   <div class="entry-meta">
-    此条目是由 <a href="http://julying.com/blog/author/julying/">王子墨</a> 发表在 <a href="http://julying.com/blog/category/web-knowledge-essay/" title="查看前端随笔中的全部文章" rel="category tag">前端随笔</a> 分类目录的。将<a href="http://julying.com/blog/how-to-become-a-good-web-front-end-engineer/" title="链向 如何成为一名优秀的web前端工程师（前端攻城师）？ 的固定链接" rel="bookmark">固定链接</a>加入收藏夹。        
+    此条目是由 <a href="http://julying.com/blog/author/julying/">王子墨</a> 发表在 <a href="http://julying.com/blog/category/web-knowledge-essay/" title="查看前端随笔中的全部文章" rel="category tag">前端随笔</a> 分类目录的。将<a href="http://julying.com/blog/how-to-become-a-good-web-front-end-engineer/" title="链向 如何成为一名优秀的web前端工程师（前端攻城师）？ 的固定链接" rel="bookmark">固定链接</a>加入收藏夹。
 
       </div><!-- .entry-meta -->
 </div>

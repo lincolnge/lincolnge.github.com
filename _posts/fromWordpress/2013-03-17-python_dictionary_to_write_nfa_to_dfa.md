@@ -6,7 +6,6 @@ categories:
 tags:
 - Python
 ---
-{% include JB/setup %}
 
 <div><a href="https://github.com/lincolnge/NFA-to-DFA/blob/master/dictDFA.py">https://github.com/lincolnge/NFA-to-DFA/blob/master/dictDFA.py</a></div>
 

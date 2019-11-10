@@ -7,15 +7,14 @@ tags:
 - Android
 - Ubuntu
 ---
-{% include JB/setup %}
 
-有问题看问题解答.  
+有问题看问题解答.
 
-首先下载 Android SDK  
+首先下载 Android SDK
 
 <img title="ubuntu配置安卓" alt="ubuntu配置安卓" src="/files/images/1_130115191941_1.jpg" name="image_operate_93601371041564499" />
 
-Android SDK官方下载地址：<http://developer.android.com/sdk/index.html>  
+Android SDK官方下载地址：<http://developer.android.com/sdk/index.html>
 
 下载Linux 32-bit版本 .
 
