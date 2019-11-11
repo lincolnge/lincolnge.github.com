@@ -1,6 +1,5 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync');
-var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var imagemin    = require('gulp-imagemin');
@@ -109,19 +108,6 @@ gulp.task('browser-sync', ['css', 'jekyll-build'], function() {
 gulp.task('less', function () {
     return gulp.src('assets/themes/twitter-lin/less/*.less')
         .pipe(less({}))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(gulp.dest('_site/assets/themes/twitter-lin/css'))
-        .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('assets/themes/twitter-lin/css'));
-});
-
-// 不再用 sass 啦。
-gulp.task('sass', function () {
-    return gulp.src('assets/themes/twitter-lin/scss/*.scss')
-        .pipe(sass({
-            includePaths: ['scss'],
-            onError: browserSync.notify
-        }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('_site/assets/themes/twitter-lin/css'))
         .pipe(browserSync.reload({stream:true}))
