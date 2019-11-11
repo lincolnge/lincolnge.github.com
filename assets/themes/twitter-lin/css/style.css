@@ -315,8 +315,7 @@
   margin: 2px;
   background: #eee;
   color: #555;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
+  border-radius: 3px;
   text-decoration: none;
   border: 1px dashed #cccccc;
 }
@@ -387,8 +386,7 @@ h2,
 }
 img {
   border: 1px solid gray;
-  -webkit-border-radius: 4px;
-          border-radius: 4px;
+  border-radius: 4px;
 }
 /* table */
 table {
