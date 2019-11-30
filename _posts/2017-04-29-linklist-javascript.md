@@ -8,6 +8,7 @@ category:
 tags:
 ---
 
+### LinkList JavaScript
 
 {% highlight JavaScript linenos %}
 /**
