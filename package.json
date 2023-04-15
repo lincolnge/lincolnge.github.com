@@ -25,10 +25,10 @@
   },
   "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync",
   "dependencies": {
-    "browser-sync": "2.12.10",
-    "gulp": "3.9.1",
+    "browser-sync": "2.29.1",
+    "gulp": "4.0.2",
     "gulp-autoprefixer": "3.1.0",
-    "gulp-image-resize": "^0.11.0",
+    "gulp-image-resize": "^0.13.1",
     "gulp-imagemin": "^3.1.1",
     "gulp-less": "^3.3.2",
     "imagemin-jpegtran": "^5.0.2",
